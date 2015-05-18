@@ -1,0 +1,8 @@
+body {
+	&.homepage {
+		@import "layouts/homepage/work";
+		@import "layouts/homepage/about";
+		@import "layouts/homepage/opinion";
+		@import "layouts/homepage/questions";
+	}
+}

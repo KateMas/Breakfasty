@@ -1,0 +1,42 @@
+.questions {
+	padding-top: 102px;
+	padding-bottom: 128px;
+	font-family: 'Open Sans', sans-serif;
+	h2 {
+		font-size: 72px;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	ul {
+		padding-bottom: 72px;
+	 	border:none;
+	 	li {
+	 		a {
+	 			padding: 0;
+	 			border:none;
+	 			font-size: 24px;
+	 			font-weight: 300;
+	 			text-decoration: underline;
+	 			color: #000000;
+	 		}
+	 	}
+	 	.active {
+ 			a {
+ 				border:none;
+ 				color: #ffa162;
+ 			}
+ 		}
+	}
+	p {
+		margin: 0 5%;
+		font-size: 22px;
+	}
+	.text-question {
+		font-weight: 400;
+		color: #ffa162;
+	}
+	.text-answer {
+		font-weight: 300;
+	}
+}

@@ -1,0 +1,47 @@
+.opinion {
+	padding-top: 58px;
+	padding-bottom: 58px;
+	background-image: url(../../../client/images/opinion/background.png);
+	background-size: cover;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	font-family: 'Open Sans', sans-serif;
+	.style-bgc {
+		padding-top: 80px;
+		padding-bottom: 6px;
+		background-color: #ffffff;
+		h2 {
+		padding-bottom: 93px;
+		font-size: 72px;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+		@include breakpoint(extra-xs-small) {
+			font-size: 60px;
+		}
+		}
+		.icon-stars {
+			display: inline-block;
+			width: 160px;
+			height: 31px;
+			margin-left: 5%;
+			margin-bottom: 32px;
+			background-image: url(../../../client/images/opinion/star.png);
+			background-repeat: repeat-x;
+		}
+		.comment {
+			margin: 0 5%;
+			font-size: 22px;
+			font-weight: 300;
+		}
+		.author {
+			margin-right: 5%;
+			padding-bottom: 86px;
+			text-align: right;
+			font-size: 18px;
+			font-weight: 300;
+			font-style: italic;
+			color: #6e6e6e;
+		}
+	}
+}
