@@ -7,8 +7,10 @@
 //sprites
 @import "work/*.png";
 @import "about/*.png";
+@import "social/*.png";
 @include all-work-sprites;
 @include all-about-sprites;
+@include all-social-sprites;
 
 //fonts
 @import "fonts/roboto";

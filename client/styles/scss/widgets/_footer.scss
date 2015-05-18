@@ -1,9 +1,48 @@
 footer {
-	padding-top: 109px;
 	padding-bottom: 87px;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	font-weight: 400;
 	text-align: center;
-	color: #333333;
+	h3 {
+		font-size: 56px;
+		font-weight: 300;
+	}
+	ul {
+		padding-top: 98px;
+		padding-bottom: 109px;
+		font-size: 0;
+		li {
+			display: inline-block;
+			margin-right: 78px;
+			a {display: inline-block;
+			}
+			&:first-child {
+				a {
+					width: 20px;
+					height: 38px;
+					@extend.social-fc;
+				}
+			}
+			&:nth-child(2) {
+				a {
+					width: 35px;
+					height: 35px;
+					@extend.social-instagram;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+				a {
+					width: 32px;
+					height: 41px;
+					@extend.social-pinterest;
+				}
+			}
+		}
+	}
+	p {
+		font-size: 18px;
+		font-weight: 400;
+		text-align: center;
+		color: #333333;
+	}
 }

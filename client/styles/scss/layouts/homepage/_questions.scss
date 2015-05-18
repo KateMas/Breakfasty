@@ -9,9 +9,16 @@
 		text-transform: uppercase;
 	}
 	ul {
+		width: 60%;
+		margin: auto;
+		padding-top: 72px;
 		padding-bottom: 72px;
 	 	border:none;
 	 	li {
+	 		margin-right: 71px;
+	 		&:last-child {
+	 			margin-right: 0;
+	 		}
 	 		a {
 	 			padding: 0;
 	 			border:none;
@@ -38,5 +45,6 @@
 	}
 	.text-answer {
 		font-weight: 300;
+		line-height: 35px;
 	}
 }
