@@ -3,6 +3,8 @@
 	text-align: center;
 	h2 {
 		margin: 0;
+		padding-top: 55px;
+		padding-bottom: 34px;
 		font-size: 61px;
 		font-weight: 400;
 	}
@@ -11,10 +13,66 @@
 		font-size: 27px;
 		font-weight: 300;
 	}
-	a {
+	.button-discount {
+		width: 300px;
+		margin-top: 60px;
+		margin-bottom: 122px;
+		padding: 0;
+		background-color: #ff7800;
 		font-family: 'Roboto', sans-serif;
 		font-size: 27px;
 		font-weight: 400;
+		line-height: 80px;
 		text-transform: uppercase;
+		@include border-radius(0);
+		&:focus {
+			border: none;
+			outline: none;
+		}
+	}
+	form {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-color: #e5dedf;
+		font-family: 'Open Sans', sans-serif;
+
+		input {
+			display: block;
+			width: 280px;
+			height: 30px;
+			margin: auto;
+			padding-left: 10px;
+			background-color: #c7c4c4;
+			border:none;
+			outline: none;
+			@include border-radius(5px);
+			@include user-select(none);
+			@include placeholder {
+				font-weight: 300;
+				font-size: 16px;
+			}
+			&:focus {
+				padding-left: 10px;
+				background-color: #fad3b1;
+				font-size: 16px;
+				color: #848080;
+				@include placeholder {
+					color: transparent;
+				}
+				@include transition-duration (400ms);
+			}
+		}
+		button {
+			height: 30px;
+			margin-top: 20px;
+			background-color: #ff7800;
+			border: none;
+			font-size: 16px;
+			font-weight: 400;
+			text-transform: uppercase;
+			color:#ffffff;
+			@include border-radius(5px);
+			@include user-select(none);
+		}
 	}
 }

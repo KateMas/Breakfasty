@@ -16,7 +16,17 @@
         <div class="row">
             <h2>Eat Brekfast Every Day</h2>
             <p>We deliver delicious breakfasts to your doorstep</p>
-            <a href="">get 50% off</a>
+            <button type="button" class="btn btn-primary button-discount" data-toggle="modal" data-target=".bs-example-modal-sm">get 50% off</button>
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <form action="/" method="post">
+                        <input type="email" value="" name="Email" placeholder="Email address" required>
+                        <button>submit</button>
+                    </form>
+                </div>
+              </div>
+            </div>
         </div>
     </div>
 </div>
