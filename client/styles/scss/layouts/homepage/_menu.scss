@@ -8,19 +8,22 @@
 		padding-top: 58px;
 	}
 	h2 {
-		margin: 0;
-		margin-bottom: 0 0 39px 0;
+		margin: 0 0 38px 0;
 		font-size: 72px;
 		font-weight: 300;
 		text-align: center;
 		text-transform: uppercase;
 		@include breakpoint(extra-xs-small) {
+			margin: 0 0 18px 0;
 			font-size: 36px;
 		}
 	}
 	.dish {
 		margin-top: 50px;
 		border: 1px solid #c7c7c7;
+		@include breakpoint(extra-xs-small) {
+			margin-top: 30px;
+		}
 		@include clearfix;
 		.price {
 			float: right;

@@ -1,17 +1,35 @@
 .advertising {
+	padding-top: 93px;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
-	h2 {
+	.plate {
+		overflow: hidden;
+		width: 100%;
+		height: 508px;
+		background-position:center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		@include user-select(none);
+	}
+	h1 {
 		margin: 0;
 		padding-top: 55px;
 		padding-bottom: 34px;
 		font-size: 61px;
 		font-weight: 400;
+		@include breakpoint(extra-xs-small) {
+			padding-top: 30px;
+			padding-bottom: 14px;
+			font-size: 30px;
+		}
 	}
 	p {
 		margin: 0;
 		font-size: 27px;
 		font-weight: 300;
+		@include breakpoint(extra-xs-small) {
+			font-size: 18px;
+		}
 	}
 	.button-discount {
 		width: 300px;
@@ -25,6 +43,13 @@
 		line-height: 80px;
 		text-transform: uppercase;
 		@include border-radius(0);
+		@include breakpoint(extra-xs-small) {
+			width: 200px;
+			margin-top: 30px;
+			margin-bottom: 70px;
+			font-size: 18px;
+			line-height: 50px;
+		}
 		&:focus {
 			border: none;
 			outline: none;

@@ -1,0 +1,84 @@
+header {
+	width: 100%;
+	.nav-style {
+		font-family: 'Roboto', sans-serif;
+		font-size: 22px;
+		font-weight: 300;
+		background-color: transparent;
+		border: none;
+		.nav-button {
+			.logo-header {
+				display: inline-block;
+				width: 224px;
+				height: 100%;
+				margin-top: 30px;
+				@include breakpoint(extra-xs-small) {
+					//width: 50%;
+				}
+				img {
+					//width: 100%;
+				}
+				p {
+					font-family: 'Open Sans', sans-serif;
+					font-size: 10px;
+					font-weight: 600;
+					text-align: right;
+					color: #000000;
+				}
+			}
+		}
+		.list {
+				border:none;
+				ul {
+					float: right;
+					@include breakpoint(small) {
+						text-align: center;
+					}
+					@include breakpoint(extra-small) {
+						float: none;
+						text-align: center;
+					}
+					@include breakpoint(extra-xs-small) {
+						float: none;
+						text-align: center;
+					}
+					li {
+						margin-right: 44px;
+						text-transform: uppercase;
+						@include breakpoint(small) {
+							line-height: 41px;
+						}
+						@include breakpoint(extra-xs-small) {
+							margin: 0;
+							line-height: 41px;
+						}
+						a {
+							padding: 0;
+							line-height: 93px;
+							color: #000000;
+							@include transition-property(color);
+							@include transition-duration(400ms);
+							&:hover {
+								color: #ff7800;
+							}
+						}
+					}
+				}
+		}
+		.cart {
+			a {
+				display: inline-block;
+				width: 34px;
+				height: 34px;
+				background-image: url(../../../client/images/header/cart.png);
+			}
+		}
+	}
+	/* .scroll {
+	 	display: none;
+		position: fixed;
+		z-index: 1;
+		background-color: rgba (#ffffff,0.7);
+	} */
+}
+
