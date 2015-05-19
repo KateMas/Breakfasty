@@ -3193,11 +3193,11 @@ body.homepage .about {
 @media (max-width: 767px) {
   /* line 1, ../scss/layouts/homepage/_about.scss */
   body.homepage .about {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
-/* line 14, ../scss/layouts/homepage/_about.scss */
+/* line 10, ../scss/layouts/homepage/_about.scss */
 body.homepage .about h2 {
   margin: 0 0 83px 0;
   font-size: 72px;
@@ -3206,69 +3206,69 @@ body.homepage .about h2 {
   color: #ffa264;
 }
 @media (max-width: 767px) {
-  /* line 14, ../scss/layouts/homepage/_about.scss */
+  /* line 10, ../scss/layouts/homepage/_about.scss */
   body.homepage .about h2 {
     margin-top: 0;
     margin-bottom: 10%;
     font-size: 36px;
   }
 }
-/* line 30, ../scss/layouts/homepage/_about.scss */
+/* line 22, ../scss/layouts/homepage/_about.scss */
 body.homepage .about p {
   font-size: 22px;
   font-weight: 300;
   line-height: 35px;
 }
 @media (max-width: 767px) {
-  /* line 30, ../scss/layouts/homepage/_about.scss */
+  /* line 22, ../scss/layouts/homepage/_about.scss */
   body.homepage .about p {
     font-size: 18px;
   }
 }
-/* line 38, ../scss/layouts/homepage/_about.scss */
+/* line 30, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts {
   margin-top: 15px;
   font-size: 0;
 }
-/* line 41, ../scss/layouts/homepage/_about.scss */
+/* line 33, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li {
   display: inline-block;
   font-size: 22px;
   font-weight: 300;
 }
 @media (max-width: 767px) {
-  /* line 41, ../scss/layouts/homepage/_about.scss */
+  /* line 33, ../scss/layouts/homepage/_about.scss */
   body.homepage .about .contacts li {
     display: block;
     font-size: 18px;
     line-height: 35px;
   }
 }
-/* line 50, ../scss/layouts/homepage/_about.scss */
+/* line 42, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li:first-child {
   margin-right: 28px;
 }
-/* line 53, ../scss/layouts/homepage/_about.scss */
+/* line 45, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li:nth-child(2) {
   margin-right: 25px;
 }
-/* line 56, ../scss/layouts/homepage/_about.scss */
+/* line 48, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li a {
   vertical-align: middle;
   color: #000000;
 }
-/* line 60, ../scss/layouts/homepage/_about.scss */
+/* line 52, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li span {
   display: inline-block;
   height: 22px;
   margin-right: 17px;
   vertical-align: middle;
 }
-/* line 66, ../scss/layouts/homepage/_about.scss */
+/* line 58, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li .phone {
   width: 14px;
 }
-/* line 70, ../scss/layouts/homepage/_about.scss */
+/* line 62, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li .envelope {
   width: 22px;
 }
@@ -3299,7 +3299,7 @@ body.homepage .comments .style-bgc h2 {
 @media (max-width: 767px) {
   /* line 13, ../scss/layouts/homepage/_comments.scss */
   body.homepage .comments .style-bgc h2 {
-    font-size: 60px;
+    font-size: 36px;
   }
 }
 /* line 23, ../scss/layouts/homepage/_comments.scss */
