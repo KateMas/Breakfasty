@@ -2905,7 +2905,7 @@ tbody.collapse.in {
   }
 }
 /* line 64, work/*.png */
-.work-sprite, .work-egg, body.homepage .work figure .work-food, .work-fridge, body.homepage .work figure .work-fridge, .work-smile, body.homepage .work figure .work-smile {
+.work-sprite, .work-egg, body.homepage .work .description-work figure .work-food, .work-fridge, body.homepage .work .description-work figure .work-fridge, .work-smile, body.homepage .work .description-work figure .work-smile {
   background-image: url('../../images/work-s31dd204e76.png');
   background-repeat: no-repeat;
 }
@@ -2923,17 +2923,17 @@ tbody.collapse.in {
 }
 
 /* line 84, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.work-egg, body.homepage .work figure .work-food {
+.work-egg, body.homepage .work .description-work figure .work-food {
   background-position: 0 0;
 }
 
 /* line 84, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.work-fridge, body.homepage .work figure .work-fridge {
+.work-fridge, body.homepage .work .description-work figure .work-fridge {
   background-position: 0 -89px;
 }
 
 /* line 84, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.work-smile, body.homepage .work figure .work-smile {
+.work-smile, body.homepage .work .description-work figure .work-smile {
   background-position: 0 -185px;
 }
 
@@ -3019,81 +3019,166 @@ footer p {
 body.homepage .work {
   padding-top: 166px;
   font-family: 'Open Sans', sans-serif;
+  font-size: 0;
 }
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 767px) {
   /* line 1, ../scss/layouts/homepage/_work.scss */
   body.homepage .work {
-    padding-top: 10%;
+    padding-top: 100px;
   }
 }
-@media (max-width: 480px) {
-  /* line 1, ../scss/layouts/homepage/_work.scss */
-  body.homepage .work {
-    padding-top: 10%;
-  }
-}
-/* line 10, ../scss/layouts/homepage/_work.scss */
+/* line 8, ../scss/layouts/homepage/_work.scss */
 body.homepage .work h2 {
+  margin: 0;
   font-size: 72px;
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
 }
-@media (max-width: 480px) {
-  /* line 10, ../scss/layouts/homepage/_work.scss */
+@media (max-width: 767px) {
+  /* line 8, ../scss/layouts/homepage/_work.scss */
   body.homepage .work h2 {
     margin-bottom: 5%;
     font-size: 65px;
   }
 }
-/* line 20, ../scss/layouts/homepage/_work.scss */
-body.homepage .work figure {
+/* line 19, ../scss/layouts/homepage/_work.scss */
+body.homepage .work .description-work {
+  width: 936px;
+  margin: auto;
   padding-top: 110px;
-  padding-bottom: 138px;
+  padding-bottom: 136px;
+  /* } @else if $point == extra-small {
+  	@media (min-width: 481px) and (max-width: 767px) {
+  	@content;
+  	} */
 }
-@media (min-width: 481px) and (max-width: 767px) {
-  /* line 20, ../scss/layouts/homepage/_work.scss */
-  body.homepage .work figure {
-    padding-top: 10%;
-    padding-bottom: 10%;
+@media (min-width: 980px) and (max-width: 1199px) {
+  /* line 19, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work {
+    width: 761px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 19, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work {
+    width: 721px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 19, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+/* line 35, ../scss/layouts/homepage/_work.scss */
+body.homepage .work .description-work figure {
+  display: inline-block;
+  vertical-align: top;
+}
+@media (max-width: 767px) {
+  /* line 35, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work figure {
+    display: block;
+    margin: auto;
     text-align: center;
   }
 }
-@media (max-width: 480px) {
-  /* line 20, ../scss/layouts/homepage/_work.scss */
-  body.homepage .work figure {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    text-align: center;
+/* line 43, ../scss/layouts/homepage/_work.scss */
+body.homepage .work .description-work figure:first-child {
+  width: 174px;
+  margin-right: 192px;
+  /* } @else if $point == extra-small {
+  	@media (min-width: 481px) and (max-width: 767px) {
+  	@content;
+  	} */
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  /* line 43, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work figure:first-child {
+    margin-right: 100px;
   }
 }
-/* line 33, ../scss/layouts/homepage/_work.scss */
-body.homepage .work figure span {
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 43, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work figure:first-child {
+    margin-right: 80px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 43, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work figure:first-child {
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+}
+/* line 57, ../scss/layouts/homepage/_work.scss */
+body.homepage .work .description-work figure:nth-child(2) {
+  width: 174px;
+  margin-right: 183px;
+  /* } @else if $point == extra-small {
+  	@media (min-width: 481px) and (max-width: 767px) {
+  	@content;
+  	} */
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  /* line 57, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work figure:nth-child(2) {
+    margin-right: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 57, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work figure:nth-child(2) {
+    margin-right: 80px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 57, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work figure:nth-child(2) {
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+}
+/* line 71, ../scss/layouts/homepage/_work.scss */
+body.homepage .work .description-work figure:nth-child(3) {
+  width: 213px;
+}
+/* line 74, ../scss/layouts/homepage/_work.scss */
+body.homepage .work .description-work figure span {
   display: inline-block;
   margin-bottom: 61px;
   text-align: center;
 }
-/* line 38, ../scss/layouts/homepage/_work.scss */
-body.homepage .work figure .work-food {
+@media (max-width: 767px) {
+  /* line 74, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work figure span {
+    margin-bottom: 20px;
+  }
+}
+/* line 82, ../scss/layouts/homepage/_work.scss */
+body.homepage .work .description-work figure .work-food {
   width: 93px;
   height: 89px;
 }
-/* line 43, ../scss/layouts/homepage/_work.scss */
-body.homepage .work figure .work-fridge {
+/* line 87, ../scss/layouts/homepage/_work.scss */
+body.homepage .work .description-work figure .work-fridge {
   width: 72px;
   height: 96px;
 }
-/* line 48, ../scss/layouts/homepage/_work.scss */
-body.homepage .work figure .work-smile {
+/* line 92, ../scss/layouts/homepage/_work.scss */
+body.homepage .work .description-work figure .work-smile {
   width: 95px;
   height: 90px;
 }
-/* line 54, ../scss/layouts/homepage/_work.scss */
-body.homepage .work figure figcaption p {
+/* line 98, ../scss/layouts/homepage/_work.scss */
+body.homepage .work .description-work figure figcaption p {
   font-size: 24px;
   font-weight: 300;
 }
-/* line 60, ../scss/layouts/homepage/_work.scss */
+/* line 105, ../scss/layouts/homepage/_work.scss */
 body.homepage .work hr {
   margin: 0;
   color: #898989;
@@ -3105,14 +3190,7 @@ body.homepage .about {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
-@media (min-width: 481px) and (max-width: 767px) {
-  /* line 1, ../scss/layouts/homepage/_about.scss */
-  body.homepage .about {
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-}
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* line 1, ../scss/layouts/homepage/_about.scss */
   body.homepage .about {
     padding-top: 10%;
@@ -3127,14 +3205,7 @@ body.homepage .about h2 {
   text-transform: uppercase;
   color: #ffa264;
 }
-@media (min-width: 481px) and (max-width: 767px) {
-  /* line 14, ../scss/layouts/homepage/_about.scss */
-  body.homepage .about h2 {
-    margin-top: 0;
-    margin-bottom: 10%;
-  }
-}
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* line 14, ../scss/layouts/homepage/_about.scss */
   body.homepage .about h2 {
     margin-top: 0;
@@ -3158,7 +3229,7 @@ body.homepage .about .contacts li {
   font-size: 22px;
   font-weight: 300;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* line 37, ../scss/layouts/homepage/_about.scss */
   body.homepage .about .contacts li {
     line-height: 35px;
@@ -3216,7 +3287,7 @@ body.homepage .comments .style-bgc h2 {
   text-align: center;
   text-transform: uppercase;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* line 13, ../scss/layouts/homepage/_comments.scss */
   body.homepage .comments .style-bgc h2 {
     font-size: 60px;
@@ -3311,7 +3382,7 @@ body.homepage .menu {
   padding-top: 138px;
   font-family: 'Open Sans', sans-serif;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* line 1, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu {
     padding-top: 70px;
@@ -3356,7 +3427,7 @@ body.homepage .menu .dish .price {
     padding: 6px 21px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* line 19, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .price {
     padding: 5px 18px;
@@ -3369,6 +3440,10 @@ body.homepage .menu .dish .name-dish {
   font-size: 24px;
   font-weight: 300;
   text-transform: uppercase;
+  /* } @else if $point == extra-small {
+  	@media (min-width: 481px) and (max-width: 767px) {
+  	@content;
+  	} */
 }
 @media (min-width: 980px) and (max-width: 1199px) {
   /* line 34, ../scss/layouts/homepage/_menu.scss */
@@ -3384,7 +3459,7 @@ body.homepage .menu .dish .name-dish {
     font-size: 20px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* line 34, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .name-dish {
     padding: 35px 0 29px 12px;
@@ -3439,7 +3514,7 @@ body.homepage .menu .dish figure figcaption {
     padding: 36px 23px 37px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* line 70, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish figure figcaption {
     padding: 36px 23px 37px;
@@ -3481,6 +3556,10 @@ body.homepage .menu .dish .counter {
   font-family: 'Roboto', sans-serif;
   font-size: 0;
   line-height: 33px;
+  /* } @else if $point == extra-small {
+  	@media (min-width: 481px) and (max-width: 767px) {
+  	@content;
+  	} */
 }
 @media (min-width: 980px) and (max-width: 1199px) {
   /* line 112, ../scss/layouts/homepage/_menu.scss */
@@ -3494,7 +3573,7 @@ body.homepage .menu .dish .counter {
     margin: 35px 0 40px 20px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* line 112, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter {
     margin: 25px 0 30px 17px;
@@ -3525,6 +3604,10 @@ body.homepage .menu .dish .counter a {
 body.homepage .menu .dish .counter a:first-child {
   margin-right: 30px;
   background-color: #cccccc;
+  /* } @else if $point == extra-small {
+  	@media (min-width: 481px) and (max-width: 767px) {
+  	@content;
+  	} */
 }
 @media (min-width: 980px) and (max-width: 1199px) {
   /* line 140, ../scss/layouts/homepage/_menu.scss */
@@ -3538,7 +3621,7 @@ body.homepage .menu .dish .counter a:first-child {
     margin-right: 20px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* line 140, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter a:first-child {
     margin-right: 10px;
@@ -3555,6 +3638,10 @@ body.homepage .menu .dish .counter span {
   margin-right: 30px;
   font-size: 48px;
   font-weight: 300;
+  /* } @else if $point == extra-small {
+  	@media (min-width: 481px) and (max-width: 767px) {
+  	@content;
+  	} */
 }
 @media (min-width: 980px) and (max-width: 1199px) {
   /* line 157, ../scss/layouts/homepage/_menu.scss */
@@ -3568,7 +3655,7 @@ body.homepage .menu .dish .counter span {
     margin-right: 20px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* line 157, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter span {
     margin-right: 10px;
@@ -3592,6 +3679,10 @@ body.homepage .menu .dish .add-order {
   -ms-user-select: none;
   user-select: none;
   cursor: default;
+  /* } @else if $point == extra-small {
+  	@media (min-width: 481px) and (max-width: 767px) {
+  	@content;
+  	} */
 }
 @media (min-width: 980px) and (max-width: 1199px) {
   /* line 174, ../scss/layouts/homepage/_menu.scss */
@@ -3607,7 +3698,7 @@ body.homepage .menu .dish .add-order {
     margin: 28px 26px 0 0;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   /* line 174, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .add-order {
     width: 90px;
