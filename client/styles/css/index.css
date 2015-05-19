@@ -2962,6 +2962,14 @@ tbody.collapse.in {
   background-position: 0 -73px;
 }
 
+/* line 3, ../scss/_base.scss */
+body.homepage .container-background {
+  background-image: url(../../../client/images/advertising/background-table.png);
+  background-size: cover;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 /* line 1, ../scss/widgets/_footer.scss */
 footer {
   padding-bottom: 87px;
