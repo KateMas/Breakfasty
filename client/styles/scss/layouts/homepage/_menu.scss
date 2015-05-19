@@ -11,6 +11,9 @@
 		font-weight: 300;
 		text-align: center;
 		text-transform: uppercase;
+		@include breakpoint(extra-xs-small) {
+			font-size: 36px;
+		}
 	}
 	.dish {
 		margin-top: 50px;

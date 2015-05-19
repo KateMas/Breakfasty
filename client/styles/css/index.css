@@ -3039,7 +3039,7 @@ body.homepage .work h2 {
   /* line 8, ../scss/layouts/homepage/_work.scss */
   body.homepage .work h2 {
     margin-bottom: 5%;
-    font-size: 65px;
+    font-size: 36px;
   }
 }
 /* line 19, ../scss/layouts/homepage/_work.scss */
@@ -3210,56 +3210,65 @@ body.homepage .about h2 {
   body.homepage .about h2 {
     margin-top: 0;
     margin-bottom: 10%;
+    font-size: 36px;
   }
 }
-/* line 29, ../scss/layouts/homepage/_about.scss */
+/* line 30, ../scss/layouts/homepage/_about.scss */
 body.homepage .about p {
   font-size: 22px;
   font-weight: 300;
   line-height: 35px;
 }
-/* line 34, ../scss/layouts/homepage/_about.scss */
+@media (max-width: 767px) {
+  /* line 30, ../scss/layouts/homepage/_about.scss */
+  body.homepage .about p {
+    font-size: 18px;
+  }
+}
+/* line 38, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts {
   margin-top: 15px;
   font-size: 0;
 }
-/* line 37, ../scss/layouts/homepage/_about.scss */
+/* line 41, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li {
   display: inline-block;
   font-size: 22px;
   font-weight: 300;
 }
 @media (max-width: 767px) {
-  /* line 37, ../scss/layouts/homepage/_about.scss */
+  /* line 41, ../scss/layouts/homepage/_about.scss */
   body.homepage .about .contacts li {
+    display: block;
+    font-size: 18px;
     line-height: 35px;
   }
 }
-/* line 44, ../scss/layouts/homepage/_about.scss */
+/* line 50, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li:first-child {
   margin-right: 28px;
 }
-/* line 47, ../scss/layouts/homepage/_about.scss */
-body.homepage .about .contacts li:nth-child {
+/* line 53, ../scss/layouts/homepage/_about.scss */
+body.homepage .about .contacts li:nth-child(2) {
   margin-right: 25px;
 }
-/* line 50, ../scss/layouts/homepage/_about.scss */
+/* line 56, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li a {
   vertical-align: middle;
   color: #000000;
 }
-/* line 54, ../scss/layouts/homepage/_about.scss */
+/* line 60, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li span {
   display: inline-block;
   height: 22px;
   margin-right: 17px;
   vertical-align: middle;
 }
-/* line 60, ../scss/layouts/homepage/_about.scss */
+/* line 66, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li .phone {
   width: 14px;
 }
-/* line 64, ../scss/layouts/homepage/_about.scss */
+/* line 70, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li .envelope {
   width: 22px;
 }
@@ -3397,7 +3406,13 @@ body.homepage .menu h2 {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 15, ../scss/layouts/homepage/_menu.scss */
+@media (max-width: 767px) {
+  /* line 7, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu h2 {
+    font-size: 36px;
+  }
+}
+/* line 18, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish {
   margin-top: 50px;
   border: 1px solid #c7c7c7;
@@ -3411,7 +3426,7 @@ body.homepage .menu .dish:before, body.homepage .menu .dish:after {
 body.homepage .menu .dish:after {
   clear: both;
 }
-/* line 19, ../scss/layouts/homepage/_menu.scss */
+/* line 22, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .price {
   float: right;
   padding: 8px 23px;
@@ -3422,18 +3437,18 @@ body.homepage .menu .dish .price {
   line-height: 27px;
 }
 @media (min-width: 980px) and (max-width: 1199px) {
-  /* line 19, ../scss/layouts/homepage/_menu.scss */
+  /* line 22, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .price {
     padding: 6px 21px;
   }
 }
 @media (max-width: 767px) {
-  /* line 19, ../scss/layouts/homepage/_menu.scss */
+  /* line 22, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .price {
     padding: 5px 18px;
   }
 }
-/* line 34, ../scss/layouts/homepage/_menu.scss */
+/* line 37, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .name-dish {
   margin: 0;
   padding: 55px 0 49px 42px;
@@ -3446,37 +3461,37 @@ body.homepage .menu .dish .name-dish {
   	} */
 }
 @media (min-width: 980px) and (max-width: 1199px) {
-  /* line 34, ../scss/layouts/homepage/_menu.scss */
+  /* line 37, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .name-dish {
     padding: 55px 0 49px 22px;
     font-size: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 34, ../scss/layouts/homepage/_menu.scss */
+  /* line 37, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .name-dish {
     padding: 55px 0 49px 22px;
     font-size: 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 34, ../scss/layouts/homepage/_menu.scss */
+  /* line 37, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .name-dish {
     padding: 35px 0 29px 12px;
     font-size: 20px;
   }
 }
-/* line 53, ../scss/layouts/homepage/_menu.scss */
+/* line 56, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish figure {
   position: relative;
   width: 100%;
 }
-/* line 57, ../scss/layouts/homepage/_menu.scss */
+/* line 60, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish figure:hover figcaption {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-/* line 61, ../scss/layouts/homepage/_menu.scss */
+/* line 64, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish figure .image {
   overflow: hidden;
   width: 100%;
@@ -3491,7 +3506,7 @@ body.homepage .menu .dish figure .image {
   user-select: none;
   cursor: default;
 }
-/* line 70, ../scss/layouts/homepage/_menu.scss */
+/* line 73, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish figure figcaption {
   position: absolute;
   top: 0;
@@ -3509,18 +3524,18 @@ body.homepage .menu .dish figure figcaption {
   transition-duration: 400ms;
 }
 @media (min-width: 980px) and (max-width: 1199px) {
-  /* line 70, ../scss/layouts/homepage/_menu.scss */
+  /* line 73, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish figure figcaption {
     padding: 36px 23px 37px;
   }
 }
 @media (max-width: 767px) {
-  /* line 70, ../scss/layouts/homepage/_menu.scss */
+  /* line 73, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish figure figcaption {
     padding: 36px 23px 37px;
   }
 }
-/* line 88, ../scss/layouts/homepage/_menu.scss */
+/* line 91, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish figure figcaption .name-for-ingridients {
   margin: 0;
   font-size: 18px;
@@ -3529,26 +3544,26 @@ body.homepage .menu .dish figure figcaption .name-for-ingridients {
   text-transform: uppercase;
 }
 @media (min-width: 980px) and (max-width: 1199px) {
-  /* line 88, ../scss/layouts/homepage/_menu.scss */
+  /* line 91, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish figure figcaption .name-for-ingridients {
     font-size: 16px;
     line-height: 26px;
   }
 }
-/* line 101, ../scss/layouts/homepage/_menu.scss */
+/* line 104, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish figure figcaption .ingridients {
   font-size: 18px;
   font-weight: 300;
   line-height: 28px;
 }
 @media (min-width: 980px) and (max-width: 1199px) {
-  /* line 101, ../scss/layouts/homepage/_menu.scss */
+  /* line 104, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish figure figcaption .ingridients {
     font-size: 16px;
     line-height: 26px;
   }
 }
-/* line 112, ../scss/layouts/homepage/_menu.scss */
+/* line 115, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter {
   float: left;
   height: 33px;
@@ -3562,24 +3577,24 @@ body.homepage .menu .dish .counter {
   	} */
 }
 @media (min-width: 980px) and (max-width: 1199px) {
-  /* line 112, ../scss/layouts/homepage/_menu.scss */
+  /* line 115, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter {
     margin: 35px 0 30px 17px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 112, ../scss/layouts/homepage/_menu.scss */
+  /* line 115, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter {
     margin: 35px 0 40px 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 112, ../scss/layouts/homepage/_menu.scss */
+  /* line 115, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter {
     margin: 25px 0 30px 17px;
   }
 }
-/* line 128, ../scss/layouts/homepage/_menu.scss */
+/* line 131, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter a {
   display: inline-block;
   width: 31px;
@@ -3600,7 +3615,7 @@ body.homepage .menu .dish .counter a {
   user-select: none;
   cursor: default;
 }
-/* line 140, ../scss/layouts/homepage/_menu.scss */
+/* line 143, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter a:first-child {
   margin-right: 30px;
   background-color: #cccccc;
@@ -3610,28 +3625,28 @@ body.homepage .menu .dish .counter a:first-child {
   	} */
 }
 @media (min-width: 980px) and (max-width: 1199px) {
-  /* line 140, ../scss/layouts/homepage/_menu.scss */
+  /* line 143, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter a:first-child {
     margin-right: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 140, ../scss/layouts/homepage/_menu.scss */
+  /* line 143, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter a:first-child {
     margin-right: 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 140, ../scss/layouts/homepage/_menu.scss */
+  /* line 143, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter a:first-child {
     margin-right: 10px;
   }
 }
-/* line 153, ../scss/layouts/homepage/_menu.scss */
+/* line 156, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter a:last-child {
   background-color: #fbb97f;
 }
-/* line 157, ../scss/layouts/homepage/_menu.scss */
+/* line 160, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter span {
   display: inline-block;
   height: 33px;
@@ -3644,24 +3659,24 @@ body.homepage .menu .dish .counter span {
   	} */
 }
 @media (min-width: 980px) and (max-width: 1199px) {
-  /* line 157, ../scss/layouts/homepage/_menu.scss */
+  /* line 160, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter span {
     margin-right: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 157, ../scss/layouts/homepage/_menu.scss */
+  /* line 160, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter span {
     margin-right: 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 157, ../scss/layouts/homepage/_menu.scss */
+  /* line 160, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter span {
     margin-right: 10px;
   }
 }
-/* line 174, ../scss/layouts/homepage/_menu.scss */
+/* line 177, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .add-order {
   float: right;
   width: 130px;
@@ -3685,21 +3700,21 @@ body.homepage .menu .dish .add-order {
   	} */
 }
 @media (min-width: 980px) and (max-width: 1199px) {
-  /* line 174, ../scss/layouts/homepage/_menu.scss */
+  /* line 177, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .add-order {
     width: 110px;
     margin: 28px 26px 0 0;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 174, ../scss/layouts/homepage/_menu.scss */
+  /* line 177, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .add-order {
     width: 110px;
     margin: 28px 26px 0 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 174, ../scss/layouts/homepage/_menu.scss */
+  /* line 177, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .add-order {
     width: 90px;
     margin: 18px 26px 0 0;
