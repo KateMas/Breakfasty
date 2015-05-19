@@ -6,10 +6,24 @@
 	background-position: 100% 100%;
 	background-repeat: no-repeat;
 	font-family: 'Open Sans', sans-serif;
+	@include breakpoint(small) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@include breakpoint(extra-xs-small) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 	.style-bgc {
 		padding-top: 80px;
 		padding-bottom: 6px;
 		background-color: #ffffff;
+		@include breakpoint(small) {
+			padding-top: 60px;
+		}
+		@include breakpoint(extra-xs-small) {
+			padding-top: 40px;
+		}
 		h2 {
 			margin: 0;
 			padding-bottom: 93px;
@@ -17,7 +31,11 @@
 			font-weight: 300;
 			text-align: center;
 			text-transform: uppercase;
+			@include breakpoint(small) {
+				padding-bottom: 63px;
+			}
 			@include breakpoint(extra-xs-small) {
+				padding-bottom: 33px;
 				font-size: 36px;
 			}
 		}
@@ -46,8 +64,16 @@
 			font-weight: 300;
 			font-style: italic;
 			color: #6e6e6e;
+			@include breakpoint(medium) {
+				padding-top: 10px;
+			}
+			@include breakpoint(small) {
+				padding-top: 10px;
+				padding-bottom: 60px;
+			}
 			@include breakpoint(extra-xs-small) {
-				font-size: 14px;
+				padding-top: 10px;
+				padding-bottom: 40px;
 			}
 		}
 	}

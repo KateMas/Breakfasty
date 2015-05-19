@@ -2,6 +2,10 @@
 	padding-top: 102px;
 	padding-bottom: 128px;
 	font-family: 'Open Sans', sans-serif;
+	@include breakpoint(small) {
+		padding-top: 80px;
+		padding-bottom: 90px;
+	}
 	@include breakpoint(extra-xs-small) {
 		padding-top: 50px;
 		padding-bottom: 60px;
@@ -16,53 +20,73 @@
 			font-size: 36px;
 		}
 	}
-	ul {
-		width: 60%;
-		margin: auto;
-		padding-top: 72px;
-		padding-bottom: 72px;
-	 	border:none;
-	 	@include breakpoint(extra-xs-small) {
-			padding-top: 32px;
-			padding-bottom: 32px;
-		}
-	 	li {
-	 		margin-right: 71px;
-	 		&:last-child {
-	 			margin-right: 0;
-	 		}
-	 		a {
-	 			padding: 0;
-	 			border:none;
-	 			font-size: 24px;
-	 			font-weight: 300;
-	 			text-decoration: underline;
-	 			color: #000000;
-	 			@include breakpoint(extra-xs-small) {
-					font-size: 20px;
-				}
-	 		}
-	 	}
-	 	.active {
- 			a {
- 				border:none;
- 				color: #ffa162;
- 			}
- 		}
-	}
-	p {
-		margin: 0 5%;
-		font-size: 22px;
+	.position-tabs {
+		margin-top: 80px;
 		@include breakpoint(extra-xs-small) {
-			font-size: 18px;
+	 		margin-top: 40px;
 		}
-	}
-	.text-question {
-		font-weight: 400;
-		color: #ffa162;
-	}
-	.text-answer {
-		font-weight: 300;
-		line-height: 35px;
+		ul {
+			width: 444px;
+			margin: auto;
+			padding-top: 72px;
+			padding-bottom: 72px;
+		 	border:none;
+		 	@include breakpoint(small) {
+				padding-top: 52px;
+				padding-bottom: 52px;
+			}
+		 	@include breakpoint(extra-xs-small) {
+		 		width: 113px;
+				padding-top: 32px;
+				padding-bottom: 32px;
+				text-align: center;
+			}
+		 	li {
+		 		margin-right: 71px;
+		 		@include breakpoint(extra-xs-small) {
+			 		float: none;
+			 		margin-right: 0;
+				}
+		 		&:last-child {
+		 			margin-right: 0;
+		 		}
+		 		a {
+		 			padding: 0;
+		 			border:none;
+		 			font-size: 24px;
+		 			font-weight: 300;
+		 			text-decoration: underline;
+		 			color: #000000;
+		 			&:hover {
+		 				background-color: transparent;
+		 				color: #ffa162;
+		 			}
+		 			@include breakpoint(extra-xs-small) {
+						font-size: 20px;
+					}
+		 		}
+		 	}
+		 	.active {
+	 			a {
+	 				border:none;
+	 				color: #ffa162;
+	 			}
+	 		}
+		}
+		p {
+			margin: 0 5%;
+			font-size: 22px;
+			@include breakpoint(extra-xs-small) {
+				font-size: 18px;
+			}
+		}
+		.text-question {
+			font-weight: 400;
+			color: #ffa162;
+		}
+		.text-answer {
+			font-weight: 300;
+			line-height: 35px;
+		}
 	}
 }
