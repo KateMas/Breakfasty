@@ -2,17 +2,32 @@ footer {
 	padding-bottom: 87px;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
+	@include breakpoint(extra-xs-small) {
+		padding-bottom: 40px;
+	}
 	h3 {
+		margin: 0;
 		font-size: 56px;
 		font-weight: 300;
+		@include breakpoint(extra-xs-small) {
+			font-size: 30px;
+		}
 	}
 	ul {
+		margin: 0;
 		padding-top: 98px;
 		padding-bottom: 109px;
 		font-size: 0;
+		@include breakpoint(extra-xs-small) {
+			padding-top: 40px;
+			padding-bottom: 50px;
+		}
 		li {
 			display: inline-block;
 			margin-right: 78px;
+			@include breakpoint(extra-xs-small) {
+				margin-right: 30px;
+			}
 			a {display: inline-block;
 			}
 			&:first-child {
@@ -40,9 +55,13 @@ footer {
 		}
 	}
 	p {
+		margin: 0;
 		font-size: 18px;
 		font-weight: 400;
 		text-align: center;
 		color: #333333;
+		@include breakpoint(extra-xs-small) {
+			font-size: 14px;
+		}
 	}
 }

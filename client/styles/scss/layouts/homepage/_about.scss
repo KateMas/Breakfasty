@@ -14,12 +14,12 @@
 		text-transform: uppercase;
 		color: #ffa264;
 		@include breakpoint(extra-xs-small) {
-			margin-top: 0;
-			margin-bottom: 10%;
+			margin: 0 0 43px 0;
 			font-size: 36px;
 		}
 	}
 	p {
+		margin: 0;
 		font-size: 22px;
 		font-weight: 300;
 		line-height: 35px;
