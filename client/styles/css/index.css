@@ -3374,7 +3374,7 @@ body.homepage .menu .dish .name-dish {
   /* line 34, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .name-dish {
     padding: 55px 0 49px 22px;
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
@@ -3409,14 +3409,20 @@ body.homepage .menu .dish figure .image {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
-/* line 69, ../scss/layouts/homepage/_menu.scss */
+/* line 70, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish figure figcaption {
   position: absolute;
   top: 0;
   left: 0;
   display: block;
-  padding: 59px 43px 57px;
+  padding: 56px 43px 57px;
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
   height: 100%;
@@ -3427,19 +3433,47 @@ body.homepage .menu .dish figure figcaption {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-/* line 81, ../scss/layouts/homepage/_menu.scss */
+@media (min-width: 980px) and (max-width: 1199px) {
+  /* line 70, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish figure figcaption {
+    padding: 36px 23px 37px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 70, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish figure figcaption {
+    padding: 36px 23px 37px;
+  }
+}
+/* line 88, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish figure figcaption .name-for-ingridients {
   margin: 0;
   font-size: 18px;
   font-weight: 300;
+  line-height: 28px;
   text-transform: uppercase;
 }
-/* line 89, ../scss/layouts/homepage/_menu.scss */
+@media (min-width: 980px) and (max-width: 1199px) {
+  /* line 88, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish figure figcaption .name-for-ingridients {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+/* line 101, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish figure figcaption .ingridients {
   font-size: 18px;
   font-weight: 300;
+  line-height: 28px;
 }
-/* line 95, ../scss/layouts/homepage/_menu.scss */
+@media (min-width: 980px) and (max-width: 1199px) {
+  /* line 101, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish figure figcaption .ingridients {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+/* line 112, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter {
   float: left;
   height: 33px;
@@ -3448,19 +3482,25 @@ body.homepage .menu .dish .counter {
   font-size: 0;
   line-height: 33px;
 }
+@media (min-width: 980px) and (max-width: 1199px) {
+  /* line 112, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter {
+    margin: 35px 0 30px 17px;
+  }
+}
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 95, ../scss/layouts/homepage/_menu.scss */
+  /* line 112, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter {
     margin: 35px 0 40px 20px;
   }
 }
 @media (max-width: 480px) {
-  /* line 95, ../scss/layouts/homepage/_menu.scss */
+  /* line 112, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter {
     margin: 25px 0 30px 17px;
   }
 }
-/* line 108, ../scss/layouts/homepage/_menu.scss */
+/* line 128, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter a {
   display: inline-block;
   width: 31px;
@@ -3474,29 +3514,41 @@ body.homepage .menu .dish .counter a {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
-/* line 119, ../scss/layouts/homepage/_menu.scss */
+/* line 140, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter a:first-child {
   margin-right: 30px;
   background-color: #cccccc;
 }
+@media (min-width: 980px) and (max-width: 1199px) {
+  /* line 140, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter a:first-child {
+    margin-right: 10px;
+  }
+}
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 119, ../scss/layouts/homepage/_menu.scss */
+  /* line 140, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter a:first-child {
     margin-right: 20px;
   }
 }
 @media (max-width: 480px) {
-  /* line 119, ../scss/layouts/homepage/_menu.scss */
+  /* line 140, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter a:first-child {
     margin-right: 10px;
   }
 }
-/* line 129, ../scss/layouts/homepage/_menu.scss */
+/* line 153, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter a:last-child {
   background-color: #fbb97f;
 }
-/* line 133, ../scss/layouts/homepage/_menu.scss */
+/* line 157, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter span {
   display: inline-block;
   height: 33px;
@@ -3504,19 +3556,25 @@ body.homepage .menu .dish .counter span {
   font-size: 48px;
   font-weight: 300;
 }
+@media (min-width: 980px) and (max-width: 1199px) {
+  /* line 157, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter span {
+    margin-right: 10px;
+  }
+}
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 133, ../scss/layouts/homepage/_menu.scss */
+  /* line 157, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter span {
     margin-right: 20px;
   }
 }
 @media (max-width: 480px) {
-  /* line 133, ../scss/layouts/homepage/_menu.scss */
+  /* line 157, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter span {
     margin-right: 10px;
   }
 }
-/* line 147, ../scss/layouts/homepage/_menu.scss */
+/* line 174, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .add-order {
   float: right;
   width: 130px;
@@ -3528,16 +3586,29 @@ body.homepage .menu .dish .add-order {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  /* line 174, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .add-order {
+    width: 110px;
+    margin: 28px 26px 0 0;
+  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 147, ../scss/layouts/homepage/_menu.scss */
+  /* line 174, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .add-order {
     width: 110px;
     margin: 28px 26px 0 0;
   }
 }
 @media (max-width: 480px) {
-  /* line 147, ../scss/layouts/homepage/_menu.scss */
+  /* line 174, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .add-order {
     width: 90px;
     margin: 18px 26px 0 0;
