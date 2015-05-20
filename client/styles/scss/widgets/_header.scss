@@ -1,6 +1,6 @@
 header {
 	width: 100%;
-	.nav-style {
+	&.nav-style {
 		font-family: 'Roboto', sans-serif;
 		font-size: 22px;
 		font-weight: 300;
@@ -74,11 +74,11 @@ header {
 			}
 		}
 	}
-	/* .scroll {
-	 	display: none;
+	&.scroll {
 		position: fixed;
 		z-index: 1;
-		background-color: rgba (#ffffff,0.7);
-	} */
+		background-color: rgba(#ffffff,0.9);
+		border: none;
+	}
 }
 
