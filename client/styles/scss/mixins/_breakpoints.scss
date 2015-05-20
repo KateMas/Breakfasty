@@ -3,10 +3,14 @@
 		@media (min-width: 1200px) {
 		@content;
 		}
-	} @else if $point == medium {
+	} @else if $point == midle {
 		@media (min-width: 980px) and (max-width: 1199px) {
 		@content;
 		}
+	} @else if $point == extra-midle {
+	@media (min-width: 980px) and (max-width: 992px) {
+	@content;
+	}
 	} @else if $point == small {
 		@media (min-width: 768px) and (max-width: 979px) {
 		@content;

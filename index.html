@@ -10,7 +10,6 @@
     <script src="client/js/bootstrap.min.js"></script>
 </head>
 <body class="homepage">
-<div class="container-background">
     <header class="navbar navbar-default nav-style">
         <div class="container">
             <div class="navbar-header nav-button">
@@ -20,10 +19,14 @@
                     <span class="icon-bar icon-color"></span>
                     <span class="icon-bar icon-color"></span>
                 </button>
-                 <a class="navbar-brand logo-header" href="/">
+                <a class="navbar-brand logo-header" href="/">
                     <img src="client/images/header/logo1.png" alt="/">
                     <p>[delisious breakfast everyday]</p>
-                 </a>
+                </a>
+                <div class="cart">
+                    <a href="javascript:void(0);"></a>
+                    <sup>+5</sup>
+                </div>
             </div>
             <div class="collapse navbar-collapse list" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav ">
@@ -33,40 +36,35 @@
                     <li><a href="#faq">faq</a></li>
                 </ul>
             </div>
-            <ul class="navbar-header cart">
-                <li>
-                    <a href="javascript:void(0);"></a>
-                    <sup>+5</sup>
-                </li>
-            </ul>
         </div>
     </header>
-    <div class="advertising container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-4 col-xs-offset-4">
-                <!-- <div class=" plate" style="background-image: url(client/images/advertising/plate-card.png);">
-                </div> -->
-                <!-- <img src="client/images/advertising/plate-card.png" alt="/"/> -->
-            </div>
-            <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-                <h1>Eat Brekfast Every Day</h1>
-                <p>We deliver delicious breakfasts to your doorstep</p>
-            </div>
-            <button type="button" class="btn btn-primary button-discount" data-toggle="modal" data-target=".bs-example-modal-sm">get 50% off</button>
-            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <form action="/" method="post">
-                        <input type="email" value="" name="Email" placeholder="Email address" required>
-                        <button>submit</button>
-                    </form>
+<main>
+    <section class="advertising container-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-4 col-xs-offset-4">
+                    <!-- <div class=" plate" style="background-image: url(client/images/advertising/plate-card.png);">
+                    </div> -->
+                    <!-- <img src="client/images/advertising/plate-card.png" alt="/"/> -->
                 </div>
-              </div>
+                <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                    <h1>Eat Brekfast Every Day</h1>
+                    <p>We deliver delicious breakfasts to your doorstep</p>
+                </div>
+                <button type="button" class="btn btn-primary button-discount" data-toggle="modal" data-target=".bs-example-modal-sm">get 50% off</button>
+                <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <form action="/" method="post">
+                                <input type="email" value="" name="Email" placeholder="Email address" required>
+                                <button>submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<main>
+    </section>
     <section id="menu" class="container menu">
     	<div class="row">
     		<div class="col-lg 12 col-md-12 col-sm-12 col-xs-12">

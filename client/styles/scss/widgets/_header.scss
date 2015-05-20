@@ -1,29 +1,103 @@
 header {
 	width: 100%;
+	padding-top: 19px;
+	@include breakpoint(extra-xs-small) {
+		padding-top: 9px;
+		padding-bottom: 9px;
+		background-color: rgba(#ffffff,0.9);
+	}
 	&.nav-style {
+		position: fixed;
+		z-index: 1;
 		font-family: 'Roboto', sans-serif;
-		font-size: 22px;
-		font-weight: 300;
 		background-color: transparent;
 		border: none;
+		font-size: 22px;
+		font-weight: 300;
+		@include breakpoint(midle) {
+			font-size: 20px;
+		}
+		@include breakpoint(small) {
+			font-size: 18px;
+		}
+		@include breakpoint(extra-xs-small) {
+			background-color: rgba(#ffffff,0.9);
+			font-size: 18px;
+		}
 		.nav-button {
+			position: relative;
+			.but-style {
+				margin-top: 43px;
+				@include breakpoint(extra-xs-small) {
+					margin: 14px 0 0 0;
+				}
+			}
 			.logo-header {
 				display: inline-block;
 				width: 224px;
 				height: 100%;
-				margin-top: 30px;
+				@include breakpoint(midle) {
+					width: 200px;
+				}
+				@include breakpoint(small) {
+					width: 200px;
+				}
 				@include breakpoint(extra-xs-small) {
-					//width: 50%;
+					width: 130px;
 				}
 				img {
-					//width: 100%;
+					@include breakpoint(small) {
+						width: 160px;
+					}
+					@include breakpoint(extra-xs-small) {
+						width: 130px;
+					}
 				}
 				p {
+					margin: 0;
 					font-family: 'Open Sans', sans-serif;
-					font-size: 10px;
+					font-size: 12px;
 					font-weight: 600;
 					text-align: right;
 					color: #000000;
+					@include breakpoint(extra-xs-small) {
+						display: none;
+					}
+				}
+			}
+			.cart {
+				position: absolute;
+				top:20px;
+				left: 1075px;
+				width: 65px;
+				@include breakpoint(midle) {
+					top: 24px;
+					left: 875px;
+					width: 65px;
+				}
+				@include breakpoint(extra-midle) {
+					top: 24px;
+					left: 655px;
+					width: 65px;
+				}
+				@include breakpoint(small) {
+					top: 20px;
+					left: 655px;
+					width: 65px;
+				}
+				@include breakpoint(extra-xs-small) {
+					top: 10px;
+					//right: 55px;
+					left: 60%;
+				}
+				a {
+					display: inline-block;
+					width: 34px;
+					height: 34px;
+					background-image: url(../../../client/images/header/cart.png);
+				}
+				sup {
+					font-size: 22px;
 				}
 			}
 		}
@@ -31,12 +105,15 @@ header {
 				border:none;
 				ul {
 					float: right;
-					@include breakpoint(small) {
-						text-align: center;
+					padding-right: 65px;
+					@include breakpoint(midle) {
+						padding-right: 65px;
 					}
-					@include breakpoint(extra-small) {
-						float: none;
-						text-align: center;
+					@include breakpoint(extra-midle) {
+						padding-right: 65px;
+					}
+					@include breakpoint(small) {
+						padding-right: 65px;
 					}
 					@include breakpoint(extra-xs-small) {
 						float: none;
@@ -45,12 +122,14 @@ header {
 					li {
 						margin-right: 44px;
 						text-transform: uppercase;
+						@include breakpoint(extra-midle) {
+							margin-right: 20px;
+						}
 						@include breakpoint(small) {
-							line-height: 41px;
+							margin-right: 20px;
 						}
 						@include breakpoint(extra-xs-small) {
 							margin: 0;
-							line-height: 41px;
 						}
 						a {
 							padding: 0;
@@ -58,20 +137,21 @@ header {
 							color: #000000;
 							@include transition-property(color);
 							@include transition-duration(400ms);
+							@include breakpoint(midle) {
+								line-height: 103px;
+							}
+							@include breakpoint(small) {
+								line-height: 93px;
+							}
+							@include breakpoint(extra-xs-small) {
+								line-height: 50px;
+							}
 							&:hover {
 								color: #ff7800;
 							}
 						}
 					}
 				}
-		}
-		.cart {
-			a {
-				display: inline-block;
-				width: 34px;
-				height: 34px;
-				background-image: url(../../../client/images/header/cart.png);
-			}
 		}
 	}
 	&.scroll {
