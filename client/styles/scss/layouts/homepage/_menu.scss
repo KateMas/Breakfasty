@@ -144,7 +144,6 @@
 				vertical-align: top;
 				color: #ffffff;
 				@include border-radius(50%);
-				@include user-select(none);
 				&:first-child {
 					margin-right: 10px;
 					background-color: #cccccc;
@@ -161,6 +160,36 @@
 				&:last-child {
 					background-color: #fbb97f;
 				}
+			}
+			input {
+				width: 50px;
+				height: 33px;
+				border: none;
+				outline: none;
+				margin-top: -2px;
+				margin-right: 10px;
+				padding: 0;
+				font-size: 33px;
+				font-weight: 300;
+				text-align: center;
+				@include placeholder {
+					font-weight: 300;
+					font-size: 47px;
+					color: #000000;
+				}
+				&:focus {
+					font-size: 33px;
+					@include placeholder {
+						color: transparent;
+					}
+					@include transition-duration (400ms);
+				}
+			}
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+			    display: none;
+			    -webkit-appearance: none;
+			    margin: 0;
 			}
 			span {
 				display: inline-block;
