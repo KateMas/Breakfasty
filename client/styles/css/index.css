@@ -4721,82 +4721,112 @@ header.scroll {
   font-size: 18px;
 }
 /* line 20, ../scss/widgets/_header.scss */
-header.scroll .nav-button {
+header.scroll .container {
+  padding-right: 45px;
+  padding-left: 30px;
+  /* } @else if $point == extra-small {
+  	@media (min-width: 481px) and (max-width: 767px) {
+  	@content;
+  	} */
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 20, ../scss/widgets/_header.scss */
+  header.scroll .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 980px) and (max-width: 991px) {
+  /* line 20, ../scss/widgets/_header.scss */
+  header.scroll .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 20, ../scss/widgets/_header.scss */
+  header.scroll .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+/* line 35, ../scss/widgets/_header.scss */
+header.scroll .container .nav-button {
   position: relative;
 }
-/* line 22, ../scss/widgets/_header.scss */
-header.scroll .nav-button .logo-header {
+/* line 37, ../scss/widgets/_header.scss */
+header.scroll .container .nav-button .logo-header {
   display: inline-block;
   width: 130px;
   height: 58px;
 }
-/* line 26, ../scss/widgets/_header.scss */
-header.scroll .nav-button .logo-header img {
+/* line 41, ../scss/widgets/_header.scss */
+header.scroll .container .nav-button .logo-header img {
   width: 130px;
   height: 58px;
 }
-/* line 30, ../scss/widgets/_header.scss */
-header.scroll .nav-button .logo-header p {
+/* line 45, ../scss/widgets/_header.scss */
+header.scroll .container .nav-button .logo-header p {
   display: none;
 }
-/* line 34, ../scss/widgets/_header.scss */
-header.scroll .nav-button .cart {
+/* line 49, ../scss/widgets/_header.scss */
+header.scroll .container .nav-button .cart {
   position: absolute;
   top: 1px;
-  left: 1075px;
+  left: 1030px;
   width: 65px;
   /* } @else if $point == extra-small {
   	@media (min-width: 481px) and (max-width: 767px) {
   	@content;
   	} */
 }
-@media (min-width: 980px) and (max-width: 1199px) {
-  /* line 34, ../scss/widgets/_header.scss */
-  header.scroll .nav-button .cart {
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 49, ../scss/widgets/_header.scss */
+  header.scroll .container .nav-button .cart {
     top: 4px;
     left: 875px;
     width: 65px;
   }
 }
-@media (min-width: 980px) and (max-width: 992px) {
-  /* line 34, ../scss/widgets/_header.scss */
-  header.scroll .nav-button .cart {
+@media (min-width: 980px) and (max-width: 991px) {
+  /* line 49, ../scss/widgets/_header.scss */
+  header.scroll .container .nav-button .cart {
     top: 4px;
     left: 655px;
     width: 65px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 34, ../scss/widgets/_header.scss */
-  header.scroll .nav-button .cart {
+  /* line 49, ../scss/widgets/_header.scss */
+  header.scroll .container .nav-button .cart {
     top: 4px;
     left: 655px;
     width: 65px;
   }
 }
-/* line 54, ../scss/widgets/_header.scss */
-header.scroll .nav-button .cart a {
+/* line 70, ../scss/widgets/_header.scss */
+header.scroll .container .nav-button .cart a {
   display: inline-block;
   width: 34px;
   height: 34px;
   background-image: url(../../../client/images/header/cart.png);
   background-repeat: no-repeat;
 }
-/* line 61, ../scss/widgets/_header.scss */
-header.scroll .nav-button .cart sup {
+/* line 77, ../scss/widgets/_header.scss */
+header.scroll .container .nav-button .cart sup {
   font-size: 22px;
 }
-/* line 66, ../scss/widgets/_header.scss */
-header.scroll .list {
+/* line 82, ../scss/widgets/_header.scss */
+header.scroll .container .list {
   border: none;
 }
-/* line 68, ../scss/widgets/_header.scss */
-header.scroll .list ul {
+/* line 84, ../scss/widgets/_header.scss */
+header.scroll .container .list ul {
   float: right;
   padding-right: 65px;
 }
-/* line 71, ../scss/widgets/_header.scss */
-header.scroll .list ul li {
+/* line 87, ../scss/widgets/_header.scss */
+header.scroll .container .list ul li {
   margin-right: 36px;
   text-transform: uppercase;
   /* } @else if $point == extra-small {
@@ -4804,20 +4834,20 @@ header.scroll .list ul li {
   	@content;
   	} */
 }
-@media (min-width: 980px) and (max-width: 992px) {
-  /* line 71, ../scss/widgets/_header.scss */
-  header.scroll .list ul li {
+@media (min-width: 980px) and (max-width: 991px) {
+  /* line 87, ../scss/widgets/_header.scss */
+  header.scroll .container .list ul li {
     margin-right: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 71, ../scss/widgets/_header.scss */
-  header.scroll .list ul li {
+  /* line 87, ../scss/widgets/_header.scss */
+  header.scroll .container .list ul li {
     margin-right: 20px;
   }
 }
-/* line 80, ../scss/widgets/_header.scss */
-header.scroll .list ul li a {
+/* line 96, ../scss/widgets/_header.scss */
+header.scroll .container .list ul li a {
   padding: 0;
   line-height: 58px;
   color: #000000;
@@ -4826,11 +4856,11 @@ header.scroll .list ul li a {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-/* line 86, ../scss/widgets/_header.scss */
-header.scroll .list ul li a:hover {
+/* line 102, ../scss/widgets/_header.scss */
+header.scroll .container .list ul li a:hover {
   color: #ff7800;
 }
-/* line 94, ../scss/widgets/_header.scss */
+/* line 111, ../scss/widgets/_header.scss */
 header.nav-style {
   position: fixed;
   z-index: 1;
@@ -4842,41 +4872,84 @@ header.nav-style {
   	@content;
   	} */
 }
-@media (min-width: 980px) and (max-width: 1199px) {
-  /* line 94, ../scss/widgets/_header.scss */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 111, ../scss/widgets/_header.scss */
+  header.nav-style {
+    font-size: 20px;
+  }
+}
+@media (min-width: 980px) and (max-width: 991px) {
+  /* line 111, ../scss/widgets/_header.scss */
   header.nav-style {
     font-size: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 94, ../scss/widgets/_header.scss */
+  /* line 111, ../scss/widgets/_header.scss */
   header.nav-style {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  /* line 94, ../scss/widgets/_header.scss */
+  /* line 111, ../scss/widgets/_header.scss */
   header.nav-style {
     background-color: rgba(255, 255, 255, 0.9);
     font-size: 18px;
   }
 }
-/* line 110, ../scss/widgets/_header.scss */
-header.nav-style .nav-button {
+/* line 130, ../scss/widgets/_header.scss */
+header.nav-style .container {
+  padding-right: 95px;
+  padding-left: 80px;
+  /* } @else if $point == extra-small {
+  	@media (min-width: 481px) and (max-width: 767px) {
+  	@content;
+  	} */
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 130, ../scss/widgets/_header.scss */
+  header.nav-style .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 980px) and (max-width: 991px) {
+  /* line 130, ../scss/widgets/_header.scss */
+  header.nav-style .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 130, ../scss/widgets/_header.scss */
+  header.nav-style .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 130, ../scss/widgets/_header.scss */
+  header.nav-style .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+/* line 149, ../scss/widgets/_header.scss */
+header.nav-style .container .nav-button {
   position: relative;
 }
-/* line 112, ../scss/widgets/_header.scss */
-header.nav-style .nav-button .but-style {
+/* line 151, ../scss/widgets/_header.scss */
+header.nav-style .container .nav-button .but-style {
   margin-top: 43px;
 }
 @media (max-width: 767px) {
-  /* line 112, ../scss/widgets/_header.scss */
-  header.nav-style .nav-button .but-style {
+  /* line 151, ../scss/widgets/_header.scss */
+  header.nav-style .container .nav-button .but-style {
     margin: 14px 0 0 0;
   }
 }
-/* line 118, ../scss/widgets/_header.scss */
-header.nav-style .nav-button .logo-header {
+/* line 157, ../scss/widgets/_header.scss */
+header.nav-style .container .nav-button .logo-header {
   display: inline-block;
   width: 224px;
   height: 100%;
@@ -4885,45 +4958,45 @@ header.nav-style .nav-button .logo-header {
   	@content;
   	} */
 }
-@media (min-width: 980px) and (max-width: 1199px) {
-  /* line 118, ../scss/widgets/_header.scss */
-  header.nav-style .nav-button .logo-header {
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 157, ../scss/widgets/_header.scss */
+  header.nav-style .container .nav-button .logo-header {
     width: 200px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 118, ../scss/widgets/_header.scss */
-  header.nav-style .nav-button .logo-header {
+  /* line 157, ../scss/widgets/_header.scss */
+  header.nav-style .container .nav-button .logo-header {
     width: 200px;
   }
 }
 @media (max-width: 767px) {
-  /* line 118, ../scss/widgets/_header.scss */
-  header.nav-style .nav-button .logo-header {
+  /* line 157, ../scss/widgets/_header.scss */
+  header.nav-style .container .nav-button .logo-header {
     width: 130px;
   }
 }
-/* line 131, ../scss/widgets/_header.scss */
-header.nav-style .nav-button .logo-header img {
+/* line 170, ../scss/widgets/_header.scss */
+header.nav-style .container .nav-button .logo-header img {
   /* } @else if $point == extra-small {
   	@media (min-width: 481px) and (max-width: 767px) {
   	@content;
   	} */
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 131, ../scss/widgets/_header.scss */
-  header.nav-style .nav-button .logo-header img {
+  /* line 170, ../scss/widgets/_header.scss */
+  header.nav-style .container .nav-button .logo-header img {
     width: 160px;
   }
 }
 @media (max-width: 767px) {
-  /* line 131, ../scss/widgets/_header.scss */
-  header.nav-style .nav-button .logo-header img {
+  /* line 170, ../scss/widgets/_header.scss */
+  header.nav-style .container .nav-button .logo-header img {
     width: 130px;
   }
 }
-/* line 139, ../scss/widgets/_header.scss */
-header.nav-style .nav-button .logo-header p {
+/* line 178, ../scss/widgets/_header.scss */
+header.nav-style .container .nav-button .logo-header p {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
@@ -4932,71 +5005,71 @@ header.nav-style .nav-button .logo-header p {
   color: #000000;
 }
 @media (max-width: 767px) {
-  /* line 139, ../scss/widgets/_header.scss */
-  header.nav-style .nav-button .logo-header p {
+  /* line 178, ../scss/widgets/_header.scss */
+  header.nav-style .container .nav-button .logo-header p {
     display: none;
   }
 }
-/* line 151, ../scss/widgets/_header.scss */
-header.nav-style .nav-button .cart {
+/* line 190, ../scss/widgets/_header.scss */
+header.nav-style .container .nav-button .cart {
   position: absolute;
   top: 20px;
-  left: 1075px;
+  left: 930px;
   width: 65px;
   /* } @else if $point == extra-small {
   	@media (min-width: 481px) and (max-width: 767px) {
   	@content;
   	} */
 }
-@media (min-width: 980px) and (max-width: 1199px) {
-  /* line 151, ../scss/widgets/_header.scss */
-  header.nav-style .nav-button .cart {
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 190, ../scss/widgets/_header.scss */
+  header.nav-style .container .nav-button .cart {
     top: 24px;
     left: 875px;
     width: 65px;
   }
 }
-@media (min-width: 980px) and (max-width: 992px) {
-  /* line 151, ../scss/widgets/_header.scss */
-  header.nav-style .nav-button .cart {
+@media (min-width: 980px) and (max-width: 991px) {
+  /* line 190, ../scss/widgets/_header.scss */
+  header.nav-style .container .nav-button .cart {
     top: 24px;
-    left: 655px;
+    left: 657px;
     width: 65px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 151, ../scss/widgets/_header.scss */
-  header.nav-style .nav-button .cart {
+  /* line 190, ../scss/widgets/_header.scss */
+  header.nav-style .container .nav-button .cart {
     top: 20px;
     left: 655px;
     width: 65px;
   }
 }
 @media (max-width: 767px) {
-  /* line 151, ../scss/widgets/_header.scss */
-  header.nav-style .nav-button .cart {
+  /* line 190, ../scss/widgets/_header.scss */
+  header.nav-style .container .nav-button .cart {
     top: 10px;
     left: 60%;
   }
 }
-/* line 176, ../scss/widgets/_header.scss */
-header.nav-style .nav-button .cart a {
+/* line 216, ../scss/widgets/_header.scss */
+header.nav-style .container .nav-button .cart a {
   display: inline-block;
   width: 34px;
   height: 34px;
   background-image: url(../../../client/images/header/cart.png);
   background-repeat: no-repeat;
 }
-/* line 183, ../scss/widgets/_header.scss */
-header.nav-style .nav-button .cart sup {
+/* line 223, ../scss/widgets/_header.scss */
+header.nav-style .container .nav-button .cart sup {
   font-size: 22px;
 }
-/* line 188, ../scss/widgets/_header.scss */
-header.nav-style .list {
+/* line 228, ../scss/widgets/_header.scss */
+header.nav-style .container .list {
   border: none;
 }
-/* line 190, ../scss/widgets/_header.scss */
-header.nav-style .list ul {
+/* line 230, ../scss/widgets/_header.scss */
+header.nav-style .container .list ul {
   float: right;
   padding-right: 65px;
   /* } @else if $point == extra-small {
@@ -5004,34 +5077,34 @@ header.nav-style .list ul {
   	@content;
   	} */
 }
-@media (min-width: 980px) and (max-width: 1199px) {
-  /* line 190, ../scss/widgets/_header.scss */
-  header.nav-style .list ul {
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 230, ../scss/widgets/_header.scss */
+  header.nav-style .container .list ul {
     padding-right: 65px;
   }
 }
-@media (min-width: 980px) and (max-width: 992px) {
-  /* line 190, ../scss/widgets/_header.scss */
-  header.nav-style .list ul {
+@media (min-width: 980px) and (max-width: 991px) {
+  /* line 230, ../scss/widgets/_header.scss */
+  header.nav-style .container .list ul {
     padding-right: 65px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 190, ../scss/widgets/_header.scss */
-  header.nav-style .list ul {
+  /* line 230, ../scss/widgets/_header.scss */
+  header.nav-style .container .list ul {
     padding-right: 65px;
   }
 }
 @media (max-width: 767px) {
-  /* line 190, ../scss/widgets/_header.scss */
-  header.nav-style .list ul {
+  /* line 230, ../scss/widgets/_header.scss */
+  header.nav-style .container .list ul {
     float: none;
     padding-right: 0;
     text-align: center;
   }
 }
-/* line 207, ../scss/widgets/_header.scss */
-header.nav-style .list ul li {
+/* line 247, ../scss/widgets/_header.scss */
+header.nav-style .container .list ul li {
   margin-right: 44px;
   text-transform: uppercase;
   /* } @else if $point == extra-small {
@@ -5039,26 +5112,26 @@ header.nav-style .list ul li {
   	@content;
   	} */
 }
-@media (min-width: 980px) and (max-width: 992px) {
-  /* line 207, ../scss/widgets/_header.scss */
-  header.nav-style .list ul li {
+@media (min-width: 980px) and (max-width: 991px) {
+  /* line 247, ../scss/widgets/_header.scss */
+  header.nav-style .container .list ul li {
     margin-right: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 207, ../scss/widgets/_header.scss */
-  header.nav-style .list ul li {
+  /* line 247, ../scss/widgets/_header.scss */
+  header.nav-style .container .list ul li {
     margin-right: 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 207, ../scss/widgets/_header.scss */
-  header.nav-style .list ul li {
+  /* line 247, ../scss/widgets/_header.scss */
+  header.nav-style .container .list ul li {
     margin: 0;
   }
 }
-/* line 219, ../scss/widgets/_header.scss */
-header.nav-style .list ul li a {
+/* line 259, ../scss/widgets/_header.scss */
+header.nav-style .container .list ul li a {
   padding: 0;
   line-height: 93px;
   color: #000000;
@@ -5071,26 +5144,26 @@ header.nav-style .list ul li a {
   	@content;
   	} */
 }
-@media (min-width: 980px) and (max-width: 1199px) {
-  /* line 219, ../scss/widgets/_header.scss */
-  header.nav-style .list ul li a {
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 259, ../scss/widgets/_header.scss */
+  header.nav-style .container .list ul li a {
     line-height: 103px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 219, ../scss/widgets/_header.scss */
-  header.nav-style .list ul li a {
+  /* line 259, ../scss/widgets/_header.scss */
+  header.nav-style .container .list ul li a {
     line-height: 93px;
   }
 }
 @media (max-width: 767px) {
-  /* line 219, ../scss/widgets/_header.scss */
-  header.nav-style .list ul li a {
+  /* line 259, ../scss/widgets/_header.scss */
+  header.nav-style .container .list ul li a {
     line-height: 50px;
   }
 }
-/* line 234, ../scss/widgets/_header.scss */
-header.nav-style .list ul li a:hover {
+/* line 274, ../scss/widgets/_header.scss */
+header.nav-style .container .list ul li a:hover {
   color: #ff7800;
 }
 
@@ -5894,6 +5967,13 @@ body.homepage .menu .dish .name-dish {
   	@content;
   	} */
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 43, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .name-dish {
+    padding: 55px 0 49px 22px;
+    font-size: 20px;
+  }
+}
 @media (min-width: 768px) and (max-width: 979px) {
   /* line 43, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .name-dish {
@@ -5951,6 +6031,12 @@ body.homepage .menu .dish figure figcaption {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 79, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish figure figcaption {
+    padding: 36px 23px 37px;
+  }
+}
 @media (max-width: 767px) {
   /* line 79, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish figure figcaption {
@@ -5965,11 +6051,25 @@ body.homepage .menu .dish figure figcaption .name-for-ingridients {
   line-height: 28px;
   text-transform: uppercase;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 98, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish figure figcaption .name-for-ingridients {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 /* line 109, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish figure figcaption .ingridients {
   font-size: 18px;
   font-weight: 300;
   line-height: 28px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 109, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish figure figcaption .ingridients {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 /* line 120, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter {
@@ -5983,6 +6083,12 @@ body.homepage .menu .dish .counter {
   	@media (min-width: 481px) and (max-width: 767px) {
   	@content;
   	} */
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 120, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter {
+    margin: 35px 0 30px 17px;
+  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
   /* line 120, ../scss/layouts/homepage/_menu.scss */
@@ -6019,6 +6125,12 @@ body.homepage .menu .dish .counter a:first-child {
   	@media (min-width: 481px) and (max-width: 767px) {
   	@content;
   	} */
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 147, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter a:first-child {
+    margin-right: 5px;
+  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
   /* line 147, ../scss/layouts/homepage/_menu.scss */
@@ -6116,6 +6228,12 @@ body.homepage .menu .dish .counter span {
   	@content;
   	} */
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 194, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter span {
+    margin-right: 5px;
+  }
+}
 @media (min-width: 768px) and (max-width: 979px) {
   /* line 194, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter span {
@@ -6150,6 +6268,14 @@ body.homepage .menu .dish .add-order {
   	@media (min-width: 481px) and (max-width: 767px) {
   	@content;
   	} */
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 213, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .add-order {
+    width: 110px;
+    margin: 32px 20px 0 0;
+    line-height: 36px;
+  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
   /* line 213, ../scss/layouts/homepage/_menu.scss */

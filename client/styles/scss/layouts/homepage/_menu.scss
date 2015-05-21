@@ -46,7 +46,7 @@
 			font-size: 24px;
 			font-weight: 300;
 			text-transform: uppercase;
-			@include breakpoint(medium) {
+			@include breakpoint(midle) {
 				padding: 55px 0 49px 22px;
 				font-size: 20px;
 			}
@@ -89,7 +89,7 @@
 				@include opacity(0);
 				@include transition-property(all);
 				@include transition-duration(400ms);
-				@include breakpoint(medium) {
+				@include breakpoint(midle) {
 					padding: 36px 23px 37px;
 				}
 				@include breakpoint(extra-xs-small) {
@@ -101,7 +101,7 @@
 					font-weight: 400;
 					line-height: 28px;
 					text-transform: uppercase;
-					@include breakpoint(medium) {
+					@include breakpoint(midle) {
 						font-size: 16px;
 						line-height: 26px;
 					}
@@ -110,7 +110,7 @@
 					font-size: 18px;
 					font-weight: 300;
 					line-height: 28px;
-					@include breakpoint(medium) {
+					@include breakpoint(midle) {
 						font-size: 16px;
 						line-height: 26px;
 					}
@@ -124,7 +124,7 @@
 			font-family: 'Roboto', sans-serif;
 			font-size: 0;
 			line-height: 33px;
-			@include breakpoint(medium) {
+			@include breakpoint(midle) {
 				margin: 35px 0 30px 17px;
 			}
 			@include breakpoint(small) {
@@ -147,7 +147,7 @@
 				&:first-child {
 					margin-right: 10px;
 					background-color: #cccccc;
-					@include breakpoint(medium) {
+					@include breakpoint(midle) {
 						margin-right: 5px;
 					}
 					@include breakpoint(small) {
@@ -199,7 +199,7 @@
 				font-size: 48px;
 				font-weight: 300;
 				text-align: center;
-				@include breakpoint(medium) {
+				@include breakpoint(midle) {
 					margin-right: 5px;
 				}
 				@include breakpoint(small) {
@@ -222,7 +222,7 @@
 			text-transform: uppercase;
 			color: #ffffff;
 			@include user-select(none);
-			@include breakpoint(medium) {
+			@include breakpoint(midle) {
 				width: 110px;
 				margin: 32px 20px 0 0;
 				line-height: 36px;

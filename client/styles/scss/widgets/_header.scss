@@ -17,74 +17,91 @@ header {
 		background-color: rgba(#ffffff,0.9);
 		border: none;
 		font-size: 18px;
-		.nav-button {
-			position: relative;
-			.logo-header {
-				display: inline-block;
-				width: 130px;
-				height: 58px;
-				img {
+		.container	 {
+			padding-right: 45px;
+			padding-left: 30px;
+			@include breakpoint(midle) {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+			@include breakpoint(extra-midle) {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+			@include breakpoint(small) {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+			.nav-button {
+				position: relative;
+				.logo-header {
+					display: inline-block;
 					width: 130px;
 					height: 58px;
+					img {
+						width: 130px;
+						height: 58px;
+					}
+					p {
+						display: none;
+					}
 				}
-				p {
-					display: none;
-				}
-			}
-			.cart {
-				position: absolute;
-				top:1px;
-				left: 1075px;
-				width: 65px;
-				@include breakpoint(midle) {
-					top: 4px;
-					left: 875px;
+				.cart {
+					position: absolute;
+					top:1px;
+					//left: 1075px;
+					left: 1030px;
 					width: 65px;
-				}
-				@include breakpoint(extra-midle) {
-					top: 4px;
-					left: 655px;
-					width: 65px;
-				}
-				@include breakpoint(small) {
-					top: 4px;
-					left: 655px;
-					width: 65px;
-				}
-				a {
-					display: inline-block;
-					width: 34px;
-					height: 34px;
-					background-image: url(../../../client/images/header/cart.png);
-					background-repeat: no-repeat;
-				}
-				sup {
-					font-size: 22px;
-				}
-			}
-		}
-		.list {
-			border:none;
-			ul {
-				float: right;
-				padding-right: 65px;
-				li {
-					margin-right: 36px;
-					text-transform: uppercase;
+					@include breakpoint(midle) {
+						top: 4px;
+						left: 875px;
+						width: 65px;
+					}
 					@include breakpoint(extra-midle) {
-						margin-right: 20px;
+						top: 4px;
+						left: 655px;
+						width: 65px;
 					}
 					@include breakpoint(small) {
-						margin-right: 20px;
+						top: 4px;
+						left: 655px;
+						width: 65px;
 					}
 					a {
-						padding: 0;
-						line-height: 58px;
-						color: #000000;
-						@include transition-property(color);
-						@include transition-duration(400ms);
-						&:hover {
-							color: #ff7800;
+						display: inline-block;
+						width: 34px;
+						height: 34px;
+						background-image: url(../../../client/images/header/cart.png);
+						background-repeat: no-repeat;
+					}
+					sup {
+						font-size: 22px;
+					}
+				}
+			}
+			.list {
+				border:none;
+				ul {
+					float: right;
+					padding-right: 65px;
+					li {
+						margin-right: 36px;
+						text-transform: uppercase;
+						@include breakpoint(extra-midle) {
+							margin-right: 20px;
+						}
+						@include breakpoint(small) {
+							margin-right: 20px;
+						}
+						a {
+							padding: 0;
+							line-height: 58px;
+							color: #000000;
+							@include transition-property(color);
+							@include transition-duration(400ms);
+							&:hover {
+								color: #ff7800;
+							}
 						}
 					}
 				}
@@ -100,6 +117,9 @@ header {
 		@include breakpoint(midle) {
 			font-size: 20px;
 		}
+		@include breakpoint(extra-midle) {
+			font-size: 20px;
+		}
 		@include breakpoint(small) {
 			font-size: 18px;
 		}
@@ -107,137 +127,159 @@ header {
 			background-color: rgba(#ffffff,0.9);
 			font-size: 18px;
 		}
-		.nav-button {
-			position: relative;
-			.but-style {
-				margin-top: 43px;
-				@include breakpoint(extra-xs-small) {
-					margin: 14px 0 0 0;
-				}
+		.container {
+			padding-right: 95px;
+			padding-left: 80px;
+			@include breakpoint(midle) {
+				padding-right: 15px;
+				padding-left: 15px;
 			}
-			.logo-header {
-				display: inline-block;
-				width: 224px;
-				height: 100%;
-				@include breakpoint(midle) {
-					width: 200px;
+			@include breakpoint(extra-midle) {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+			@include breakpoint(small) {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+			@include breakpoint(extra-xs-small) {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+			.nav-button {
+				position: relative;
+				.but-style {
+					margin-top: 43px;
+					@include breakpoint(extra-xs-small) {
+						margin: 14px 0 0 0;
+					}
 				}
-				@include breakpoint(small) {
-					width: 200px;
-				}
-				@include breakpoint(extra-xs-small) {
-					width: 130px;
-				}
-				img {
+				.logo-header {
+					display: inline-block;
+					width: 224px;
+					height: 100%;
+					@include breakpoint(midle) {
+						width: 200px;
+					}
 					@include breakpoint(small) {
-						width: 160px;
+						width: 200px;
 					}
 					@include breakpoint(extra-xs-small) {
 						width: 130px;
 					}
-				}
-				p {
-					margin: 0;
-					font-family: 'Open Sans', sans-serif;
-					font-size: 12px;
-					font-weight: 600;
-					text-align: right;
-					color: #000000;
-					@include breakpoint(extra-xs-small) {
-						display: none;
-					}
-				}
-			}
-			.cart {
-				position: absolute;
-				top:20px;
-				left: 1075px;
-				width: 65px;
-				@include breakpoint(midle) {
-					top: 24px;
-					left: 875px;
-					width: 65px;
-				}
-				@include breakpoint(extra-midle) {
-					top: 24px;
-					left: 655px;
-					width: 65px;
-				}
-				@include breakpoint(small) {
-					top: 20px;
-					left: 655px;
-					width: 65px;
-				}
-				@include breakpoint(extra-xs-small) {
-					top: 10px;
-					//right: 55px;
-					left: 60%;
-				}
-				a {
-					display: inline-block;
-					width: 34px;
-					height: 34px;
-					background-image: url(../../../client/images/header/cart.png);
-					background-repeat: no-repeat;
-				}
-				sup {
-					font-size: 22px;
-				}
-			}
-		}
-		.list {
-			border:none;
-			ul {
-				float: right;
-				padding-right: 65px;
-				@include breakpoint(midle) {
-					padding-right: 65px;
-				}
-				@include breakpoint(extra-midle) {
-					padding-right: 65px;
-				}
-				@include breakpoint(small) {
-					padding-right: 65px;
-				}
-				@include breakpoint(extra-xs-small) {
-					float: none;
-					padding-right: 0;
-					text-align: center;
-				}
-				li {
-					margin-right: 44px;
-					text-transform: uppercase;
-					@include breakpoint(extra-midle) {
-						margin-right: 20px;
-					}
-					@include breakpoint(small) {
-						margin-right: 20px;
-					}
-					@include breakpoint(extra-xs-small) {
-						margin: 0;
-					}
-					a {
-						padding: 0;
-						line-height: 93px;
-						color: #000000;
-						@include transition-property(color);
-						@include transition-duration(400ms);
-						@include breakpoint(midle) {
-							line-height: 103px;
-						}
+					img {
 						@include breakpoint(small) {
-							line-height: 93px;
+							width: 160px;
 						}
 						@include breakpoint(extra-xs-small) {
-							line-height: 50px;
+							width: 130px;
 						}
-						&:hover {
-							color: #ff7800;
+					}
+					p {
+						margin: 0;
+						font-family: 'Open Sans', sans-serif;
+						font-size: 12px;
+						font-weight: 600;
+						text-align: right;
+						color: #000000;
+						@include breakpoint(extra-xs-small) {
+							display: none;
+						}
+					}
+				}
+				.cart {
+					position: absolute;
+					top:20px;
+					//left: 1075px;
+					left: 930px;
+					width: 65px;
+					@include breakpoint(midle) {
+						top: 24px;
+						left: 875px;
+						width: 65px;
+					}
+					@include breakpoint(extra-midle) {
+						top: 24px;
+						left: 657px;
+						width: 65px;
+					}
+					@include breakpoint(small) {
+						top: 20px;
+						left: 655px;
+						width: 65px;
+					}
+					@include breakpoint(extra-xs-small) {
+						top: 10px;
+						//right: 55px;
+						left: 60%;
+					}
+					a {
+						display: inline-block;
+						width: 34px;
+						height: 34px;
+						background-image: url(../../../client/images/header/cart.png);
+						background-repeat: no-repeat;
+					}
+					sup {
+						font-size: 22px;
+					}
+				}
+			}
+			.list {
+				border:none;
+				ul {
+					float: right;
+					padding-right: 65px;
+					@include breakpoint(midle) {
+						padding-right: 65px;
+					}
+					@include breakpoint(extra-midle) {
+						padding-right: 65px;
+					}
+					@include breakpoint(small) {
+						padding-right: 65px;
+					}
+					@include breakpoint(extra-xs-small) {
+						float: none;
+						padding-right: 0;
+						text-align: center;
+					}
+					li {
+						margin-right: 44px;
+						text-transform: uppercase;
+						@include breakpoint(extra-midle) {
+							margin-right: 20px;
+						}
+						@include breakpoint(small) {
+							margin-right: 20px;
+						}
+						@include breakpoint(extra-xs-small) {
+							margin: 0;
+						}
+						a {
+							padding: 0;
+							line-height: 93px;
+							color: #000000;
+							@include transition-property(color);
+							@include transition-duration(400ms);
+							@include breakpoint(midle) {
+								line-height: 103px;
+							}
+							@include breakpoint(small) {
+								line-height: 93px;
+							}
+							@include breakpoint(extra-xs-small) {
+								line-height: 50px;
+							}
+							&:hover {
+								color: #ff7800;
+							}
 						}
 					}
 				}
 			}
 		}
+		
 	}
 }
 

@@ -4,11 +4,11 @@
 		@content;
 		}
 	} @else if $point == midle {
-		@media (min-width: 980px) and (max-width: 1199px) {
+		@media (min-width: 992px) and (max-width: 1199px) {
 		@content;
 		}
 	} @else if $point == extra-midle {
-	@media (min-width: 980px) and (max-width: 992px) {
+	@media (min-width: 980px) and (max-width: 991px) {
 	@content;
 	}
 	} @else if $point == small {
