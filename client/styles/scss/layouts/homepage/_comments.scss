@@ -64,7 +64,10 @@
 			font-weight: 300;
 			font-style: italic;
 			color: #6e6e6e;
-			@include breakpoint(medium) {
+			@include breakpoint(midle) {
+				padding-top: 10px;
+			}
+			@include breakpoint(extra-midle) {
 				padding-top: 10px;
 			}
 			@include breakpoint(small) {

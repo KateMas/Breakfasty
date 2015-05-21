@@ -5405,6 +5405,18 @@ body.homepage .work .description-work {
   	@content;
   	} */
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 21, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work {
+    width: 761px;
+  }
+}
+@media (min-width: 980px) and (max-width: 991px) {
+  /* line 21, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work {
+    width: 761px;
+  }
+}
 @media (min-width: 768px) and (max-width: 979px) {
   /* line 21, ../scss/layouts/homepage/_work.scss */
   body.homepage .work .description-work {
@@ -5421,20 +5433,20 @@ body.homepage .work .description-work {
     padding-bottom: 60px;
   }
 }
-/* line 39, ../scss/layouts/homepage/_work.scss */
+/* line 42, ../scss/layouts/homepage/_work.scss */
 body.homepage .work .description-work figure {
   display: inline-block;
   vertical-align: top;
 }
 @media (max-width: 767px) {
-  /* line 39, ../scss/layouts/homepage/_work.scss */
+  /* line 42, ../scss/layouts/homepage/_work.scss */
   body.homepage .work .description-work figure {
     display: block;
     margin: auto;
     text-align: center;
   }
 }
-/* line 47, ../scss/layouts/homepage/_work.scss */
+/* line 50, ../scss/layouts/homepage/_work.scss */
 body.homepage .work .description-work figure:first-child {
   width: 174px;
   margin-right: 192px;
@@ -5443,20 +5455,32 @@ body.homepage .work .description-work figure:first-child {
   	@content;
   	} */
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 50, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work figure:first-child {
+    margin-right: 100px;
+  }
+}
+@media (min-width: 980px) and (max-width: 991px) {
+  /* line 50, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work figure:first-child {
+    margin-right: 100px;
+  }
+}
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 47, ../scss/layouts/homepage/_work.scss */
+  /* line 50, ../scss/layouts/homepage/_work.scss */
   body.homepage .work .description-work figure:first-child {
     margin-right: 80px;
   }
 }
 @media (max-width: 767px) {
-  /* line 47, ../scss/layouts/homepage/_work.scss */
+  /* line 50, ../scss/layouts/homepage/_work.scss */
   body.homepage .work .description-work figure:first-child {
     margin: 0 auto;
     padding-bottom: 50px;
   }
 }
-/* line 61, ../scss/layouts/homepage/_work.scss */
+/* line 67, ../scss/layouts/homepage/_work.scss */
 body.homepage .work .description-work figure:nth-child(2) {
   width: 174px;
   margin-right: 183px;
@@ -5465,57 +5489,69 @@ body.homepage .work .description-work figure:nth-child(2) {
   	@content;
   	} */
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 67, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work figure:nth-child(2) {
+    margin-right: 100px;
+  }
+}
+@media (min-width: 980px) and (max-width: 991px) {
+  /* line 67, ../scss/layouts/homepage/_work.scss */
+  body.homepage .work .description-work figure:nth-child(2) {
+    margin-right: 100px;
+  }
+}
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 61, ../scss/layouts/homepage/_work.scss */
+  /* line 67, ../scss/layouts/homepage/_work.scss */
   body.homepage .work .description-work figure:nth-child(2) {
     margin-right: 80px;
   }
 }
 @media (max-width: 767px) {
-  /* line 61, ../scss/layouts/homepage/_work.scss */
+  /* line 67, ../scss/layouts/homepage/_work.scss */
   body.homepage .work .description-work figure:nth-child(2) {
     margin: 0 auto;
     padding-bottom: 50px;
   }
 }
-/* line 75, ../scss/layouts/homepage/_work.scss */
+/* line 84, ../scss/layouts/homepage/_work.scss */
 body.homepage .work .description-work figure:nth-child(3) {
   width: 213px;
 }
-/* line 78, ../scss/layouts/homepage/_work.scss */
+/* line 87, ../scss/layouts/homepage/_work.scss */
 body.homepage .work .description-work figure span {
   display: inline-block;
   margin-bottom: 61px;
   text-align: center;
 }
 @media (max-width: 767px) {
-  /* line 78, ../scss/layouts/homepage/_work.scss */
+  /* line 87, ../scss/layouts/homepage/_work.scss */
   body.homepage .work .description-work figure span {
     margin-bottom: 20px;
   }
 }
-/* line 86, ../scss/layouts/homepage/_work.scss */
+/* line 95, ../scss/layouts/homepage/_work.scss */
 body.homepage .work .description-work figure .work-food {
   width: 93px;
   height: 89px;
 }
-/* line 91, ../scss/layouts/homepage/_work.scss */
+/* line 100, ../scss/layouts/homepage/_work.scss */
 body.homepage .work .description-work figure .work-fridge {
   width: 72px;
   height: 96px;
 }
-/* line 96, ../scss/layouts/homepage/_work.scss */
+/* line 105, ../scss/layouts/homepage/_work.scss */
 body.homepage .work .description-work figure .work-smile {
   width: 95px;
   height: 90px;
 }
-/* line 102, ../scss/layouts/homepage/_work.scss */
+/* line 111, ../scss/layouts/homepage/_work.scss */
 body.homepage .work .description-work figure figcaption p {
   margin: 0;
   font-size: 24px;
   font-weight: 300;
 }
-/* line 110, ../scss/layouts/homepage/_work.scss */
+/* line 119, ../scss/layouts/homepage/_work.scss */
 body.homepage .work hr {
   margin: 0;
   color: #898989;
@@ -5731,6 +5767,18 @@ body.homepage .comments .style-bgc .author {
   	@media (min-width: 481px) and (max-width: 767px) {
   	@content;
   	} */
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 59, ../scss/layouts/homepage/_comments.scss */
+  body.homepage .comments .style-bgc .author {
+    padding-top: 10px;
+  }
+}
+@media (min-width: 980px) and (max-width: 991px) {
+  /* line 59, ../scss/layouts/homepage/_comments.scss */
+  body.homepage .comments .style-bgc .author {
+    padding-top: 10px;
+  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
   /* line 59, ../scss/layouts/homepage/_comments.scss */

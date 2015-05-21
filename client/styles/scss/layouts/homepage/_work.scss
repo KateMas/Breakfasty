@@ -23,7 +23,10 @@
 		margin: auto;
 		padding-top: 110px;
 		padding-bottom: 136px;
-		@include breakpoint(medium) {
+		@include breakpoint(midle) {
+			width: 761px;
+		}
+		@include breakpoint(extra-midle) {
 			width: 761px;
 		}
 		@include breakpoint(small) {
@@ -47,7 +50,10 @@
 			&:first-child {
 				width: 174px;
 				margin-right: 192px;
-				@include breakpoint(medium) {
+				@include breakpoint(midle) {
+					margin-right: 100px;
+				}
+				@include breakpoint(extra-midle) {
 					margin-right: 100px;
 				}
 				@include breakpoint(small) {
@@ -61,7 +67,10 @@
 			&:nth-child(2) {
 				width: 174px;
 				margin-right: 183px;
-				@include breakpoint(medium) {
+				@include breakpoint(midle) {
+					margin-right: 100px;
+				}
+				@include breakpoint(extra-midle) {
 					margin-right: 100px;
 				}
 				@include breakpoint(small) {
