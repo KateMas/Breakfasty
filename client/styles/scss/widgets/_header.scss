@@ -18,6 +18,7 @@ header {
 		border: none;
 		font-size: 18px;
 		.container	 {
+			position: relative;
 			padding-right: 45px;
 			padding-left: 30px;
 			@include breakpoint(midle) {
@@ -44,38 +45,6 @@ header {
 					}
 					p {
 						display: none;
-					}
-				}
-				.cart {
-					position: absolute;
-					top:1px;
-					//left: 1075px;
-					left: 1030px;
-					width: 65px;
-					@include breakpoint(midle) {
-						top: 4px;
-						left: 875px;
-						width: 65px;
-					}
-					@include breakpoint(extra-midle) {
-						top: 4px;
-						left: 655px;
-						width: 65px;
-					}
-					@include breakpoint(small) {
-						top: 4px;
-						left: 655px;
-						width: 65px;
-					}
-					a {
-						display: inline-block;
-						width: 34px;
-						height: 34px;
-						background-image: url(../../../client/images/header/cart.png);
-						background-repeat: no-repeat;
-					}
-					sup {
-						font-size: 22px;
 					}
 				}
 			}
@@ -106,6 +75,34 @@ header {
 					}
 				}
 			}
+			.cart {
+					position: absolute;
+					top:1px;
+					right: 45px;
+					width: 65px;
+					@include breakpoint(midle) {
+						top: 4px;
+						right: 15px;
+					}
+					@include breakpoint(extra-midle) {
+						top: 4px;
+						right: 15px;
+					}
+					@include breakpoint(small) {
+						top: 11px;
+						right: 17px;
+					}
+					a {
+						display: inline-block;
+						width: 34px;
+						height: 34px;
+						background-image: url(../../../client/images/header/cart.png);
+						background-repeat: no-repeat;
+					}
+					sup {
+						font-size: 22px;
+					}
+				}
 		}
 	}
 	&.nav-style {
@@ -128,6 +125,7 @@ header {
 			font-size: 18px;
 		}
 		.container {
+			position: relative;
 			padding-right: 95px;
 			padding-left: 80px;
 			@include breakpoint(midle) {
@@ -147,7 +145,6 @@ header {
 				padding-left: 15px;
 			}
 			.nav-button {
-				position: relative;
 				.but-style {
 					margin-top: 43px;
 					@include breakpoint(extra-xs-small) {
@@ -185,43 +182,6 @@ header {
 						@include breakpoint(extra-xs-small) {
 							display: none;
 						}
-					}
-				}
-				.cart {
-					position: absolute;
-					top:20px;
-					//left: 1075px;
-					left: 930px;
-					width: 65px;
-					@include breakpoint(midle) {
-						top: 24px;
-						left: 875px;
-						width: 65px;
-					}
-					@include breakpoint(extra-midle) {
-						top: 24px;
-						left: 657px;
-						width: 65px;
-					}
-					@include breakpoint(small) {
-						top: 20px;
-						left: 655px;
-						width: 65px;
-					}
-					@include breakpoint(extra-xs-small) {
-						top: 10px;
-						//right: 55px;
-						left: 60%;
-					}
-					a {
-						display: inline-block;
-						width: 34px;
-						height: 34px;
-						background-image: url(../../../client/images/header/cart.png);
-						background-repeat: no-repeat;
-					}
-					sup {
-						font-size: 22px;
 					}
 				}
 			}
@@ -278,6 +238,38 @@ header {
 					}
 				}
 			}
+			.cart {
+					position: absolute;
+					top:20px;
+					right: 95px;
+					width: 65px;
+					@include breakpoint(midle) {
+						top: 24px;
+						right: 15px;
+					}
+					@include breakpoint(extra-midle) {
+						top: 20px;
+						right: 15px;
+					}
+					@include breakpoint(small) {
+						top: 20px;
+						right: 15px;
+					}
+					@include breakpoint(extra-xs-small) {
+						top: 10px;
+						right: 65px;
+					}
+					a {
+						display: inline-block;
+						width: 34px;
+						height: 34px;
+						background-image: url(../../../client/images/header/cart.png);
+						background-repeat: no-repeat;
+					}
+					sup {
+						font-size: 22px;
+					}
+				}
 		}
 	}
 }
