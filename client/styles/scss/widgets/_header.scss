@@ -8,7 +8,7 @@ header {
 		padding-bottom: 9px;
 		background-color: rgba(#ffffff,0.9);
 	}
-	&.scroll {
+	/* &.scroll {
 		position: fixed;
 		z-index: 1;
 		min-height: 58px;
@@ -34,7 +34,6 @@ header {
 				padding-left: 15px;
 			}
 			.nav-button {
-				position: relative;
 				.logo-header {
 					display: inline-block;
 					width: 130px;
@@ -104,7 +103,7 @@ header {
 					}
 				}
 		}
-	}
+	} */
 	&.nav-style {
 		position: fixed;
 		z-index: 1;
@@ -123,6 +122,59 @@ header {
 		@include breakpoint(extra-xs-small) {
 			background-color: rgba(#ffffff,0.9);
 			font-size: 18px;
+		}
+		&.scroll {
+			min-height: 58px;
+			padding-top: 9px;
+			padding-bottom: 9px;
+			background-color: rgba(#ffffff,0.9);
+			font-size: 18px;
+			.container	 {
+				padding-right: 45px;
+				padding-left: 30px;
+				.nav-button {
+					.logo-header {
+						width: 130px;
+						height: 58px;
+						img {
+							width: 130px;
+							height: 58px;
+						}
+						p {
+							display: none;
+						}
+					}
+				}
+				.list {
+					ul {
+						float: right;
+						padding-right: 65px;
+						li {
+							margin-right: 36px;
+							a {
+								line-height: 58px;
+							}
+						}
+					}
+				}
+				.cart {
+					top:1px;
+					right: 45px;
+					width: 65px;
+					@include breakpoint(midle) {
+						top: 4px;
+						right: 15px;
+					}
+					@include breakpoint(extra-midle) {
+						top: 4px;
+						right: 15px;
+					}
+					@include breakpoint(small) {
+						top: 11px;
+						right: 17px;
+					}
+				}
+			}
 		}
 		.container {
 			position: relative;

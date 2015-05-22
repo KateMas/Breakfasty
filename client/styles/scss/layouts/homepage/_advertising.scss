@@ -1,24 +1,19 @@
 .advertising {
-	padding-top: 93px;
+	padding-top: 103px;
 	background-image: url(../../../client/images/advertising/background-table.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
-	.plate {
-		width: 100%;
-		height: 508px;
-		background-position:center;
-		background-size: contain;
-		background-repeat: no-repeat;
-		@include user-select(none);
-		@include breakpoint(extra-xs-small) {
-			height: 300px;
-		}
-		@include breakpoint(extra-xs-small) {
-			height: 200px;
-		}
+	@include breakpoint(small) {
+		padding-top: 93px;
+	}
+	@include breakpoint(extra-xs-small) {
+		padding-top: 80px;
+	}
+	img {
+		padding-top: 42px;
 	}
 	h1 {
 		margin: 0;

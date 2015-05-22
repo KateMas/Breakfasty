@@ -231,7 +231,6 @@
 			text-align: center;
 			text-transform: uppercase;
 			color: #ffffff;
-			@include user-select(none);
 			@include breakpoint(midle) {
 				width: 110px;
 				margin: 32px 20px 0 0;
