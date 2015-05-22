@@ -1,5 +1,5 @@
 .advertising {
-	padding-top: 103px;
+	padding-top: 122px;
 	background-image: url(../../../client/images/advertising/background-table.png);
 	background-size: cover;
 	background-position: center;
@@ -7,13 +7,20 @@
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	@include breakpoint(small) {
-		padding-top: 93px;
+		padding-top: 112px;
 	}
 	@include breakpoint(extra-xs-small) {
 		padding-top: 80px;
 	}
 	img {
+		width: 750px;
 		padding-top: 42px;
+		@include breakpoint(small) {
+			width: 600px
+		}
+		@include breakpoint(extra-xs-small) {
+			width: 300px;
+		}
 	}
 	h1 {
 		margin: 0;
@@ -59,25 +66,31 @@
 			outline: none;
 		}
 	}
+	.modal-sm-header {
+		border: none;
+		button {
+			float: right;
+
+		}
+	}
 	form {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		background-color: #e5dedf;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		//background-color: #e5dedf;
 		font-family: 'Open Sans', sans-serif;
 
 		input {
 			display: block;
-			width: 280px;
-			height: 30px;
+			width: 260px;
+			height: 40px;
 			margin: auto;
 			padding-left: 10px;
-			background-color: #c7c4c4;
-			border:none;
+			background-color: #fff;
+			//border:none;
 			outline: none;
 			font-weight: 400;
 			font-size: 16px;
 			color: #555353;
-			@include border-radius(5px);
 			@include user-select(none);
 			@include placeholder {
 				font-weight: 300;
@@ -86,8 +99,6 @@
 			}
 			&:focus {
 				padding-left: 10px;
-				//background-color: #fad3b1;
-				background-color: #fff;
 				font-size: 16px;
 				font-weight: 400;
 				color: #555353;
@@ -98,15 +109,15 @@
 			}
 		}
 		button {
-			height: 30px;
+			width: 180px;
+			height: 40px;
 			margin-top: 20px;
 			background-color: #ff7800;
 			border: none;
-			font-size: 16px;
+			font-size: 18px;
 			font-weight: 400;
 			text-transform: uppercase;
 			color:#ffffff;
-			@include border-radius(5px);
 			@include user-select(none);
 		}
 	}
