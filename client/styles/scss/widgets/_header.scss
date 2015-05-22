@@ -24,6 +24,7 @@ header {
 			font-size: 18px;
 		}
 		@include breakpoint(extra-xs-small) {
+			min-height: 58px;
 			background-color: rgba(#ffffff,0.9);
 			font-size: 18px;
 		}
@@ -102,10 +103,31 @@ header {
 			.nav-button {
 				.but-style {
 					margin-top: 43px;
+					border: none;
 					@include breakpoint(extra-xs-small) {
 						margin: 14px 0 0 0;
 					}
+					&:hover {
+						.icon-color {
+							background-color: #ff7800;
+						}
+					}
+					.icon-color {
+						height: 3px;
+						background-color: #ff7800;
+					}
 				}
+				.collapsed {
+		            background-color: transparent;
+		            .icon-bar {
+		            	background-color: #888888;
+		            }
+		        }
+		        .navbar-toggle {
+		        	&:focus {
+		            	background-color: transparent;
+		            }
+		        }
 				.logo-header {
 					display: inline-block;
 					width: 224px;
@@ -125,6 +147,7 @@ header {
 						}
 						@include breakpoint(extra-xs-small) {
 							width: 130px;
+							height: 58px;
 						}
 					}
 					p {
@@ -235,6 +258,9 @@ header {
 						@include breakpoint(small) {
 							top: 20px;
 							font-size: 18px;
+						}
+						@include breakpoint(exrta-xs-small) {
+							top: 17px;
 						}
 					}
 				}

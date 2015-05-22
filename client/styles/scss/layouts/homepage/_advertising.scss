@@ -66,17 +66,23 @@
 			outline: none;
 		}
 	}
-	.modal-sm-header {
-		border: none;
-		button {
-			float: right;
-
+	.modal-sm-content {
+		@include border-radius(0px);
+		.modal-sm-header {
+			border: none;
+			button {
+				float: right;
+				border: none;
+				background-color: transparent;
+				span {
+					font-size: 20px;
+				}
+			}
 		}
 	}
 	form {
-		padding-top: 30px;
-		padding-bottom: 30px;
-		//background-color: #e5dedf;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		font-family: 'Open Sans', sans-serif;
 
 		input {
@@ -86,7 +92,6 @@
 			margin: auto;
 			padding-left: 10px;
 			background-color: #fff;
-			//border:none;
 			outline: none;
 			font-weight: 400;
 			font-size: 16px;
