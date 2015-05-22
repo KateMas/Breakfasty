@@ -174,7 +174,7 @@
 				text-align: center;
 				color: #000000;
 				@include appearance(textfield);
-				@include button {
+				@include spin-button {
 					display: none;
 				    margin: 0;
 				    @include appearance(none);
