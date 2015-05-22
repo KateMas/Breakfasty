@@ -8,102 +8,6 @@ header {
 		padding-bottom: 9px;
 		background-color: rgba(#ffffff,0.9);
 	}
-	/* &.scroll {
-		position: fixed;
-		z-index: 1;
-		min-height: 58px;
-		padding-top: 9px;
-		padding-bottom: 9px;
-		background-color: rgba(#ffffff,0.9);
-		border: none;
-		font-size: 18px;
-		.container	 {
-			position: relative;
-			padding-right: 45px;
-			padding-left: 30px;
-			@include breakpoint(midle) {
-				padding-right: 15px;
-				padding-left: 15px;
-			}
-			@include breakpoint(extra-midle) {
-				padding-right: 15px;
-				padding-left: 15px;
-			}
-			@include breakpoint(small) {
-				padding-right: 15px;
-				padding-left: 15px;
-			}
-			.nav-button {
-				.logo-header {
-					display: inline-block;
-					width: 130px;
-					height: 58px;
-					img {
-						width: 130px;
-						height: 58px;
-					}
-					p {
-						display: none;
-					}
-				}
-			}
-			.list {
-				border:none;
-				ul {
-					float: right;
-					padding-right: 65px;
-					li {
-						margin-right: 36px;
-						text-transform: uppercase;
-						@include breakpoint(extra-midle) {
-							margin-right: 20px;
-						}
-						@include breakpoint(small) {
-							margin-right: 20px;
-						}
-						a {
-							padding: 0;
-							line-height: 58px;
-							color: #000000;
-							@include transition-property(color);
-							@include transition-duration(400ms);
-							&:hover {
-								color: #ff7800;
-							}
-						}
-					}
-				}
-			}
-			.cart {
-					position: absolute;
-					top:1px;
-					right: 45px;
-					width: 65px;
-					@include breakpoint(midle) {
-						top: 4px;
-						right: 15px;
-					}
-					@include breakpoint(extra-midle) {
-						top: 4px;
-						right: 15px;
-					}
-					@include breakpoint(small) {
-						top: 11px;
-						right: 17px;
-					}
-					a {
-						display: inline-block;
-						width: 34px;
-						height: 34px;
-						background-image: url(../../../client/images/header/cart.png);
-						background-repeat: no-repeat;
-					}
-					sup {
-						font-size: 22px;
-					}
-				}
-		}
-	} */
 	&.nav-style {
 		position: fixed;
 		z-index: 1;
@@ -147,8 +51,6 @@ header {
 				}
 				.list {
 					ul {
-						float: right;
-						padding-right: 65px;
 						li {
 							margin-right: 36px;
 							a {
@@ -158,20 +60,13 @@ header {
 					}
 				}
 				.cart {
-					top:1px;
+					top:11px;
 					right: 45px;
-					width: 65px;
-					@include breakpoint(midle) {
-						top: 4px;
-						right: 15px;
-					}
-					@include breakpoint(extra-midle) {
-						top: 4px;
-						right: 15px;
-					}
-					@include breakpoint(small) {
-						top: 11px;
-						right: 17px;
+					sup {
+						top: 17px;
+						@include breakpoint(midle) {
+							top: 19px;
+						}
 					}
 				}
 			}
@@ -292,23 +187,23 @@ header {
 			}
 			.cart {
 					position: absolute;
-					top:20px;
+					top:30px;
 					right: 95px;
 					width: 65px;
 					@include breakpoint(midle) {
-						top: 24px;
+						top: 35px;
 						right: 15px;
 					}
 					@include breakpoint(extra-midle) {
-						top: 20px;
+						top: 31px;
 						right: 15px;
 					}
 					@include breakpoint(small) {
-						top: 20px;
+						top: 28px;
 						right: 15px;
 					}
 					@include breakpoint(extra-xs-small) {
-						top: 10px;
+						top: 15px;
 						right: 65px;
 					}
 					a {
@@ -319,7 +214,20 @@ header {
 						background-repeat: no-repeat;
 					}
 					sup {
+						position: absolute;
+						top: 16px;
+						left: 40px;
 						font-size: 22px;
+						@include breakpoint(midle) {
+							top: 18px;
+						}
+						@include breakpoint(extra-midle) {
+							top: 19px;
+						}
+						@include breakpoint(small) {
+							top: 20px;
+							font-size: 18px;
+						}
 					}
 				}
 		}
