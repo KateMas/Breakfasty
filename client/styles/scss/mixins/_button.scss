@@ -1,0 +1,4 @@
+@mixin button {
+	&::-webkit-outer-spin-button {@content}
+	&::-webkit-inner-spin-button {@content}
+}

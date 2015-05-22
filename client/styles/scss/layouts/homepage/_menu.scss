@@ -172,6 +172,13 @@
 				font-size: 33px;
 				font-weight: 300;
 				text-align: center;
+				color: #000000;
+				@include appearance(textfield);
+				@include button {
+					display: none;
+				    margin: 0;
+				    @include appearance(none);
+				}
 				@include placeholder {
 					font-weight: 300;
 					font-size: 47px;
@@ -185,15 +192,15 @@
 					@include transition-duration (400ms);
 				}
 			}
-			input::-webkit-outer-spin-button,
+			/* input::-webkit-outer-spin-button,
 			input::-webkit-inner-spin-button {
 			    display: none;
 			    -webkit-appearance: none;
 			    margin: 0;
-			}
-			input[type=number] {
-    -moz-appearance:textfield;
-}
+			}*/
+			/*input[type=number] {
+			    -moz-appearance:textfield;
+			}*/
 			span {
 				display: inline-block;
 				width: 50px;

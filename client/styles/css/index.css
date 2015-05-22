@@ -6016,6 +6016,15 @@ body.homepage .menu .dish .counter {
   font-family: 'Roboto', sans-serif;
   font-size: 0;
   line-height: 33px;
+  /* input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      display: none;
+      -webkit-appearance: none;
+      margin: 0;
+  }*/
+  /*input[type=number] {
+      -moz-appearance:textfield;
+  }*/
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   /* line 120, ../scss/layouts/homepage/_menu.scss */
@@ -6089,6 +6098,23 @@ body.homepage .menu .dish .counter input {
   font-size: 33px;
   font-weight: 300;
   text-align: center;
+  color: #000000;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+/* line 2, ../scss/mixins/_button.scss */
+body.homepage .menu .dish .counter input::-webkit-outer-spin-button {
+  display: none;
+  margin: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+/* line 3, ../scss/mixins/_button.scss */
+body.homepage .menu .dish .counter input::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 /* line 2, ../scss/mixins/_placeholder.scss */
 body.homepage .menu .dish .counter input::-webkit-input-placeholder {
@@ -6114,7 +6140,7 @@ body.homepage .menu .dish .counter input:-ms-input-placeholder {
   font-size: 47px;
   color: #000000;
 }
-/* line 180, ../scss/layouts/homepage/_menu.scss */
+/* line 187, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter input:focus {
   font-size: 33px;
   -webkit-transition-duration: 400ms;
@@ -6136,18 +6162,7 @@ body.homepage .menu .dish .counter input:focus:-moz-placeholder {
 body.homepage .menu .dish .counter input:focus:-ms-input-placeholder {
   color: transparent;
 }
-/* line 188, ../scss/layouts/homepage/_menu.scss */
-body.homepage .menu .dish .counter input::-webkit-outer-spin-button,
-body.homepage .menu .dish .counter input::-webkit-inner-spin-button {
-  display: none;
-  -webkit-appearance: none;
-  margin: 0;
-}
-/* line 194, ../scss/layouts/homepage/_menu.scss */
-body.homepage .menu .dish .counter input[type=number] {
-  -moz-appearance: textfield;
-}
-/* line 197, ../scss/layouts/homepage/_menu.scss */
+/* line 204, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter span {
   display: inline-block;
   width: 50px;
@@ -6158,24 +6173,24 @@ body.homepage .menu .dish .counter span {
   text-align: center;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 197, ../scss/layouts/homepage/_menu.scss */
+  /* line 204, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter span {
     margin-right: 5px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 197, ../scss/layouts/homepage/_menu.scss */
+  /* line 204, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter span {
     margin-right: 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 197, ../scss/layouts/homepage/_menu.scss */
+  /* line 204, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter span {
     margin-right: 10px;
   }
 }
-/* line 216, ../scss/layouts/homepage/_menu.scss */
+/* line 223, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .add-order {
   float: right;
   width: 130px;
@@ -6195,7 +6210,7 @@ body.homepage .menu .dish .add-order {
   cursor: default;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 216, ../scss/layouts/homepage/_menu.scss */
+  /* line 223, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .add-order {
     width: 110px;
     margin: 32px 20px 0 0;
@@ -6203,14 +6218,14 @@ body.homepage .menu .dish .add-order {
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 216, ../scss/layouts/homepage/_menu.scss */
+  /* line 223, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .add-order {
     width: 110px;
     margin: 28px 26px 0 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 216, ../scss/layouts/homepage/_menu.scss */
+  /* line 223, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .add-order {
     width: 90px;
     margin: 18px 26px 0 0;
