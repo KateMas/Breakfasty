@@ -4591,7 +4591,6 @@ input[type=number] {
   width: 50px;
   border: none;
   outline: none;
-  margin-right: 10px;
   padding: 0;
   font-size: 47px;
   font-weight: 300;
@@ -4616,31 +4615,22 @@ input[type=number]::-webkit-inner-spin-button {
   -moz-appearance: none;
   -webkit-appearance: none;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* line 1, ../scss/components/_input.scss */
-  input[type=number] {
-    margin-right: 5px;
-  }
-}
-@media (max-width: 767px) {
-  /* line 1, ../scss/components/_input.scss */
-  input[type=number] {
-    margin-right: 5px;
-  }
-}
 
-/* line 25, ../scss/components/_input.scss */
+/* line 18, ../scss/components/_input.scss */
 input[type=email] {
   display: block;
   width: 260px;
   height: 40px;
-  margin: auto;
   padding-left: 10px;
   background-color: #ffffff;
   outline: none;
   font-weight: 400;
   font-size: 16px;
   color: #555353;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
   -webkit-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -4672,14 +4662,12 @@ input[type=email]:-ms-input-placeholder {
   font-size: 16px;
   color: #555353;
 }
-/* line 42, ../scss/components/_input.scss */
+/* line 36, ../scss/components/_input.scss */
 input[type=email]:focus {
   padding-left: 10px;
   font-size: 16px;
   font-weight: 400;
   color: #555353;
-  -webkit-transition-duration: 400ms;
-  transition-duration: 400ms;
 }
 /* line 2, ../scss/mixins/_placeholder.scss */
 input[type=email]:focus::-webkit-input-placeholder {
@@ -5316,6 +5304,10 @@ body.homepage .advertising form {
   font-family: 'Open Sans', sans-serif;
 }
 /* line 89, ../scss/layouts/homepage/_advertising.scss */
+body.homepage .advertising form input {
+  margin: auto;
+}
+/* line 92, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form button {
   width: 180px;
   height: 40px;
@@ -6087,11 +6079,28 @@ body.homepage .menu .dish .counter .order-plus {
   background-color: #fbb97f;
 }
 /* line 151, ../scss/layouts/homepage/_menu.scss */
+body.homepage .menu .dish .counter input {
+  margin-right: 10px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 151, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter input {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 151, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter input {
+    margin-right: 5px;
+  }
+}
+/* line 160, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter button {
   float: right;
   width: 130px;
   margin-top: 9px;
   margin-right: 20px;
+  padding: 0;
   background-color: #ff7800;
   border: none;
   font-size: 24px;
@@ -6102,20 +6111,20 @@ body.homepage .menu .dish .counter button {
   color: #ffffff;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 151, ../scss/layouts/homepage/_menu.scss */
+  /* line 160, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter button {
     width: 110px;
     margin-right: 17px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 151, ../scss/layouts/homepage/_menu.scss */
+  /* line 160, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter button {
     width: 110px;
   }
 }
 @media (max-width: 767px) {
-  /* line 151, ../scss/layouts/homepage/_menu.scss */
+  /* line 160, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter button {
     width: 90px;
   }

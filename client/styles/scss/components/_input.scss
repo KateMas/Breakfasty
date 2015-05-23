@@ -2,7 +2,6 @@ input[type=number] {
 	width: 50px;
 	border: none;
 	outline: none;
-	margin-right: 10px;
 	padding: 0;
 	font-size: 47px;
 	font-weight: 300;
@@ -15,24 +14,19 @@ input[type=number] {
 	    margin: 0;
 	    @include appearance(none);
 	}
-	@include breakpoint(midle) {
-		margin-right: 5px;
-	}
-	@include breakpoint(extra-xs-small) {
-		margin-right: 5px;
-	}
 }
 input[type=email] {
 	display: block;
 	width: 260px;
 	height: 40px;
-	margin: auto;
 	padding-left: 10px;
 	background-color: #ffffff;
 	outline: none;
 	font-weight: 400;
 	font-size: 16px;
 	color: #555353;
+	@include transition-property(all);
+	@include transition-duration (400ms);
 	@include user-select(none);
 	@include placeholder {
 		font-weight: 300;
@@ -47,6 +41,5 @@ input[type=email] {
 		@include placeholder {
 			color: transparent;
 		}
-		@include transition-duration (400ms);
 	}
 }
