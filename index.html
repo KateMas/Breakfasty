@@ -10,34 +10,36 @@
     <script src="client/js/bootstrap.min.js"></script>
 </head>
 <body class="homepage">
-    <header class="navbar navbar-default nav-style scroll">
-        <div class="container">
-            <div class="navbar-header nav-button">
-                <button type="button" class="navbar-toggle collapsed but-style" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar icon-color"></span>
-                    <span class="icon-bar icon-color"></span>
-                    <span class="icon-bar icon-color"></span>
-                </button>
-                <a class="navbar-brand logo-header" href="/">
-                    <img src="client/images/header/logo1.png" alt="/">
-                    <p>[delisious breakfast everyday]</p>
-                </a>
-            </div>
-            <div class="collapse navbar-collapse list" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav ">
-                    <li><a href="#menu">menu</a></li>
-                    <li><a href="#about">about us</a></li>
-                    <li><a href="#work">how it works</a></li>
-                    <li><a href="#faq">faq</a></li>
-                </ul>
-            </div>
-            <div class="cart navbar-header">
-                <a href="javascript:void(0);"></a>
-                <sup>+5</sup>
-            </div>
+<header class="navbar navbar-default nav-style scroll">
+    <div class="container">
+        <div class="navbar-header nav-button">
+            <button type="button" class="navbar-toggle collapsed but-style" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar icon-color"></span>
+                <span class="icon-bar icon-color"></span>
+                <span class="icon-bar icon-color"></span>
+            </button>
+            <a class="navbar-brand logo-header" href="/">
+                <img src="client/images/header/logo1.png" alt="/">
+
+                <p>[delisious breakfast everyday]</p>
+            </a>
         </div>
-    </header>
+        <div class="collapse navbar-collapse list" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav ">
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#about">about us</a></li>
+                <li><a href="#work">how it works</a></li>
+                <li><a href="#faq">faq</a></li>
+            </ul>
+        </div>
+        <div class="cart navbar-header">
+            <a href="javascript:void(0);"></a>
+            <sup>+5</sup>
+        </div>
+    </div>
+</header>
 <main>
     <section class="advertising">
         <div class="container">
@@ -45,25 +47,31 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <img src="client/images/advertising/plate-card.png" alt="/"/>
                 </div>
-                <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <h1>Eat Brekfast Every Day</h1>
+
                     <p>We deliver delicious breakfasts to your doorstep</p>
                 </div>
-                <button type="button" class="btn btn-primary button-discount" data-toggle="modal" data-target=".bs-example-modal-sm">get 50% off</button>
-                <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content">
-                            <div class="modal-header modal-sm-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form action="/" method="post">
-                                    <input type="email" value="" name="Email" placeholder="Email address" required>
-                                    <button>submit</button>
-                                </form>
-                            </div>
+                <button type="button" class="btn btn-primary button-discount" data-toggle="modal"
+                        data-target=".bs-example-modal-sm">get 50% off
+                </button>
+            </div>
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header modal-sm-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="/" method="post">
+                                <input type="email" value="" name="Email" placeholder="Email address" required>
+                                <button>submit</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -71,138 +79,170 @@
         </div>
     </section>
     <section id="menu" class="container menu">
-    	<div class="row">
-    		<div class="col-lg 12 col-md-12 col-sm-12 col-xs-12">
-    			<h2>menu</h2>
-    		</div>
-    		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-    			<div class="dish">
-    				<span class="price">$7</span>
-	    			<h3 class="name-dish">veggie omelette<br/>banana muffin</h3>
-	    			<figure>
-	    				<div class="image" style="background-image: url(client/images/menu/omelette.png);"></div>
-	    				<figcaption>
-	    					<h3 class="name-for-ingridients">omelette:</h3>
-	    					<p class="ingridients">Eggs, Red Pepper, Green Onions, Mushrooms,Avocado</p>
-	    					<h3 class="name-for-ingridients">banana muffin:</h3>
-	    					<p class="ingridients">Banana, Egg, Sugar, Butter, Canola Oil, Flour,Soda, Walnuts, Cranberries, Salt</p>
-	    				</figcaption>
-	    			</figure>
-	    			<div class="counter">
-	    					<a href="javascript:void(0);">-</a>
-	    					<!-- <span>0</span> -->
-                            <input type="number" placeholder="0" min="0" max="99">
-	    					<a href="javascript:void(0);">+</a>
-	    				</div>
-    				<a class="add-order" href="javascript:void(0);">add</a>
-    			</div>
-    		</div>
-    		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-    			<div class="dish">
-    				<span class="price">$7</span>
-	    			<h3 class="name-dish">pork crepes<br/>fruit bowl</h3>
-	    			<figure>
-	    				<div class="image" style="background-image: url(client/images/menu/bowl.png);"></div>
-	    				<figcaption>
-	    					<h3 class="name-for-ingridients">crepes:</h3>
-	    					<p class="ingridients">Flour, Eggs, Milk, Butter, Puller Pork, Potatoes, Onion Jam, Mascarpone Cheese</p>
-	    					<h3 class="name-for-ingridients">fruit bowl:</h3>
-	    					<p class="ingridients">Orange, Grapefruit, Apple, Strawberries</p>
-	    				</figcaption>
-	    			</figure>
-	    			<div class="counter">
-	    					<a href="javascript:void(0);">-</a>
-	    					<span>0</span>
-	    					<a href="javascript:void(0);">+</a>
-	    				</div>
-    				<a class="add-order" href="javascript:void(0);">add</a>
-    			</div>
-    		</div>
-    		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-    			<div class="dish">
-    				<span class="price">$7</span>
-	    			<h3 class="name-dish">breakfast quesadilla<br/>apple bread pudding</h3>
-	    			<figure>
-	    				<div class="image" style="background-image: url(client/images/menu/pudding.png);"></div>
-	    				<figcaption>
-	    					<h3 class="name-for-ingridients">quesadilla:</h3>
-	    					<p class="ingridients">Tortialla, Eggs, Italian Mild Pork Sausage, Red Pepper, Green Onions, Salt and Pepper</p>
-	    					<h3 class="name-for-ingridients">oatmel cookie:</h3>
-	    					<p class="ingridients">Flour, Walnut, Salt, Eggs, Oats</p>
-	    				</figcaption>
-	    			</figure>
-	    			<div class="counter">
-	    					<a href="javascript:void(0);">-</a>
-	    					<span>0</span>
-	    					<a href="javascript:void(0);">+</a>
-	    				</div>
-    				<a class="add-order" href="javascript:void(0);">add</a>
-    			</div>
-    		</div>
-    		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-    			<div class="dish">
-    				<span class="price">$7</span>
-	    			<h3 class="name-dish">english egg muffin<br/>banana bread</h3>
-	    			<figure>
-	    				<div class="image" style="background-image: url(client/images/menu/egg-muffin.png);"></div>
-	    				<figcaption>
-	    					<h3 class="name-for-ingridients">sandwich:</h3>
-	    					<p class="ingridients">Multi-grain English Muffins, Ham, Egg, Avocado, Cheddar Cheese, Salt and Pepper</p>
-	    					<h3 class="name-for-ingridients">banana bread</h3>
-	    					<p class="ingridients">Banana, Egg, Sugar, Butter, Canola Oil, Flour, Soda, Walnuts, Cranberries, Salt</p>
-	    				</figcaption>
-	    			</figure>
-	    			<div class="counter">
-	    					<a href="javascript:void(0);">-</a>
-	    					<span>0</span>
-	    					<a href="javascript:void(0);">+</a>
-	    				</div>
-    				<a class="add-order" href="javascript:void(0);">add</a>
-    			</div>
-    		</div>
-    		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-    			<div class="dish">
-    				<span class="price">$7</span>
-	    			<h3 class="name-dish">breakfast quinoa salad<br/>banana bread</h3>
-	    			<figure>
-	    				<div class="image" style="background-image: url(client/images/menu/salad.png);"></div>
-	    				<figcaption>
-	    					<h3 class="name-for-ingridients">omelette:</h3>
-	    					<p class="ingridients">Eggs, Red Pepper, Green Onions, Mushrooms,Avocado</p>
-	    					<h3 class="name-for-ingridients">banana muffin:</h3>
-	    					<p class="ingridients">Banana, Egg, Sugar, Butter, Canola Oil, Flour,Soda, Walnuts, Cranberries, Salt</p>
-	    				</figcaption>
-	    			</figure>
-	    			<div class="counter">
-	    					<a href="javascript:void(0);">-</a>
-	    					<span>0</span>
-	    					<a href="javascript:void(0);">+</a>
-	    				</div>
-    				<a class="add-order" href="javascript:void(0);">add</a>
-    			</div>
-    		</div>
-    		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-    			<div class="dish">
-    				<span class="price">$7</span>
-	    			<h3 class="name-dish">breakfast burrito<br/>banana bread</h3>
-	    			<figure>
-	    				<div class="image" style="background-image: url(client/images/menu/burrito.png);"></div>
-	    				<figcaption>
-	    					<h3 class="name-for-ingridients">burrito:</h3>
-	    					<p class="ingridients">Tortilla, Potatoes, Pulled Pork, Bacon, Eggs, Red Pepper, Green Onions, Mild Cheddar Cheese, Avocado, Salt and Pepper</p>
-	    					<h3 class="name-for-ingridients">banana bread</h3>
-	    					<p class="ingridients">Banana, Egg, Sugar, Butter, Canola Oil, Flour,Soda, Walnuts, Cranberries, Salt</p>
-	    				</figcaption>
-	    			</figure>
-	    			<div class="counter">
-	    					<a href="javascript:void(0);">-</a>
-	    					<span>0</span>
-	    					<a href="javascript:void(0);">+</a>
-	    				</div>
-    				<a class="add-order" href="javascript:void(0);">add</a>
-    			</div>
-    		</div>
-    	</div>
+        <div class="row">
+            <div class="col-lg 12 col-md-12 col-sm-12 col-xs-12">
+                <h2>menu</h2>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="dish">
+                    <span class="price">$7</span>
+
+                    <h3 class="name-dish">veggie omelette<br/>banana muffin</h3>
+                    <figure>
+                        <div class="image" style="background-image: url(client/images/menu/omelette.png);"></div>
+                        <figcaption>
+                            <h3 class="name-for-ingridients">omelette:</h3>
+
+                            <p class="ingridients">Eggs, Red Pepper, Green Onions, Mushrooms,Avocado</p>
+
+                            <h3 class="name-for-ingridients">banana muffin:</h3>
+
+                            <p class="ingridients">Banana, Egg, Sugar, Butter, Canola Oil, Flour,Soda, Walnuts,
+                                Cranberries, Salt</p>
+                        </figcaption>
+                    </figure>
+                    <div class="counter">
+                        <a href="javascript:void(0);">-</a>
+                        <!-- <span>0</span> -->
+                        <input type="number" placeholder="0" min="0" max="99">
+                        <a href="javascript:void(0);">+</a>
+                    </div>
+                    <a class="add-order" href="javascript:void(0);">add</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="dish">
+                    <span class="price">$7</span>
+
+                    <h3 class="name-dish">pork crepes<br/>fruit bowl</h3>
+                    <figure>
+                        <div class="image" style="background-image: url(client/images/menu/bowl.png);"></div>
+                        <figcaption>
+                            <h3 class="name-for-ingridients">crepes:</h3>
+
+                            <p class="ingridients">Flour, Eggs, Milk, Butter, Puller Pork, Potatoes, Onion Jam,
+                                Mascarpone Cheese</p>
+
+                            <h3 class="name-for-ingridients">fruit bowl:</h3>
+
+                            <p class="ingridients">Orange, Grapefruit, Apple, Strawberries</p>
+                        </figcaption>
+                    </figure>
+                    <div class="counter">
+                        <a href="javascript:void(0);">-</a>
+                        <span>0</span>
+                        <a href="javascript:void(0);">+</a>
+                    </div>
+                    <a class="add-order" href="javascript:void(0);">add</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="dish">
+                    <span class="price">$7</span>
+
+                    <h3 class="name-dish">breakfast quesadilla<br/>apple bread pudding</h3>
+                    <figure>
+                        <div class="image" style="background-image: url(client/images/menu/pudding.png);"></div>
+                        <figcaption>
+                            <h3 class="name-for-ingridients">quesadilla:</h3>
+
+                            <p class="ingridients">Tortialla, Eggs, Italian Mild Pork Sausage, Red Pepper, Green Onions,
+                                Salt and Pepper</p>
+
+                            <h3 class="name-for-ingridients">oatmel cookie:</h3>
+
+                            <p class="ingridients">Flour, Walnut, Salt, Eggs, Oats</p>
+                        </figcaption>
+                    </figure>
+                    <div class="counter">
+                        <a href="javascript:void(0);">-</a>
+                        <span>0</span>
+                        <a href="javascript:void(0);">+</a>
+                    </div>
+                    <a class="add-order" href="javascript:void(0);">add</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="dish">
+                    <span class="price">$7</span>
+
+                    <h3 class="name-dish">english egg muffin<br/>banana bread</h3>
+                    <figure>
+                        <div class="image" style="background-image: url(client/images/menu/egg-muffin.png);"></div>
+                        <figcaption>
+                            <h3 class="name-for-ingridients">sandwich:</h3>
+
+                            <p class="ingridients">Multi-grain English Muffins, Ham, Egg, Avocado, Cheddar Cheese, Salt
+                                and Pepper</p>
+
+                            <h3 class="name-for-ingridients">banana bread</h3>
+
+                            <p class="ingridients">Banana, Egg, Sugar, Butter, Canola Oil, Flour, Soda, Walnuts,
+                                Cranberries, Salt</p>
+                        </figcaption>
+                    </figure>
+                    <div class="counter">
+                        <a href="javascript:void(0);">-</a>
+                        <span>0</span>
+                        <a href="javascript:void(0);">+</a>
+                    </div>
+                    <a class="add-order" href="javascript:void(0);">add</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="dish">
+                    <span class="price">$7</span>
+
+                    <h3 class="name-dish">breakfast quinoa salad<br/>banana bread</h3>
+                    <figure>
+                        <div class="image" style="background-image: url(client/images/menu/salad.png);"></div>
+                        <figcaption>
+                            <h3 class="name-for-ingridients">omelette:</h3>
+
+                            <p class="ingridients">Eggs, Red Pepper, Green Onions, Mushrooms,Avocado</p>
+
+                            <h3 class="name-for-ingridients">banana muffin:</h3>
+
+                            <p class="ingridients">Banana, Egg, Sugar, Butter, Canola Oil, Flour,Soda, Walnuts,
+                                Cranberries, Salt</p>
+                        </figcaption>
+                    </figure>
+                    <div class="counter">
+                        <a href="javascript:void(0);">-</a>
+                        <span>0</span>
+                        <a href="javascript:void(0);">+</a>
+                    </div>
+                    <a class="add-order" href="javascript:void(0);">add</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="dish">
+                    <span class="price">$7</span>
+
+                    <h3 class="name-dish">breakfast burrito<br/>banana bread</h3>
+                    <figure>
+                        <div class="image" style="background-image: url(client/images/menu/burrito.png);"></div>
+                        <figcaption>
+                            <h3 class="name-for-ingridients">burrito:</h3>
+
+                            <p class="ingridients">Tortilla, Potatoes, Pulled Pork, Bacon, Eggs, Red Pepper, Green
+                                Onions, Mild Cheddar Cheese, Avocado, Salt and Pepper</p>
+
+                            <h3 class="name-for-ingridients">banana bread</h3>
+
+                            <p class="ingridients">Banana, Egg, Sugar, Butter, Canola Oil, Flour,Soda, Walnuts,
+                                Cranberries, Salt</p>
+                        </figcaption>
+                    </figure>
+                    <div class="counter">
+                        <a href="javascript:void(0);">-</a>
+                        <span>0</span>
+                        <a href="javascript:void(0);">+</a>
+                    </div>
+                    <a class="add-order" href="javascript:void(0);">add</a>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="work" class="work container">
         <div class="row">
@@ -230,8 +270,8 @@
                 </figcaption>
             </figure>
         </div>
-            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                <hr/>
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+            <hr/>
         </div>
     </section>
     <section id="about" class="about">
@@ -239,7 +279,14 @@
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                     <h2>about us</h2>
-                    <p>This person is in charge of all activities related to the kitchen, which usually includes menu creation,management of kitchen staff,ordering and purchasing of inventory, and plating design. Chef de cuisine is the traditional French term from which the English word chef is derived. Head chef is often used to designate someone with the same duties as an executive chef, but there is usually someone in charge of a head chef,possibly making the larger executive decisions such as direction of menu, final authority in staff management decisions, etc. This is often the case for executive chefs with multiple restaurants.</p>
+
+                    <p>This person is in charge of all activities related to the kitchen, which usually includes menu
+                        creation,management of kitchen staff,ordering and purchasing of inventory, and plating design.
+                        Chef de cuisine is the traditional French term from which the English word chef is derived. Head
+                        chef is often used to designate someone with the same duties as an executive chef, but there is
+                        usually someone in charge of a head chef,possibly making the larger executive decisions such as
+                        direction of menu, final authority in staff management decisions, etc. This is often the case
+                        for executive chefs with multiple restaurants.</p>
                 </div>
                 <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
                     <ul class="contacts">
@@ -263,10 +310,16 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 style-bgc">
                     <h2>what people say</h2>
                     <span class="icon-stars"></span>
-                    <p class="comment">“The experience of eating real breakfast every morning befor work is a lifesaver! It is so easy to heat it up, eat and forget about hunger till lunch.”</p>
+
+                    <p class="comment">“The experience of eating real breakfast every morning befor work is a lifesaver!
+                        It is so easy to heat it up, eat and forget about hunger till lunch.”</p>
+
                     <p class="author">by Boris Nasunov on April 14, 2015</p>
                     <span class="icon-stars"></span>
-                    <p class="comment">“The experience of eating real breakfast every morning befor work is a lifesaver! It is so easy to heat it up, eat and forget about hunger till lunch.”</p>
+
+                    <p class="comment">“The experience of eating real breakfast every morning befor work is a lifesaver!
+                        It is so easy to heat it up, eat and forget about hunger till lunch.”</p>
+
                     <p class="author">by Boris Nasunov on April 14, 2015</p>
                 </div>
             </div>
@@ -293,19 +346,42 @@
                     <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-sm-10 col-sm-offset-1">
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="meals">
-                                <p class="text-question">This person is in charge of all activities related to the kitchen, which usually includes menu creation, management of kitchen staff, ordering and purchasing?</p>
-                                <p class="text-answer">Сhef is derived. Head chef is often used to designate someone with the same duties as an executive chef, but there is usually someone in charge of a head chef.</p>
+                                <p class="text-question">This person is in charge of all activities related to the
+                                    kitchen, which usually includes menu creation, management of kitchen staff, ordering
+                                    and purchasing?</p>
+
+                                <p class="text-answer">Сhef is derived. Head chef is often used to designate someone
+                                    with the same duties as an executive chef, but there is usually someone in charge of
+                                    a head chef.</p>
                                 <br/>
-                                <p class="text-question">This person is in charge of all activities related to the kitchen, which usually includes menu creation, management of kitchen staff, ordering and purchasing?</p>
-                                <p class="text-answer">Сhef is derived. Head chef is often used to designate someone with the same duties as an executive chef, but there is usually someone in charge of a head chef.Сhef is derived. Head chef is often used to designate someone with the same duties as an executive chef, but there is usually someone in charge of a head chef.</p>
+
+                                <p class="text-question">This person is in charge of all activities related to the
+                                    kitchen, which usually includes menu creation, management of kitchen staff, ordering
+                                    and purchasing?</p>
+
+                                <p class="text-answer">Сhef is derived. Head chef is often used to designate someone
+                                    with the same duties as an executive chef, but there is usually someone in charge of
+                                    a head chef.Сhef is derived. Head chef is often used to designate someone with the
+                                    same duties as an executive chef, but there is usually someone in charge of a head
+                                    chef.</p>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="subscription">
-                                <p class="text-question">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit accusamus fugiat autem tempora minima a tenetur cupiditate nulla quisquam, eligendi in unde corporis, nihil laboriosam.</p>
-                                <p class="text-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, reiciendis, officia. Quia nobis blanditiis in, itaque sequi minima numquam eaque.</p>
+                                <p class="text-question">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+                                    accusamus fugiat autem tempora minima a tenetur cupiditate nulla quisquam, eligendi
+                                    in unde corporis, nihil laboriosam.</p>
+
+                                <p class="text-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
+                                    reiciendis, officia. Quia nobis blanditiis in, itaque sequi minima numquam
+                                    eaque.</p>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="delivery">
-                                <p class="text-question">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit accusamus fugiat autem tempora minima a tenetur cupiditate nulla quisquam, eligendi in unde corporis, nihil laboriosam.</p>
-                                <p class="text-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, reiciendis, officia. Quia nobis blanditiis in, itaque sequi minima numquam eaque.</p>
+                                <p class="text-question">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+                                    accusamus fugiat autem tempora minima a tenetur cupiditate nulla quisquam, eligendi
+                                    in unde corporis, nihil laboriosam.</p>
+
+                                <p class="text-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
+                                    reiciendis, officia. Quia nobis blanditiis in, itaque sequi minima numquam
+                                    eaque.</p>
                             </div>
                         </div>
                     </div>
@@ -324,6 +400,7 @@
                 <li><a href="javascript:void(0);"></a></li>
             </ul>
             <p>Copyright © 2015 Breakfasty.</p>
+
             <p>All rights reserved and other such important stuff.</p>
         </div>
     </div>
