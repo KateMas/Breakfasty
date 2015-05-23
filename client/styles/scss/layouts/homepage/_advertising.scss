@@ -42,7 +42,7 @@
 			font-size: 18px;
 		}
 	}
-	.button-discount {
+	.button {
 		width: 300px;
 		margin-top: 60px;
 		margin-bottom: 122px;
@@ -84,35 +84,6 @@
 		padding-top: 20px;
 		padding-bottom: 20px;
 		font-family: 'Open Sans', sans-serif;
-
-		input {
-			display: block;
-			width: 260px;
-			height: 40px;
-			margin: auto;
-			padding-left: 10px;
-			background-color: #fff;
-			outline: none;
-			font-weight: 400;
-			font-size: 16px;
-			color: #555353;
-			@include user-select(none);
-			@include placeholder {
-				font-weight: 300;
-				font-size: 16px;
-				color: #555353;
-			}
-			&:focus {
-				padding-left: 10px;
-				font-size: 16px;
-				font-weight: 400;
-				color: #555353;
-				@include placeholder {
-					color: transparent;
-				}
-				@include transition-duration (400ms);
-			}
-		}
 		button {
 			width: 180px;
 			height: 40px;

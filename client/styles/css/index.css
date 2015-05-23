@@ -4586,6 +4586,188 @@ body.homepage .container-background {
   background-repeat: no-repeat;
 }
 
+/* line 1, ../scss/components/_input.scss */
+input[type=number] {
+  width: 50px;
+  height: 33px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  padding: 0;
+  font-size: 33px;
+  font-weight: 300;
+  text-align: center;
+  color: #000000;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+/* line 2, ../scss/mixins/_spin-button.scss */
+input[type=number]::-webkit-outer-spin-button {
+  display: none;
+  margin: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+/* line 3, ../scss/mixins/_spin-button.scss */
+input[type=number]::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+/* line 2, ../scss/mixins/_placeholder.scss */
+input[type=number]::-webkit-input-placeholder {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  font-size: 45px;
+  color: #000000;
+}
+/* line 3, ../scss/mixins/_placeholder.scss */
+input[type=number]::-moz-placeholder {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  font-size: 45px;
+  color: #000000;
+}
+/* line 4, ../scss/mixins/_placeholder.scss */
+input[type=number]:-moz-placeholder {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  font-size: 45px;
+  color: #000000;
+}
+/* line 5, ../scss/mixins/_placeholder.scss */
+input[type=number]:-ms-input-placeholder {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  font-size: 45px;
+  color: #000000;
+}
+/* line 25, ../scss/components/_input.scss */
+input[type=number]:focus {
+  font-size: 33px;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+}
+/* line 2, ../scss/mixins/_placeholder.scss */
+input[type=number]:focus::-webkit-input-placeholder {
+  font-size: 0;
+  color: transparent;
+}
+/* line 3, ../scss/mixins/_placeholder.scss */
+input[type=number]:focus::-moz-placeholder {
+  font-size: 0;
+  color: transparent;
+}
+/* line 4, ../scss/mixins/_placeholder.scss */
+input[type=number]:focus:-moz-placeholder {
+  font-size: 0;
+  color: transparent;
+}
+/* line 5, ../scss/mixins/_placeholder.scss */
+input[type=number]:focus:-ms-input-placeholder {
+  font-size: 0;
+  color: transparent;
+}
+/* line 2, ../scss/mixins/_placeholder.scss */
+input[type=number]:active::-webkit-input-placeholder {
+  color: transparent;
+}
+/* line 3, ../scss/mixins/_placeholder.scss */
+input[type=number]:active::-moz-placeholder {
+  color: transparent;
+}
+/* line 4, ../scss/mixins/_placeholder.scss */
+input[type=number]:active:-moz-placeholder {
+  color: transparent;
+}
+/* line 5, ../scss/mixins/_placeholder.scss */
+input[type=number]:active:-ms-input-placeholder {
+  color: transparent;
+}
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+    margin: 0;
+}*/
+/*input[type=number] {
+    -moz-appearance:textfield;
+}*/
+/* line 48, ../scss/components/_input.scss */
+input[type=email] {
+  display: block;
+  width: 260px;
+  height: 40px;
+  margin: auto;
+  padding-left: 10px;
+  background-color: #ffffff;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: #555353;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+/* line 2, ../scss/mixins/_placeholder.scss */
+input[type=email]::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  color: #555353;
+}
+/* line 3, ../scss/mixins/_placeholder.scss */
+input[type=email]::-moz-placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  color: #555353;
+}
+/* line 4, ../scss/mixins/_placeholder.scss */
+input[type=email]:-moz-placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  color: #555353;
+}
+/* line 5, ../scss/mixins/_placeholder.scss */
+input[type=email]:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  color: #555353;
+}
+/* line 65, ../scss/components/_input.scss */
+input[type=email]:focus {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #555353;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+}
+/* line 2, ../scss/mixins/_placeholder.scss */
+input[type=email]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+/* line 3, ../scss/mixins/_placeholder.scss */
+input[type=email]:focus::-moz-placeholder {
+  color: transparent;
+}
+/* line 4, ../scss/mixins/_placeholder.scss */
+input[type=email]:focus:-moz-placeholder {
+  color: transparent;
+}
+/* line 5, ../scss/mixins/_placeholder.scss */
+input[type=email]:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
 /* line 1, ../scss/widgets/_footer.scss */
 footer {
   padding-bottom: 87px;
@@ -5145,7 +5327,7 @@ body.homepage .advertising p {
   }
 }
 /* line 45, ../scss/layouts/homepage/_advertising.scss */
-body.homepage .advertising .button-discount {
+body.homepage .advertising .button {
   width: 300px;
   margin-top: 60px;
   margin-bottom: 122px;
@@ -5162,7 +5344,7 @@ body.homepage .advertising .button-discount {
 }
 @media (max-width: 767px) {
   /* line 45, ../scss/layouts/homepage/_advertising.scss */
-  body.homepage .advertising .button-discount {
+  body.homepage .advertising .button {
     width: 200px;
     margin-top: 30px;
     margin-bottom: 70px;
@@ -5171,7 +5353,7 @@ body.homepage .advertising .button-discount {
   }
 }
 /* line 64, ../scss/layouts/homepage/_advertising.scss */
-body.homepage .advertising .button-discount:focus {
+body.homepage .advertising .button:focus {
   border: none;
   outline: none;
 }
@@ -5201,75 +5383,7 @@ body.homepage .advertising form {
   padding-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 88, ../scss/layouts/homepage/_advertising.scss */
-body.homepage .advertising form input {
-  display: block;
-  width: 260px;
-  height: 40px;
-  margin: auto;
-  padding-left: 10px;
-  background-color: #fff;
-  outline: none;
-  font-weight: 400;
-  font-size: 16px;
-  color: #555353;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-}
-/* line 2, ../scss/mixins/_placeholder.scss */
-body.homepage .advertising form input::-webkit-input-placeholder {
-  font-weight: 300;
-  font-size: 16px;
-  color: #555353;
-}
-/* line 3, ../scss/mixins/_placeholder.scss */
-body.homepage .advertising form input::-moz-placeholder {
-  font-weight: 300;
-  font-size: 16px;
-  color: #555353;
-}
-/* line 4, ../scss/mixins/_placeholder.scss */
-body.homepage .advertising form input:-moz-placeholder {
-  font-weight: 300;
-  font-size: 16px;
-  color: #555353;
-}
-/* line 5, ../scss/mixins/_placeholder.scss */
-body.homepage .advertising form input:-ms-input-placeholder {
-  font-weight: 300;
-  font-size: 16px;
-  color: #555353;
-}
-/* line 105, ../scss/layouts/homepage/_advertising.scss */
-body.homepage .advertising form input:focus {
-  padding-left: 10px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #555353;
-  -webkit-transition-duration: 400ms;
-  transition-duration: 400ms;
-}
-/* line 2, ../scss/mixins/_placeholder.scss */
-body.homepage .advertising form input:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-/* line 3, ../scss/mixins/_placeholder.scss */
-body.homepage .advertising form input:focus::-moz-placeholder {
-  color: transparent;
-}
-/* line 4, ../scss/mixins/_placeholder.scss */
-body.homepage .advertising form input:focus:-moz-placeholder {
-  color: transparent;
-}
-/* line 5, ../scss/mixins/_placeholder.scss */
-body.homepage .advertising form input:focus:-ms-input-placeholder {
-  color: transparent;
-}
-/* line 116, ../scss/layouts/homepage/_advertising.scss */
+/* line 87, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form button {
   width: 180px;
   height: 40px;
@@ -5569,7 +5683,7 @@ body.homepage .about .contacts li .envelope {
 body.homepage .comments {
   padding-top: 58px;
   padding-bottom: 58px;
-  background-image: url(../../../client/images/opinion/background.png);
+  background-image: url(../../../client/images/comments/background.png);
   background-size: cover;
   background-position: 100% 100%;
   background-repeat: no-repeat;
@@ -5636,7 +5750,7 @@ body.homepage .comments .style-bgc .icon-stars {
   height: 31px;
   margin-left: 5%;
   margin-bottom: 32px;
-  background-image: url(../../../client/images/opinion/star.png);
+  background-image: url(../../../client/images/comments/star.png);
   background-repeat: repeat-x;
 }
 /* line 51, ../scss/layouts/homepage/_comments.scss */
@@ -6004,15 +6118,6 @@ body.homepage .menu .dish .counter {
   font-family: 'Roboto', sans-serif;
   font-size: 0;
   line-height: 33px;
-  /* input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-      display: none;
-      -webkit-appearance: none;
-      margin: 0;
-  }*/
-  /*input[type=number] {
-      -moz-appearance:textfield;
-  }*/
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   /* line 120, ../scss/layouts/homepage/_menu.scss */
@@ -6035,9 +6140,9 @@ body.homepage .menu .dish .counter {
 /* line 136, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter a {
   display: inline-block;
-  width: 31px;
-  height: 31px;
-  font-size: 30px;
+  width: 33px;
+  height: 33px;
+  font-size: 33px;
   font-weight: 400;
   line-height: 31px;
   text-align: center;
@@ -6075,82 +6180,6 @@ body.homepage .menu .dish .counter a:last-child {
   background-color: #fbb97f;
 }
 /* line 164, ../scss/layouts/homepage/_menu.scss */
-body.homepage .menu .dish .counter input {
-  width: 50px;
-  height: 33px;
-  border: none;
-  outline: none;
-  margin-top: -2px;
-  margin-right: 10px;
-  padding: 0;
-  font-size: 33px;
-  font-weight: 300;
-  text-align: center;
-  color: #000000;
-  -moz-appearance: textfield;
-  -webkit-appearance: textfield;
-}
-/* line 2, ../scss/mixins/_spin-button.scss */
-body.homepage .menu .dish .counter input::-webkit-outer-spin-button {
-  display: none;
-  margin: 0;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
-/* line 3, ../scss/mixins/_spin-button.scss */
-body.homepage .menu .dish .counter input::-webkit-inner-spin-button {
-  display: none;
-  margin: 0;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
-/* line 2, ../scss/mixins/_placeholder.scss */
-body.homepage .menu .dish .counter input::-webkit-input-placeholder {
-  font-weight: 300;
-  font-size: 47px;
-  color: #000000;
-}
-/* line 3, ../scss/mixins/_placeholder.scss */
-body.homepage .menu .dish .counter input::-moz-placeholder {
-  font-weight: 300;
-  font-size: 47px;
-  color: #000000;
-}
-/* line 4, ../scss/mixins/_placeholder.scss */
-body.homepage .menu .dish .counter input:-moz-placeholder {
-  font-weight: 300;
-  font-size: 47px;
-  color: #000000;
-}
-/* line 5, ../scss/mixins/_placeholder.scss */
-body.homepage .menu .dish .counter input:-ms-input-placeholder {
-  font-weight: 300;
-  font-size: 47px;
-  color: #000000;
-}
-/* line 187, ../scss/layouts/homepage/_menu.scss */
-body.homepage .menu .dish .counter input:focus {
-  font-size: 33px;
-  -webkit-transition-duration: 400ms;
-  transition-duration: 400ms;
-}
-/* line 2, ../scss/mixins/_placeholder.scss */
-body.homepage .menu .dish .counter input:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-/* line 3, ../scss/mixins/_placeholder.scss */
-body.homepage .menu .dish .counter input:focus::-moz-placeholder {
-  color: transparent;
-}
-/* line 4, ../scss/mixins/_placeholder.scss */
-body.homepage .menu .dish .counter input:focus:-moz-placeholder {
-  color: transparent;
-}
-/* line 5, ../scss/mixins/_placeholder.scss */
-body.homepage .menu .dish .counter input:focus:-ms-input-placeholder {
-  color: transparent;
-}
-/* line 204, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter span {
   display: inline-block;
   width: 50px;
@@ -6161,25 +6190,25 @@ body.homepage .menu .dish .counter span {
   text-align: center;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 204, ../scss/layouts/homepage/_menu.scss */
+  /* line 164, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter span {
     margin-right: 5px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 204, ../scss/layouts/homepage/_menu.scss */
+  /* line 164, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter span {
     margin-right: 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 204, ../scss/layouts/homepage/_menu.scss */
+  /* line 164, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter span {
     margin-right: 10px;
   }
 }
-/* line 223, ../scss/layouts/homepage/_menu.scss */
-body.homepage .menu .dish .add-order {
+/* line 183, ../scss/layouts/homepage/_menu.scss */
+body.homepage .menu .dish .button {
   float: right;
   width: 130px;
   margin: 38px 26px 0 0;
@@ -6192,23 +6221,23 @@ body.homepage .menu .dish .add-order {
   color: #ffffff;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 223, ../scss/layouts/homepage/_menu.scss */
-  body.homepage .menu .dish .add-order {
+  /* line 183, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .button {
     width: 110px;
     margin: 32px 20px 0 0;
     line-height: 36px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 223, ../scss/layouts/homepage/_menu.scss */
-  body.homepage .menu .dish .add-order {
+  /* line 183, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .button {
     width: 110px;
     margin: 28px 26px 0 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 223, ../scss/layouts/homepage/_menu.scss */
-  body.homepage .menu .dish .add-order {
+  /* line 183, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .button {
     width: 90px;
     margin: 18px 26px 0 0;
   }
