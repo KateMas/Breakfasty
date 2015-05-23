@@ -5179,7 +5179,7 @@ header.nav-style .container .cart sup {
 
 /* line 1, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising {
-  padding-top: 122px;
+  padding-top: 164px;
   background-image: url(../../../client/images/advertising/background-table.png);
   background-size: cover;
   background-position: center;
@@ -5190,19 +5190,18 @@ body.homepage .advertising {
 @media (min-width: 768px) and (max-width: 979px) {
   /* line 1, ../scss/layouts/homepage/_advertising.scss */
   body.homepage .advertising {
-    padding-top: 112px;
+    padding-top: 154px;
   }
 }
 @media (max-width: 767px) {
   /* line 1, ../scss/layouts/homepage/_advertising.scss */
   body.homepage .advertising {
-    padding-top: 80px;
+    padding-top: 122px;
   }
 }
 /* line 15, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising img {
   width: 750px;
-  padding-top: 42px;
 }
 @media (min-width: 768px) and (max-width: 979px) {
   /* line 15, ../scss/layouts/homepage/_advertising.scss */
@@ -5216,7 +5215,7 @@ body.homepage .advertising img {
     width: 300px;
   }
 }
-/* line 25, ../scss/layouts/homepage/_advertising.scss */
+/* line 24, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising h1 {
   margin: 0;
   padding-top: 55px;
@@ -5225,26 +5224,26 @@ body.homepage .advertising h1 {
   font-weight: 400;
 }
 @media (max-width: 767px) {
-  /* line 25, ../scss/layouts/homepage/_advertising.scss */
+  /* line 24, ../scss/layouts/homepage/_advertising.scss */
   body.homepage .advertising h1 {
     padding-top: 30px;
     padding-bottom: 14px;
     font-size: 30px;
   }
 }
-/* line 37, ../scss/layouts/homepage/_advertising.scss */
+/* line 36, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising p {
   margin: 0;
   font-size: 27px;
   font-weight: 300;
 }
 @media (max-width: 767px) {
-  /* line 37, ../scss/layouts/homepage/_advertising.scss */
+  /* line 36, ../scss/layouts/homepage/_advertising.scss */
   body.homepage .advertising p {
     font-size: 18px;
   }
 }
-/* line 45, ../scss/layouts/homepage/_advertising.scss */
+/* line 44, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .button {
   width: 300px;
   margin-top: 60px;
@@ -5263,7 +5262,7 @@ body.homepage .advertising .button {
   border-radius: 0;
 }
 @media (max-width: 767px) {
-  /* line 45, ../scss/layouts/homepage/_advertising.scss */
+  /* line 44, ../scss/layouts/homepage/_advertising.scss */
   body.homepage .advertising .button {
     width: 200px;
     margin-top: 30px;
@@ -5272,42 +5271,42 @@ body.homepage .advertising .button {
     line-height: 50px;
   }
 }
-/* line 66, ../scss/layouts/homepage/_advertising.scss */
+/* line 65, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .button:focus {
   border: none;
   outline: none;
 }
-/* line 71, ../scss/layouts/homepage/_advertising.scss */
+/* line 70, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 73, ../scss/layouts/homepage/_advertising.scss */
+/* line 72, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content .modal-sm-header {
   border: none;
 }
-/* line 75, ../scss/layouts/homepage/_advertising.scss */
+/* line 74, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content .modal-sm-header button {
   float: right;
   border: none;
   background-color: transparent;
 }
-/* line 79, ../scss/layouts/homepage/_advertising.scss */
+/* line 78, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content .modal-sm-header button span {
   font-size: 20px;
 }
-/* line 85, ../scss/layouts/homepage/_advertising.scss */
+/* line 84, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 89, ../scss/layouts/homepage/_advertising.scss */
+/* line 88, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form input {
   margin: auto;
 }
-/* line 92, ../scss/layouts/homepage/_advertising.scss */
+/* line 91, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form button {
   width: 180px;
   height: 40px;

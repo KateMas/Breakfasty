@@ -1,5 +1,5 @@
 .advertising {
-	padding-top: 122px;
+	padding-top: 164px;
 	background-image: url(../../../client/images/advertising/background-table.png);
 	background-size: cover;
 	background-position: center;
@@ -7,14 +7,13 @@
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	@include breakpoint(small) {
-		padding-top: 112px;
+		padding-top: 154px;
 	}
 	@include breakpoint(extra-xs-small) {
-		padding-top: 80px;
+		padding-top: 122px;
 	}
 	img {
 		width: 750px;
-		padding-top: 42px;
 		@include breakpoint(small) {
 			width: 600px
 		}
