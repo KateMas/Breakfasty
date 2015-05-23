@@ -117,7 +117,7 @@
 				}
 			}
 		}
-		.counter {
+		/* .counter {
 			float: left;
 			height: 33px;
 			margin: 45px 0 50px 17px;
@@ -178,6 +178,36 @@
 				@include breakpoint(extra-xs-small) {
 					margin-right: 10px;
 				}
+			}
+		} */
+		.counter {
+			position: relative;
+			float: left;
+			width: 136px;
+			height: 33px;
+			margin: 45px 0 50px 17px;
+			font-family: 'Roboto', sans-serif;
+			font-size: 0;
+			line-height: 33px;
+			a {
+				position: absolute;
+				display: inline-block;
+				width: 33px;
+				height: 33px;
+				font-size: 33px;
+				font-weight: 400;
+				line-height: 32px;
+				text-align: center;
+				color: #ffffff;
+				@include border-radius(50%);
+			}
+			.order-minus {
+					left: 0px;
+					background-color: #cccccc;
+				}
+			.order-plus {
+				left: 103px;
+				background-color: #fbb97f;
 			}
 		}
 		.button {
