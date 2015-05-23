@@ -6041,7 +6041,21 @@ body.homepage .menu .dish .counter {
   font-family: 'Roboto', sans-serif;
   font-size: 0;
 }
-/* line 126, ../scss/layouts/homepage/_menu.scss */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 120, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter {
+    padding-top: 20px;
+    padding-bottom: 23px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 120, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter {
+    padding-top: 20px;
+    padding-bottom: 23px;
+  }
+}
+/* line 134, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter a {
   display: inline-block;
   width: 33px;
@@ -6056,44 +6070,44 @@ body.homepage .menu .dish .counter a {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 138, ../scss/layouts/homepage/_menu.scss */
+/* line 146, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter .order-minus {
   margin-right: 10px;
   background-color: #cccccc;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 138, ../scss/layouts/homepage/_menu.scss */
+  /* line 146, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter .order-minus {
     margin-right: 5px;
   }
 }
 @media (max-width: 767px) {
-  /* line 138, ../scss/layouts/homepage/_menu.scss */
+  /* line 146, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter .order-minus {
     margin-right: 5px;
   }
 }
-/* line 148, ../scss/layouts/homepage/_menu.scss */
+/* line 156, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter .order-plus {
   background-color: #fbb97f;
 }
-/* line 151, ../scss/layouts/homepage/_menu.scss */
+/* line 159, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter input {
   margin-right: 10px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 151, ../scss/layouts/homepage/_menu.scss */
+  /* line 159, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter input {
     margin-right: 5px;
   }
 }
 @media (max-width: 767px) {
-  /* line 151, ../scss/layouts/homepage/_menu.scss */
+  /* line 159, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter input {
     margin-right: 5px;
   }
 }
-/* line 160, ../scss/layouts/homepage/_menu.scss */
+/* line 168, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter button {
   float: right;
   width: 130px;
@@ -6110,20 +6124,20 @@ body.homepage .menu .dish .counter button {
   color: #ffffff;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 160, ../scss/layouts/homepage/_menu.scss */
+  /* line 168, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter button {
     width: 110px;
     margin-right: 17px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 160, ../scss/layouts/homepage/_menu.scss */
+  /* line 168, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter button {
     width: 110px;
   }
 }
 @media (max-width: 767px) {
-  /* line 160, ../scss/layouts/homepage/_menu.scss */
+  /* line 168, ../scss/layouts/homepage/_menu.scss */
   body.homepage .menu .dish .counter button {
     width: 90px;
   }

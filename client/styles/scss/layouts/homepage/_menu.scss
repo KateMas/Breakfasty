@@ -123,6 +123,14 @@
 			padding-left: 17px;
 			font-family: 'Roboto', sans-serif;
 			font-size: 0;
+			@include breakpoint(small) {
+				padding-top: 20px;
+				padding-bottom: 23px;
+			}
+			@include breakpoint(extra-xs-small) {
+				padding-top: 20px;
+				padding-bottom: 23px;
+			}
 			a {
 				display: inline-block;
 				width: 33px;
