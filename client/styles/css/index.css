@@ -4589,12 +4589,11 @@ body.homepage .container-background {
 /* line 1, ../scss/components/_input.scss */
 input[type=number] {
   width: 50px;
-  height: 33px;
   border: none;
   outline: none;
   margin-right: 10px;
   padding: 0;
-  font-size: 33px;
+  font-size: 47px;
   font-weight: 300;
   text-align: center;
   color: #000000;
@@ -4617,80 +4616,20 @@ input[type=number]::-webkit-inner-spin-button {
   -moz-appearance: none;
   -webkit-appearance: none;
 }
-/* line 2, ../scss/mixins/_placeholder.scss */
-input[type=number]::-webkit-input-placeholder {
-  padding: 0;
-  margin: 0;
-  font-weight: 300;
-  font-size: 45px;
-  color: #000000;
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 1, ../scss/components/_input.scss */
+  input[type=number] {
+    margin-right: 5px;
+  }
 }
-/* line 3, ../scss/mixins/_placeholder.scss */
-input[type=number]::-moz-placeholder {
-  padding: 0;
-  margin: 0;
-  font-weight: 300;
-  font-size: 45px;
-  color: #000000;
-}
-/* line 4, ../scss/mixins/_placeholder.scss */
-input[type=number]:-moz-placeholder {
-  padding: 0;
-  margin: 0;
-  font-weight: 300;
-  font-size: 45px;
-  color: #000000;
-}
-/* line 5, ../scss/mixins/_placeholder.scss */
-input[type=number]:-ms-input-placeholder {
-  padding: 0;
-  margin: 0;
-  font-weight: 300;
-  font-size: 45px;
-  color: #000000;
-}
-/* line 26, ../scss/components/_input.scss */
-input[type=number]:focus {
-  font-size: 33px;
-}
-/* line 2, ../scss/mixins/_placeholder.scss */
-input[type=number]:focus::-webkit-input-placeholder {
-  font-size: 0;
-  color: transparent;
-}
-/* line 3, ../scss/mixins/_placeholder.scss */
-input[type=number]:focus::-moz-placeholder {
-  font-size: 0;
-  color: transparent;
-}
-/* line 4, ../scss/mixins/_placeholder.scss */
-input[type=number]:focus:-moz-placeholder {
-  font-size: 0;
-  color: transparent;
-}
-/* line 5, ../scss/mixins/_placeholder.scss */
-input[type=number]:focus:-ms-input-placeholder {
-  font-size: 0;
-  color: transparent;
-}
-/* line 2, ../scss/mixins/_placeholder.scss */
-input[type=number]:active::-webkit-input-placeholder {
-  color: transparent;
-}
-/* line 3, ../scss/mixins/_placeholder.scss */
-input[type=number]:active::-moz-placeholder {
-  color: transparent;
-}
-/* line 4, ../scss/mixins/_placeholder.scss */
-input[type=number]:active:-moz-placeholder {
-  color: transparent;
-}
-/* line 5, ../scss/mixins/_placeholder.scss */
-input[type=number]:active:-ms-input-placeholder {
-  color: transparent;
+@media (max-width: 767px) {
+  /* line 1, ../scss/components/_input.scss */
+  input[type=number] {
+    margin-right: 5px;
+  }
 }
 
-/* line 39, ../scss/components/_input.scss */
+/* line 25, ../scss/components/_input.scss */
 input[type=email] {
   display: block;
   width: 260px;
@@ -4733,7 +4672,7 @@ input[type=email]:-ms-input-placeholder {
   font-size: 16px;
   color: #555353;
 }
-/* line 56, ../scss/components/_input.scss */
+/* line 42, ../scss/components/_input.scss */
 input[type=email]:focus {
   padding-left: 10px;
   font-size: 16px;
@@ -5324,6 +5263,8 @@ body.homepage .advertising .button {
   margin-bottom: 122px;
   padding: 0;
   background-color: #ff7800;
+  border: none;
+  outline: none;
   font-family: 'Roboto', sans-serif;
   font-size: 27px;
   font-weight: 400;
@@ -5343,38 +5284,38 @@ body.homepage .advertising .button {
     line-height: 50px;
   }
 }
-/* line 64, ../scss/layouts/homepage/_advertising.scss */
+/* line 66, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .button:focus {
   border: none;
   outline: none;
 }
-/* line 69, ../scss/layouts/homepage/_advertising.scss */
+/* line 71, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 71, ../scss/layouts/homepage/_advertising.scss */
+/* line 73, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content .modal-sm-header {
   border: none;
 }
-/* line 73, ../scss/layouts/homepage/_advertising.scss */
+/* line 75, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content .modal-sm-header button {
   float: right;
   border: none;
   background-color: transparent;
 }
-/* line 77, ../scss/layouts/homepage/_advertising.scss */
+/* line 79, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content .modal-sm-header button span {
   font-size: 20px;
 }
-/* line 83, ../scss/layouts/homepage/_advertising.scss */
+/* line 85, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 87, ../scss/layouts/homepage/_advertising.scss */
+/* line 89, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form button {
   width: 180px;
   height: 40px;
@@ -5957,69 +5898,6 @@ body.homepage .menu h2 {
 body.homepage .menu .dish {
   margin-top: 50px;
   border: 1px solid #c7c7c7;
-  /* .counter {
-  	float: left;
-  	height: 33px;
-  	margin: 45px 0 50px 17px;
-  	font-family: 'Roboto', sans-serif;
-  	font-size: 0;
-  	line-height: 33px;
-  	@include breakpoint(midle) {
-  		margin: 35px 0 30px 17px;
-  	}
-  	@include breakpoint(small) {
-  		margin: 35px 0 40px 20px;
-  	}
-  	@include breakpoint(extra-xs-small) {
-  		margin: 25px 0 30px 17px;
-  	}
-  	a {
-  		display: inline-block;
-  		width: 33px;
-  		height: 33px;
-  		font-size: 33px;
-  		font-weight: 400;
-  		line-height: 31px;
-  		text-align: center;
-  		vertical-align: top;
-  		color: #ffffff;
-  		@include border-radius(50%);
-  		&:first-child {
-  			margin-right: 10px;
-  			background-color: #cccccc;
-  			@include breakpoint(midle) {
-  				margin-right: 5px;
-  			}
-  			@include breakpoint(small) {
-  				margin-right: 20px;
-  			}
-  			@include breakpoint(extra-xs-small) {
-  				margin-right: 10px;
-  			}
-  		}
-  		&:last-child {
-  			background-color: #fbb97f;
-  		}
-  	}
-  	span {
-  		display: inline-block;
-  		width: 50px;
-  		height: 33px;
-  		margin-right: 10px;
-  		font-size: 48px;
-  		font-weight: 300;
-  		text-align: center;
-  		@include breakpoint(midle) {
-  			margin-right: 5px;
-  		}
-  		@include breakpoint(small) {
-  			margin-right: 20px;
-  		}
-  		@include breakpoint(extra-xs-small) {
-  			margin-right: 10px;
-  		}
-  	}
-  } */
 }
 @media (max-width: 767px) {
   /* line 21, ../scss/layouts/homepage/_menu.scss */
@@ -6164,47 +6042,58 @@ body.homepage .menu .dish figure figcaption .ingridients {
     line-height: 26px;
   }
 }
-/* line 183, ../scss/layouts/homepage/_menu.scss */
+/* line 120, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter {
-  position: relative;
-  float: left;
-  height: 33px;
-  margin: 45px 0 50px 17px;
+  padding-top: 40px;
+  padding-bottom: 43px;
+  padding-left: 17px;
   font-family: 'Roboto', sans-serif;
   font-size: 0;
-  line-height: 33px;
 }
-/* line 191, ../scss/layouts/homepage/_menu.scss */
+/* line 126, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter a {
-  position: absolute;
   display: inline-block;
   width: 33px;
   height: 33px;
   font-size: 33px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 31px;
   text-align: center;
+  vertical-align: text-bottom;
   color: #ffffff;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 203, ../scss/layouts/homepage/_menu.scss */
+/* line 138, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter .order-minus {
-  left: 30px;
+  margin-right: 10px;
   background-color: #cccccc;
 }
-/* line 207, ../scss/layouts/homepage/_menu.scss */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 138, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter .order-minus {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 138, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter .order-minus {
+    margin-right: 5px;
+  }
+}
+/* line 148, ../scss/layouts/homepage/_menu.scss */
 body.homepage .menu .dish .counter .order-plus {
-  left: 50px;
   background-color: #fbb97f;
 }
-/* line 212, ../scss/layouts/homepage/_menu.scss */
-body.homepage .menu .dish .button {
+/* line 151, ../scss/layouts/homepage/_menu.scss */
+body.homepage .menu .dish .counter button {
   float: right;
   width: 130px;
-  margin: 38px 26px 0 0;
+  margin-top: 9px;
+  margin-right: 20px;
   background-color: #ff7800;
+  border: none;
   font-size: 24px;
   font-weight: 500;
   line-height: 48px;
@@ -6213,24 +6102,21 @@ body.homepage .menu .dish .button {
   color: #ffffff;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 212, ../scss/layouts/homepage/_menu.scss */
-  body.homepage .menu .dish .button {
+  /* line 151, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter button {
     width: 110px;
-    margin: 32px 20px 0 0;
-    line-height: 36px;
+    margin-right: 17px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 212, ../scss/layouts/homepage/_menu.scss */
-  body.homepage .menu .dish .button {
+  /* line 151, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter button {
     width: 110px;
-    margin: 28px 26px 0 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 212, ../scss/layouts/homepage/_menu.scss */
-  body.homepage .menu .dish .button {
+  /* line 151, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter button {
     width: 90px;
-    margin: 18px 26px 0 0;
   }
 }
