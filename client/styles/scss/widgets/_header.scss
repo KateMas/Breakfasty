@@ -14,10 +14,10 @@ header {
 		background-color: transparent;
 		border: none;
 		font-size: 22px;
-		@include breakpoint(midle) {
+		@include breakpoint(middle) {
 			font-size: 20px;
 		}
-		@include breakpoint(extra-midle) {
+		@include breakpoint(extra-middle) {
 			font-size: 20px;
 		}
 		@include breakpoint(small) {
@@ -73,7 +73,7 @@ header {
 					}
 					sup {
 						top: 17px;
-						@include breakpoint(midle) {
+						@include breakpoint(middle) {
 							top: 19px;
 						}
 					}
@@ -84,11 +84,11 @@ header {
 			position: relative;
 			padding-right: 95px;
 			padding-left: 80px;
-			@include breakpoint(midle) {
+			@include breakpoint(middle) {
 				padding-right: 15px;
 				padding-left: 15px;
 			}
-			@include breakpoint(extra-midle) {
+			@include breakpoint(extra-middle) {
 				padding-right: 15px;
 				padding-left: 15px;
 			}
@@ -132,7 +132,7 @@ header {
 					display: inline-block;
 					width: 224px;
 					height: 100%;
-					@include breakpoint(midle) {
+					@include breakpoint(middle) {
 						width: 200px;
 					}
 					@include breakpoint(small) {
@@ -168,10 +168,10 @@ header {
 				ul {
 					float: right;
 					padding-right: 65px;
-					@include breakpoint(midle) {
+					@include breakpoint(middle) {
 						padding-right: 65px;
 					}
-					@include breakpoint(extra-midle) {
+					@include breakpoint(extra-middle) {
 						padding-right: 65px;
 					}
 					@include breakpoint(small) {
@@ -185,7 +185,7 @@ header {
 					li {
 						margin-right: 44px;
 						text-transform: uppercase;
-						@include breakpoint(extra-midle) {
+						@include breakpoint(extra-middle) {
 							margin-right: 20px;
 						}
 						@include breakpoint(small) {
@@ -200,7 +200,7 @@ header {
 							color: #000000;
 							@include transition-property(color);
 							@include transition-duration(400ms);
-							@include breakpoint(midle) {
+							@include breakpoint(middle) {
 								line-height: 103px;
 							}
 							@include breakpoint(small) {
@@ -221,11 +221,11 @@ header {
 					top:30px;
 					right: 95px;
 					width: 65px;
-					@include breakpoint(midle) {
+					@include breakpoint(middle) {
 						top: 35px;
 						right: 15px;
 					}
-					@include breakpoint(extra-midle) {
+					@include breakpoint(extra-middle) {
 						top: 31px;
 						right: 15px;
 					}
@@ -249,10 +249,10 @@ header {
 						top: 16px;
 						left: 40px;
 						font-size: 22px;
-						@include breakpoint(midle) {
+						@include breakpoint(middle) {
 							top: 18px;
 						}
-						@include breakpoint(extra-midle) {
+						@include breakpoint(extra-middle) {
 							top: 19px;
 						}
 						@include breakpoint(small) {

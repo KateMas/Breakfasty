@@ -1,24 +1,76 @@
 .advertising {
-	padding-top: 164px;
+	padding-top: 144px;
+	padding-bottom: 122px;
 	background-image: url(../../../client/images/advertising/background-table.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
-	@include breakpoint(small) {
-		padding-top: 154px;
+	@include breakpoint(large-middle) {
+		padding-top: 124px;
+		padding-bottom: 100px;
+	}
+	@include breakpoint(large-small) {
+		padding-top: 124px;
+		padding-bottom: 80px;
+	}
+	@include breakpoint(middle-md) {
+		padding-top: 124px;
+		padding-bottom: 100px;
+	}
+	@include breakpoint(middle-small) {
+		padding-top: 124px;
+		padding-bottom: 80px;
+	}
+	@include breakpoint(extra-middle-md) {
+		padding-top: 124px;
+		padding-bottom: 100px;
+	}
+	@include breakpoint(extra-middle-small) {
+		padding-top: 124px;
+		padding-bottom: 80px;
+	}
+	@include breakpoint(small-middle) {
+		padding-top: 124px;
+		padding-bottom: 100px;
+	}
+	@include breakpoint(small-sm) {
+		padding-top: 124px;
+		padding-bottom: 80px;
 	}
 	@include breakpoint(extra-xs-small) {
-		padding-top: 122px;
+		padding-top: 102px;
+		padding-bottom: 70px;
 	}
 	img {
-		width: 750px;
-		@include breakpoint(small) {
-			width: 600px
+		width: 730px;
+		@include breakpoint(large-middle) {
+			width: 550px;
+		}
+		@include breakpoint(large-small) {
+			width: 500px;
+		}
+		@include breakpoint(middle-md) {
+			width: 550px;
+		}
+		@include breakpoint(middle-small) {
+			width: 500px;
+		}
+		@include breakpoint(extra-middle-md) {
+			width: 550px;
+		}
+		@include breakpoint(extra-middle-small) {
+			width: 500px;
+		}
+		@include breakpoint(small-middle) {
+			width: 550px;
+		}
+		@include breakpoint(small-sm) {
+			width: 500px;
 		}
 		@include breakpoint(extra-xs-small) {
-			width: 300px;
+			width: 280px;
 		}
 	}
 	h1 {
@@ -27,9 +79,45 @@
 		padding-bottom: 34px;
 		font-size: 61px;
 		font-weight: 400;
-		@include breakpoint(extra-xs-small) {
-			padding-top: 30px;
+		@include breakpoint(large-middle) {
+			padding-top: 35px;
+			padding-bottom: 24px;
+		}
+		@include breakpoint(large-small) {
+			padding-top: 25px;
 			padding-bottom: 14px;
+			font-size: 45px;
+		}
+		@include breakpoint(middle-md) {
+			padding-top: 35px;
+			padding-bottom: 24px;
+		}
+		@include breakpoint(middle-small) {
+			padding-top: 25px;
+			padding-bottom: 14px;
+			font-size: 45px;
+		}
+		@include breakpoint(extra-middle-md) {
+			padding-top: 35px;
+			padding-bottom: 24px;
+		}
+		@include breakpoint(extra-middle-small) {
+			padding-top: 25px;
+			padding-bottom: 14px;
+			font-size: 45px;
+		}
+		@include breakpoint(small-middle) {
+			padding-top: 35px;
+			padding-bottom: 24px;
+		}
+		@include breakpoint(small-sm) {
+			padding-top: 25px;
+			padding-bottom: 14px;
+			font-size: 45px;
+		}
+		@include breakpoint(extra-xs-small) {
+			padding-top: 20px;
+			padding-bottom: 10px;
 			font-size: 30px;
 		}
 	}
@@ -37,16 +125,27 @@
 		margin: 0;
 		font-size: 27px;
 		font-weight: 300;
+		@include breakpoint(large-small) {
+			font-size: 24px;
+		}
+		@include breakpoint(middle-small) {
+			font-size: 24px;
+		}
+		@include breakpoint(extra-middle-small) {
+			font-size: 24px;
+		}
+		@include breakpoint(small-sm) {
+			font-size: 24px;
+		}
 		@include breakpoint(extra-xs-small) {
 			font-size: 18px;
 		}
 	}
-	.button {
+	.large-button {
 		width: 300px;
 		margin-top: 60px;
-		margin-bottom: 122px;
 		padding: 0;
-		background-color: #ff7800;
+		//background-color: #ff7800;
 		border: none;
 		outline: none;
 		font-family: 'Roboto', sans-serif;
@@ -55,10 +154,37 @@
 		line-height: 80px;
 		text-transform: uppercase;
 		@include border-radius(0);
+		@include breakpoint(large-middle) {
+			margin-top: 30px;
+		}
+		@include breakpoint(large-small) {
+			margin-top: 20px;
+			line-height: 60px;
+		}
+		@include breakpoint(middle-md) {
+			margin-top: 30px;
+		}
+		@include breakpoint(middle-small) {
+			margin-top: 20px;
+			line-height: 60px;
+		}
+		@include breakpoint(extra-middle-md) {
+			margin-top: 30px;
+		}
+		@include breakpoint(extra-middle-small) {
+			margin-top: 20px;
+			line-height: 60px;
+		}
+		@include breakpoint(small-middle) {
+			margin-top: 30px;
+		}
+		@include breakpoint(small-sm) {
+			margin-top: 20px;
+			line-height: 60px;
+		}
 		@include breakpoint(extra-xs-small) {
 			width: 200px;
-			margin-top: 30px;
-			margin-bottom: 70px;
+			margin-top: 20px;
 			font-size: 18px;
 			line-height: 50px;
 		}
@@ -92,7 +218,7 @@
 			width: 180px;
 			height: 40px;
 			margin-top: 20px;
-			background-color: #ff7800;
+			//background-color: #ff7800;
 			border: none;
 			font-size: 18px;
 			font-weight: 400;

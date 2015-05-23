@@ -13,9 +13,14 @@
 		font-weight: 300;
 		text-align: center;
 		text-transform: uppercase;
+		@include transition-property(color);
+		@include transition-duration(400ms);
 		@include breakpoint(extra-xs-small) {
 			margin: 0 0 18px 0;
 			font-size: 36px;
+		}
+		&:hover {
+			color: #b5b4b4;
 		}
 	}
 	.dish {
@@ -46,7 +51,7 @@
 			font-size: 24px;
 			font-weight: 300;
 			text-transform: uppercase;
-			@include breakpoint(midle) {
+			@include breakpoint(middle) {
 				padding: 55px 0 49px 22px;
 				font-size: 20px;
 			}
@@ -89,7 +94,7 @@
 				@include opacity(0);
 				@include transition-property(all);
 				@include transition-duration(400ms);
-				@include breakpoint(midle) {
+				@include breakpoint(middle) {
 					padding: 36px 23px 37px;
 				}
 				@include breakpoint(extra-xs-small) {
@@ -101,7 +106,7 @@
 					font-weight: 400;
 					line-height: 28px;
 					text-transform: uppercase;
-					@include breakpoint(midle) {
+					@include breakpoint(middle) {
 						font-size: 16px;
 						line-height: 26px;
 					}
@@ -110,7 +115,7 @@
 					font-size: 18px;
 					font-weight: 300;
 					line-height: 28px;
-					@include breakpoint(midle) {
+					@include breakpoint(middle) {
 						font-size: 16px;
 						line-height: 26px;
 					}
@@ -142,23 +147,37 @@
 				vertical-align: text-bottom;
 				color: #ffffff;
 				@include border-radius(50%);
+				@include transition-property(background-color);
+				@include transition-duration(400ms);
 			}
 			.order-minus {
 				margin-right: 10px;
 				background-color: #cccccc;
-				@include breakpoint(midle) {
+				@include breakpoint(middle) {
 					margin-right: 5px;
 				}
 				@include breakpoint(extra-xs-small) {
 					margin-right: 5px;
 				}
+				&:hover {
+					background-color: #d9d9d9;
+				}
+				&:active {
+					background-color: #adacac;
+				}
 			}
 			.order-plus {
 				background-color: #fbb97f;
+				&:hover {
+					background-color: #fecca0;
+				}
+				&:active {
+					background-color: #fe9c46;
+				}
 			}
 			input {
 				margin-right: 10px;
-				@include breakpoint(midle) {
+				@include breakpoint(middle) {
 					margin-right: 5px;
 				}
 				@include breakpoint(extra-xs-small) {
@@ -171,7 +190,7 @@
 				margin-top: 9px;
 				margin-right: 20px;
 				padding: 0;
-				background-color: #ff7800;
+				//background-color: #ff7800;
 				border: none;
 				font-size: 24px;
 				font-weight: 500;
@@ -179,7 +198,7 @@
 				text-align: center;
 				text-transform: uppercase;
 				color: #ffffff;
-				@include breakpoint(midle) {
+				@include breakpoint(middle) {
 					width: 110px;
 					margin-right: 17px;
 				}

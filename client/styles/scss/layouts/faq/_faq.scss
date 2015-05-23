@@ -1,14 +1,8 @@
 .faq {
-	padding-top: 102px;
-	padding-bottom: 128px;
+	padding-top: 144px;
 	font-family: 'Open Sans', sans-serif;
-	@include breakpoint(small) {
-		padding-top: 80px;
-		padding-bottom: 90px;
-	}
 	@include breakpoint(extra-xs-small) {
-		padding-top: 50px;
-		padding-bottom: 60px;
+		padding-top: 102px;
 	}
 	h2 {
 		margin: 0;
@@ -16,8 +10,13 @@
 		font-weight: 300;
 		text-align: center;
 		text-transform: uppercase;
+		@include transition-property(color);
+		@include transition-duration(400ms);
 		@include breakpoint(extra-xs-small) {
 			font-size: 36px;
+		}
+		&:hover {
+			color: #b5b4b4;
 		}
 	}
 	.position-tabs {

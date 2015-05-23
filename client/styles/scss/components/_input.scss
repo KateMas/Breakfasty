@@ -8,7 +8,6 @@ input[type=number] {
 	text-align: center;
 	color: #000000;
 	@include appearance(textfield);
-	@include transition-duration (400ms);
 	@include spin-button {
 		display: none;
 	    margin: 0;
