@@ -1,10 +1,10 @@
-button {
-	&.button {
+button.button, a.button {
+	//&.button {
 		padding: 0;
 		background-color: #ff7800;
 		border: none;
-		outline: none;
 		font-family: 'Roboto', sans-serif;
+		text-align: center;
 		text-transform: uppercase;
 		color: #ffffff;
 		@include border-radius(0px);
@@ -16,11 +16,7 @@ button {
 		&:active {
 			background-color: #db7215;
 		}
-		&:visited {
-			background-color: #ff7800;
-		}
 		&:focus {
-			background-color: #ff7800;
 			border: none;
 			outline: none;
 		}
@@ -38,9 +34,10 @@ button {
 		}
 		&.button-small {
 			width: 130px;
+			height: 48px;
 			font-size: 24px;
 			font-weight: 500;
 			line-height: 48px;
 		}
-	}
+	//}
 }

@@ -131,7 +131,7 @@
 				padding-top: 20px;
 				padding-bottom: 23px;
 			}
-			a {
+			.order-col {
 				display: inline-block;
 				width: 33px;
 				height: 33px;
@@ -179,19 +179,21 @@
 					margin-right: 5px;
 				}
 			}
-			.button-small {
-				float: right;
-				margin-top: 9px;
-				margin-right: 20px;
-				@include breakpoint(middle) {
-					width: 110px;
-					margin-right: 17px;
-				}
-				@include breakpoint(small) {
-					width: 110px;
-				}
-				@include breakpoint(extra-small) {
-					width: 90px;
+			a {
+				&.button-small {
+					float: right;
+					margin-top: 9px;
+					margin-right: 20px;
+					@include breakpoint(middle) {
+						width: 110px;
+						margin-right: 17px;
+					}
+					@include breakpoint(small) {
+						width: 110px;
+					}
+					@include breakpoint(extra-small) {
+						width: 90px;
+					}
 				}
 			}
 		}

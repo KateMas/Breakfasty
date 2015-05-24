@@ -40,6 +40,14 @@ footer {
 			}
 			a {
 				display: inline-block;
+				@include transition-property(all);
+				@include transition-duration(400ms);
+				&:hover {
+					@include opacity (0.7);
+				}
+				&:active {
+					@include opacity (0.9);
+				}
 			}
 			&:first-child {
 				a {

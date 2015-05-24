@@ -1,71 +1,6 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-/* line 5, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -4691,13 +4626,13 @@ input[type=email]:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-/* line 2, ../scss/components/_button.scss */
-button.button {
+/* line 1, ../scss/components/_button.scss */
+button.button, a.button {
   padding: 0;
   background-color: #ff7800;
   border: none;
-  outline: none;
   font-family: 'Roboto', sans-serif;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   -moz-border-radius: 0px;
@@ -4709,40 +4644,36 @@ button.button {
   transition-duration: 400ms;
 }
 /* line 13, ../scss/components/_button.scss */
-button.button:hover {
+button.button:hover, a.button:hover {
   background-color: #ffac63;
 }
 /* line 16, ../scss/components/_button.scss */
-button.button:active {
+button.button:active, a.button:active {
   background-color: #db7215;
 }
 /* line 19, ../scss/components/_button.scss */
-button.button:visited {
-  background-color: #ff7800;
-}
-/* line 22, ../scss/components/_button.scss */
-button.button:focus {
-  background-color: #ff7800;
+button.button:focus, a.button:focus {
   border: none;
   outline: none;
 }
-/* line 27, ../scss/components/_button.scss */
-button.button.button-large {
+/* line 23, ../scss/components/_button.scss */
+button.button.button-large, a.button.button-large {
   width: 300px;
   font-size: 27px;
   font-weight: 400;
   line-height: 80px;
 }
-/* line 33, ../scss/components/_button.scss */
-button.button.button-middle {
+/* line 29, ../scss/components/_button.scss */
+button.button.button-middle, a.button.button-middle {
   width: 180px;
   height: 40px;
   font-size: 18px;
   font-weight: 400;
 }
-/* line 39, ../scss/components/_button.scss */
-button.button.button-small {
+/* line 35, ../scss/components/_button.scss */
+button.button.button-small, a.button.button-small {
   width: 130px;
+  height: 48px;
   font-size: 24px;
   font-weight: 500;
   line-height: 48px;
@@ -4816,27 +4747,41 @@ footer ul li {
 /* line 41, ../scss/widgets/_footer.scss */
 footer ul li a {
   display: inline-block;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
 }
 /* line 45, ../scss/widgets/_footer.scss */
+footer ul li a:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+/* line 48, ../scss/widgets/_footer.scss */
+footer ul li a:active {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+/* line 53, ../scss/widgets/_footer.scss */
 footer ul li:first-child a {
   width: 20px;
   height: 38px;
 }
-/* line 52, ../scss/widgets/_footer.scss */
+/* line 60, ../scss/widgets/_footer.scss */
 footer ul li:nth-child(2) a {
   width: 35px;
   height: 35px;
 }
-/* line 58, ../scss/widgets/_footer.scss */
+/* line 66, ../scss/widgets/_footer.scss */
 footer ul li:last-child {
   margin-right: 0;
 }
-/* line 60, ../scss/widgets/_footer.scss */
+/* line 68, ../scss/widgets/_footer.scss */
 footer ul li:last-child a {
   width: 32px;
   height: 41px;
 }
-/* line 68, ../scss/widgets/_footer.scss */
+/* line 76, ../scss/widgets/_footer.scss */
 footer p {
   margin: 0;
   font-size: 18px;
@@ -4845,7 +4790,7 @@ footer p {
   color: #333333;
 }
 @media (max-width: 767px) {
-  /* line 68, ../scss/widgets/_footer.scss */
+  /* line 76, ../scss/widgets/_footer.scss */
   footer p {
     font-size: 14px;
   }
@@ -5573,20 +5518,28 @@ body.homepage .advertising .modal-sm-content .modal-sm-header button {
   border: none;
 }
 /* line 190, ../scss/layouts/homepage/_advertising.scss */
+body.homepage .advertising .modal-sm-content .modal-sm-header button:focus {
+  outline: none;
+}
+/* line 193, ../scss/layouts/homepage/_advertising.scss */
+body.homepage .advertising .modal-sm-content .modal-sm-header button:active {
+  outline: none;
+}
+/* line 196, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content .modal-sm-header button span {
   font-size: 20px;
 }
-/* line 196, ../scss/layouts/homepage/_advertising.scss */
+/* line 202, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 200, ../scss/layouts/homepage/_advertising.scss */
+/* line 206, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form input {
   margin: auto;
 }
-/* line 203, ../scss/layouts/homepage/_advertising.scss */
+/* line 209, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form .button-middle {
   margin-top: 20px;
 }
@@ -6172,7 +6125,7 @@ body.homepage .menu .dish .counter {
   }
 }
 /* line 134, ../scss/layouts/homepage/_menu.scss */
-body.homepage .menu .dish .counter a {
+body.homepage .menu .dish .counter .order-col {
   display: inline-block;
   width: 33px;
   height: 33px;
@@ -6243,28 +6196,28 @@ body.homepage .menu .dish .counter input {
     margin-right: 5px;
   }
 }
-/* line 182, ../scss/layouts/homepage/_menu.scss */
-body.homepage .menu .dish .counter .button-small {
+/* line 183, ../scss/layouts/homepage/_menu.scss */
+body.homepage .menu .dish .counter a.button-small {
   float: right;
   margin-top: 9px;
   margin-right: 20px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 182, ../scss/layouts/homepage/_menu.scss */
-  body.homepage .menu .dish .counter .button-small {
+  /* line 183, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter a.button-small {
     width: 110px;
     margin-right: 17px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 182, ../scss/layouts/homepage/_menu.scss */
-  body.homepage .menu .dish .counter .button-small {
+  /* line 183, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter a.button-small {
     width: 110px;
   }
 }
 @media (max-width: 767px) {
-  /* line 182, ../scss/layouts/homepage/_menu.scss */
-  body.homepage .menu .dish .counter .button-small {
+  /* line 183, ../scss/layouts/homepage/_menu.scss */
+  body.homepage .menu .dish .counter a.button-small {
     width: 90px;
   }
 }
