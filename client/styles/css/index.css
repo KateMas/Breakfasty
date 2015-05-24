@@ -4759,8 +4759,8 @@ footer ul li a:hover {
 }
 /* line 48, ../scss/widgets/_footer.scss */
 footer ul li a:active {
-  opacity: 0.9;
-  filter: alpha(opacity=90);
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 /* line 53, ../scss/widgets/_footer.scss */
 footer ul li:first-child a {
