@@ -1,273 +1,274 @@
 header {
-	width: 100%;
-	padding-top: 19px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	@include breakpoint(extra-small) {
-		padding-top: 9px;
-		padding-bottom: 9px;
-		background-color: rgba(#ffffff,0.9);
-	}
-	&.nav-style {
-		position: fixed;
-		z-index: 1;
-		background-color: transparent;
-		border: none;
-		font-size: 22px;
-		@include breakpoint(middle) {
-			font-size: 20px;
-		}
-		@include breakpoint(extra-middle) {
-			font-size: 20px;
-		}
-		@include breakpoint(small) {
-			font-size: 18px;
-		}
-		@include breakpoint(extra-small) {
-			min-height: 58px;
-			background-color: rgba(#ffffff,0.9);
-			font-size: 18px;
-			@include box-shadow (0 1px 3px 0 rgba(#000000,0.15));
-		}
-		&.scroll {
-			min-height: 58px;
-			padding-top: 9px;
-			padding-bottom: 9px;
-			background-color: rgba(#ffffff,0.9);
-			font-size: 18px;
-			@include box-shadow (0 1px 3px 0 rgba(#000000,0.15));
-			.container	 {
-				padding-right: 45px;
-				padding-left: 30px;
-				@include breakpoint(extra-small) {
-					padding-right: 15px;
-					padding-left: 15px;
-				}
-				.nav-button {
-					.logo-header {
-						width: 130px;
-						height: 58px;
-						img {
-							width: 130px;
-							height: 58px;
-						}
-						p {
-							display: none;
-						}
-					}
-				}
-				.list {
-					ul {
-						li {
-							margin-right: 36px;
-							a {
-								line-height: 58px;
-							}
-						}
-					}
-				}
-				.cart {
-					top:11px;
-					right: 45px;
-					@include breakpoint(extra-small) {
-						top: 15px;
-						right: 65px;
-					}
-					sup {
-						top: 17px;
-						@include breakpoint(middle) {
-							top: 19px;
-						}
-					}
-				}
-			}
-		}
-		.container {
-			position: relative;
-			padding-right: 95px;
-			padding-left: 80px;
-			@include breakpoint(middle) {
-				padding-right: 15px;
-				padding-left: 15px;
-			}
-			@include breakpoint(extra-middle) {
-				padding-right: 15px;
-				padding-left: 15px;
-			}
-			@include breakpoint(small) {
-				padding-right: 15px;
-				padding-left: 15px;
-			}
-			@include breakpoint(extra-small) {
-				padding-right: 15px;
-				padding-left: 15px;
-			}
-			.nav-button {
-				.but-style {
-					margin-top: 43px;
-					border: none;
-					@include breakpoint(extra-small) {
-						margin: 14px 0 0 0;
-					}
-					&:hover {
-						.icon-color {
-							background-color: #ff7800;
-						}
-					}
-					.icon-color {
-						height: 3px;
-						background-color: #ff7800;
-					}
-				}
-				.collapsed {
-		            background-color: transparent;
-		            .icon-bar {
-		            	background-color: #888888;
-		            }
-		        }
-		        .navbar-toggle {
-		        	&:focus {
-		            	background-color: transparent;
-		            }
-		        }
-				.logo-header {
-					display: inline-block;
-					width: 224px;
-					height: 100%;
-					@include breakpoint(middle) {
-						width: 200px;
-					}
-					@include breakpoint(small) {
-						width: 200px;
-					}
-					@include breakpoint(extra-small) {
-						width: 130px;
-					}
-					img {
-						@include breakpoint(small) {
-							width: 160px;
-						}
-						@include breakpoint(extra-small) {
-							width: 130px;
-							height: 58px;
-						}
-					}
-					p {
-						margin: 0;
-						font-family: 'Open Sans', sans-serif;
-						font-size: 12px;
-						font-weight: 600;
-						text-align: right;
-						color: #000000;
-						@include breakpoint(extra-small) {
-							display: none;
-						}
-					}
-				}
-			}
-			.list {
-				border:none;
-				ul {
-					float: right;
-					padding-right: 65px;
-					@include breakpoint(middle) {
-						padding-right: 65px;
-					}
-					@include breakpoint(extra-middle) {
-						padding-right: 65px;
-					}
-					@include breakpoint(small) {
-						padding-right: 65px;
-					}
-					@include breakpoint(extra-small) {
-						float: none;
-						padding-right: 0;
-						text-align: center;
-					}
-					li {
-						margin-right: 44px;
-						text-transform: uppercase;
-						@include breakpoint(extra-middle) {
-							margin-right: 20px;
-						}
-						@include breakpoint(small) {
-							margin-right: 20px;
-						}
-						@include breakpoint(extra-small) {
-							margin: 0;
-						}
-						a {
-							padding: 0;
-							line-height: 93px;
-							color: #000000;
-							@include transition-property(color);
-							@include transition-duration(400ms);
-							@include breakpoint(middle) {
-								line-height: 103px;
-							}
-							@include breakpoint(small) {
-								line-height: 93px;
-							}
-							@include breakpoint(extra-small) {
-								line-height: 50px;
-							}
-							&:hover {
-								color: #ff7800;
-							}
-						}
-					}
-				}
-			}
-			.cart {
-					position: absolute;
-					top:30px;
-					right: 95px;
-					width: 65px;
-					@include breakpoint(middle) {
-						top: 35px;
-						right: 15px;
-					}
-					@include breakpoint(extra-middle) {
-						top: 31px;
-						right: 15px;
-					}
-					@include breakpoint(small) {
-						top: 28px;
-						right: 15px;
-					}
-					@include breakpoint(extra-small) {
-						top: 15px;
-						right: 65px;
-					}
-					a {
-						display: inline-block;
-						width: 34px;
-						height: 34px;
-						background-image: url(../../../client/images/header/cart.png);
-						background-repeat: no-repeat;
-					}
-					sup {
-						position: absolute;
-						top: 16px;
-						left: 40px;
-						font-size: 22px;
-						@include breakpoint(middle) {
-							top: 18px;
-						}
-						@include breakpoint(extra-middle) {
-							top: 19px;
-						}
-						@include breakpoint(small) {
-							top: 20px;
-							font-size: 18px;
-						}
-						@include breakpoint(exrta-xs-small) {
-							top: 17px;
-						}
-					}
-				}
-		}
-	}
+    width: 100%;
+    padding-top: 19px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    @include breakpoint(extra-small) {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        background-color: rgba(#ffffff, 0.9);
+    }
+    &.nav-style {
+        position: absolute;
+        z-index: 1;
+        background-color: transparent;
+        border: none;
+        font-size: 22px;
+        @include breakpoint(middle) {
+            font-size: 20px;
+        }
+        @include breakpoint(extra-middle) {
+            font-size: 20px;
+        }
+        @include breakpoint(small) {
+            font-size: 18px;
+        }
+        @include breakpoint(extra-small) {
+            min-height: 58px;
+            background-color: rgba(#ffffff, 0.9);
+            font-size: 18px;
+            @include box-shadow(0 1px 3px 0 rgba(#000000, 0.15));
+        }
+        &.scroll {
+            position: fixed;
+            min-height: 58px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            background-color: rgba(#ffffff, 0.9);
+            font-size: 18px;
+            @include box-shadow(0 1px 3px 0 rgba(#000000, 0.15));
+            .container {
+                padding-right: 45px;
+                padding-left: 30px;
+                @include breakpoint(extra-small) {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+                .nav-button {
+                    .logo-header {
+                        width: 130px;
+                        height: 58px;
+                        img {
+                            width: 130px;
+                            height: 58px;
+                        }
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+                .list {
+                    ul {
+                        li {
+                            margin-right: 36px;
+                            a {
+                                line-height: 58px;
+                            }
+                        }
+                    }
+                }
+                .cart {
+                    top: 11px;
+                    right: 45px;
+                    @include breakpoint(extra-small) {
+                        top: 15px;
+                        right: 65px;
+                    }
+                    sup {
+                        top: 17px;
+                        @include breakpoint(middle) {
+                            top: 19px;
+                        }
+                    }
+                }
+            }
+        }
+        .container {
+            position: relative;
+            padding-right: 95px;
+            padding-left: 80px;
+            @include breakpoint(middle) {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            @include breakpoint(extra-middle) {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            @include breakpoint(small) {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            @include breakpoint(extra-small) {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .nav-button {
+                .but-style {
+                    margin-top: 43px;
+                    border: none;
+                    @include breakpoint(extra-small) {
+                        margin: 14px 0 0 0;
+                    }
+                    &:hover {
+                        .icon-color {
+                            background-color: #ff7800;
+                        }
+                    }
+                    .icon-color {
+                        height: 3px;
+                        background-color: #ff7800;
+                    }
+                }
+                .collapsed {
+                    background-color: transparent;
+                    .icon-bar {
+                        background-color: #888888;
+                    }
+                }
+                .navbar-toggle {
+                    &:focus {
+                        background-color: transparent;
+                    }
+                }
+                .logo-header {
+                    display: inline-block;
+                    width: 224px;
+                    height: 100%;
+                    @include breakpoint(middle) {
+                        width: 200px;
+                    }
+                    @include breakpoint(small) {
+                        width: 200px;
+                    }
+                    @include breakpoint(extra-small) {
+                        width: 130px;
+                    }
+                    img {
+                        @include breakpoint(small) {
+                            width: 160px;
+                        }
+                        @include breakpoint(extra-small) {
+                            width: 130px;
+                            height: 58px;
+                        }
+                    }
+                    p {
+                        margin: 0;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 12px;
+                        font-weight: 600;
+                        text-align: right;
+                        color: #000000;
+                        @include breakpoint(extra-small) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .list {
+                border: none;
+                ul {
+                    float: right;
+                    padding-right: 65px;
+                    @include breakpoint(middle) {
+                        padding-right: 65px;
+                    }
+                    @include breakpoint(extra-middle) {
+                        padding-right: 65px;
+                    }
+                    @include breakpoint(small) {
+                        padding-right: 65px;
+                    }
+                    @include breakpoint(extra-small) {
+                        float: none;
+                        padding-right: 0;
+                        text-align: center;
+                    }
+                    li {
+                        margin-right: 44px;
+                        text-transform: uppercase;
+                        @include breakpoint(extra-middle) {
+                            margin-right: 20px;
+                        }
+                        @include breakpoint(small) {
+                            margin-right: 20px;
+                        }
+                        @include breakpoint(extra-small) {
+                            margin: 0;
+                        }
+                        a {
+                            padding: 0;
+                            line-height: 93px;
+                            color: #000000;
+                            @include transition-property(color);
+                            @include transition-duration(400ms);
+                            @include breakpoint(middle) {
+                                line-height: 103px;
+                            }
+                            @include breakpoint(small) {
+                                line-height: 93px;
+                            }
+                            @include breakpoint(extra-small) {
+                                line-height: 50px;
+                            }
+                            &:hover {
+                                color: #ff7800;
+                            }
+                        }
+                    }
+                }
+            }
+            .cart {
+                position: absolute;
+                top: 30px;
+                right: 95px;
+                width: 65px;
+                @include breakpoint(middle) {
+                    top: 35px;
+                    right: 15px;
+                }
+                @include breakpoint(extra-middle) {
+                    top: 31px;
+                    right: 15px;
+                }
+                @include breakpoint(small) {
+                    top: 28px;
+                    right: 15px;
+                }
+                @include breakpoint(extra-small) {
+                    top: 15px;
+                    right: 65px;
+                }
+                a {
+                    display: inline-block;
+                    width: 34px;
+                    height: 34px;
+                    background-image: url(../../../client/images/header/cart.png);
+                    background-repeat: no-repeat;
+                }
+                sup {
+                    position: absolute;
+                    top: 16px;
+                    left: 40px;
+                    font-size: 22px;
+                    @include breakpoint(middle) {
+                        top: 18px;
+                    }
+                    @include breakpoint(extra-middle) {
+                        top: 19px;
+                    }
+                    @include breakpoint(small) {
+                        top: 20px;
+                        font-size: 18px;
+                    }
+                    @include breakpoint(exrta-xs-small) {
+                        top: 17px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

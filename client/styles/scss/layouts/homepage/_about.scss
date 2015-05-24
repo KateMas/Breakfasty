@@ -1,68 +1,68 @@
 .about {
-	padding-top: 126px;
-	padding-bottom: 164px;
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	@include breakpoint(small) {
-		padding-top: 75px;
-		padding-bottom: 100px;
-	}
-	@include breakpoint(extra-small) {
-		padding-top: 46px;
-		padding-bottom: 64px;
-	}
-	h2 {
-		padding-bottom: 83px;
-		color: #ffa264;
-		@include breakpoint(extra-small) {
-			padding-bottom: 33px;
-		}
-	}
-	p {
-		margin: 0;
-		font-size: 22px;
-		font-weight: 300;
-		line-height: 35px;
-		@include breakpoint(extra-small) {
-			font-size: 18px;
-		}
-	}
-	.contacts {
-		margin-top: 15px;
-		font-size: 0;
-		li {
-			display: inline-block;
-			font-size: 22px;
-			font-weight: 300;
-			@include breakpoint(extra-small) {
-				display: block;
-				font-size: 18px;
-				line-height: 35px;
-			}
-			&:first-child {
-				margin-right: 28px;
-			}
-			&:nth-child(2) {
-				margin-right: 25px;
-			}
-			a {
-				vertical-align: middle;
-				color: #000000;
-			}
-			span {
-				display: inline-block;
-				height: 22px;
-				margin-right: 17px;
-				vertical-align: middle;
-			}
-			.phone {
-				width: 14px;
-				@extend.about-phone;
-			}
-			.envelope {
-				width: 22px;
-				@extend.about-envelope;
-			}
-		}
-	}
+    padding-top: 126px;
+    padding-bottom: 164px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    @include breakpoint(small) {
+        padding-top: 75px;
+        padding-bottom: 100px;
+    }
+    @include breakpoint(extra-small) {
+        padding-top: 46px;
+        padding-bottom: 64px;
+    }
+    h2 {
+        padding-bottom: 83px;
+        color: #ffa264;
+        @include breakpoint(extra-small) {
+            padding-bottom: 33px;
+        }
+    }
+    p {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 35px;
+        @include breakpoint(extra-small) {
+            font-size: 18px;
+        }
+    }
+    .contacts {
+        margin-top: 15px;
+        font-size: 0;
+        li {
+            display: inline-block;
+            font-size: 22px;
+            font-weight: 300;
+            @include breakpoint(extra-small) {
+                display: block;
+                font-size: 18px;
+                line-height: 35px;
+            }
+            &:first-child {
+                margin-right: 28px;
+            }
+            &:nth-child(2) {
+                margin-right: 25px;
+            }
+            a {
+                vertical-align: middle;
+                color: #000000;
+            }
+            span {
+                display: inline-block;
+                height: 22px;
+                margin-right: 17px;
+                vertical-align: middle;
+            }
+            .phone {
+                width: 14px;
+                @extend .about-phone;
+            }
+            .envelope {
+                width: 22px;
+                @extend .about-envelope;
+            }
+        }
+    }
 }

@@ -2,11 +2,11 @@
 @import "compass/utilities/general/clearfix";
 @import "compass/utilities/sprites";
 @import "lib/bootstrap/bootstrap";
-
 //sprites
 @import "work/*.png";
 @import "about/*.png";
 @import "social/*.png";
+
 @include all-work-sprites;
 @include all-about-sprites;
 @include all-social-sprites;

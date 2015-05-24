@@ -1,77 +1,77 @@
 .comments {
-	padding-top: 58px;
-	padding-bottom: 58px;
-	background-image: url(../../../client/images/comments/background.png);
-	background-size: cover;
-	background-position: 100% 100%;
-	background-repeat: no-repeat;
-	font-family: 'Open Sans', sans-serif;
-	@include breakpoint(small) {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-	@include breakpoint(extra-small) {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-	.style-bgc {
-		padding-top: 80px;
-		padding-bottom: 6px;
-		background-color: #ffffff;
-		@include breakpoint(small) {
-			padding-top: 60px;
-		}
-		@include breakpoint(extra-small) {
-			padding-top: 40px;
-		}
-		h2 {
-			padding-bottom: 93px;
-			@include breakpoint(small) {
-				padding-bottom: 63px;
-			}
-			@include breakpoint(extra-small) {
-				padding-bottom: 33px;
-			}
-		}
-		.icon-stars {
-			display: inline-block;
-			width: 160px;
-			height: 31px;
-			margin-left: 5%;
-			margin-bottom: 32px;
-			background-image: url(../../../client/images/comments/star.png);
-			background-repeat: repeat-x;
-		}
-		.comment {
-			margin: 0 5%;
-			font-size: 22px;
-			font-weight: 300;
-			@include breakpoint(extra-small) {
-				font-size: 18px;
-			}
-		}
-		.author {
-			margin-right: 5%;
-			padding-bottom: 86px;
-			font-size: 18px;
-			font-weight: 300;
-			font-style: italic;
-			text-align: right;
-			color: #6e6e6e;
-			@include breakpoint(middle) {
-				padding-top: 10px;
-			}
-			@include breakpoint(extra-middle) {
-				padding-top: 10px;
-			}
-			@include breakpoint(small) {
-				padding-top: 10px;
-				padding-bottom: 60px;
-			}
-			@include breakpoint(extra-small) {
-				padding-top: 10px;
-				padding-bottom: 40px;
-			}
-		}
-	}
+    padding-top: 58px;
+    padding-bottom: 58px;
+    background-image: url(../../../client/images/comments/background.png);
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    @include breakpoint(small) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @include breakpoint(extra-small) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .style-bgc {
+        padding-top: 80px;
+        padding-bottom: 6px;
+        background-color: #ffffff;
+        @include breakpoint(small) {
+            padding-top: 60px;
+        }
+        @include breakpoint(extra-small) {
+            padding-top: 40px;
+        }
+        h2 {
+            padding-bottom: 93px;
+            @include breakpoint(small) {
+                padding-bottom: 63px;
+            }
+            @include breakpoint(extra-small) {
+                padding-bottom: 33px;
+            }
+        }
+        .icon-stars {
+            display: inline-block;
+            width: 160px;
+            height: 31px;
+            margin-left: 5%;
+            margin-bottom: 32px;
+            background-image: url(../../../client/images/comments/star.png);
+            background-repeat: repeat-x;
+        }
+        .comment {
+            margin: 0 5%;
+            font-size: 22px;
+            font-weight: 300;
+            @include breakpoint(extra-small) {
+                font-size: 18px;
+            }
+        }
+        .author {
+            margin-right: 5%;
+            padding-bottom: 86px;
+            font-size: 18px;
+            font-weight: 300;
+            font-style: italic;
+            text-align: right;
+            color: #6e6e6e;
+            @include breakpoint(middle) {
+                padding-top: 10px;
+            }
+            @include breakpoint(extra-middle) {
+                padding-top: 10px;
+            }
+            @include breakpoint(small) {
+                padding-top: 10px;
+                padding-bottom: 60px;
+            }
+            @include breakpoint(extra-small) {
+                padding-top: 10px;
+                padding-bottom: 40px;
+            }
+        }
+    }
 }

@@ -1,201 +1,201 @@
 .menu {
-	padding-top: 138px;
-	font-family: 'Open Sans', sans-serif;
-	@include breakpoint(small) {
-		padding-top: 80px;
-	}
-	@include breakpoint(extra-small) {
-		padding-top: 58px;
-	}
-	h2 {
-		padding-bottom: 38px;
-		@include transition-property(color);
-		@include transition-duration(400ms);
-		@include breakpoint(extra-small) {
-			padding-bottom: 18px;
-		}
-		&:hover {
-			color: #b5b4b4;
-		}
-	}
-	.dish {
-		margin-top: 50px;
-		border: 1px solid #c7c7c7;
-		@include breakpoint(extra-small) {
-			margin-top: 30px;
-		}
-		@include clearfix;
-		.price {
-			float: right;
-			padding: 8px 23px;
-			border-bottom: 1px solid #c7c7c7;
-			border-left: 1px solid #c7c7c7;
-			font-size: 36px;
-			font-weight: 300;
-			line-height: 27px;
-			@include breakpoint(medium) {
-				padding: 6px 21px;
-			}
-			@include breakpoint(extra-small) {
-				padding: 5px 18px;
-			}
-		}
-		.name-dish {
-			margin: 0;
-			padding: 55px 0 49px 42px;
-			font-size: 24px;
-			font-weight: 300;
-			text-transform: uppercase;
-			@include breakpoint(middle) {
-				padding: 55px 0 49px 22px;
-				font-size: 20px;
-			}
-			@include breakpoint(small) {
-				padding: 55px 0 49px 22px;
-				font-size: 20px;
-			}
-			@include breakpoint(extra-small) {
-				padding: 35px 0 29px 12px;
-				font-size: 20px;
-			}
-		}
-		figure {
-			position: relative;
-			width: 100%;
-			&:hover {
-				figcaption {
-					@include opacity(1);
-				}
-			}
-			.image {
-				overflow: hidden;
-				width: 100%;
-				height: 300px;
-				background-position:center;
-				background-size: cover;
-				background-repeat: no-repeat;
-				@include user-select(none);
-			}
-			figcaption {
-				position: absolute;
-				top: 0;
-				left: 0;
-				overflow: hidden;
-				display: block;
-				padding: 36px 43px 57px;
-				width: 100%;
-				height: 100%;
-				background-color: rgba(#ffffff, 0.8);
-				@include opacity(0);
-				@include transition-property(all);
-				@include transition-duration(400ms);
-				@include breakpoint(middle) {
-					padding: 36px 23px 37px;
-				}
-				@include breakpoint(extra-small) {
-					padding: 36px 23px 37px;
-				}
-				.name-for-ingridients {
-					margin: 0;
-					font-size: 18px;
-					font-weight: 400;
-					line-height: 28px;
-					text-transform: uppercase;
-					@include breakpoint(middle) {
-						font-size: 16px;
-						line-height: 26px;
-					}
-				}
-				.ingridients {
-					font-size: 18px;
-					font-weight: 300;
-					line-height: 28px;
-					@include breakpoint(middle) {
-						font-size: 16px;
-						line-height: 26px;
-					}
-				}
-			}
-		}
-		.counter {
-			padding-top: 40px;
-			padding-bottom: 43px;
-			padding-left: 17px;
-			font-family: 'Roboto', sans-serif;
-			font-size: 0;
-			@include breakpoint(small) {
-				padding-top: 20px;
-				padding-bottom: 23px;
-			}
-			@include breakpoint(extra-small) {
-				padding-top: 20px;
-				padding-bottom: 23px;
-			}
-			.order-col {
-				display: inline-block;
-				width: 33px;
-				height: 33px;
-				font-size: 33px;
-				font-weight: 400;
-				line-height: 31px;
-				text-align: center;
-				vertical-align: text-bottom;
-				color: #ffffff;
-				@include border-radius(50%);
-				@include transition-property(background-color);
-				@include transition-duration(400ms);
-			}
-			.order-minus {
-				margin-right: 10px;
-				background-color: #cccccc;
-				@include breakpoint(middle) {
-					margin-right: 5px;
-				}
-				@include breakpoint(extra-small) {
-					margin-right: 5px;
-				}
-				&:hover {
-					background-color: #d9d9d9;
-				}
-				&:active {
-					background-color: #adacac;
-				}
-			}
-			.order-plus {
-				background-color: #fbb97f;
-				&:hover {
-					background-color: #fecca0;
-				}
-				&:active {
-					background-color: #fe9c46;
-				}
-			}
-			input {
-				margin-right: 10px;
-				@include breakpoint(middle) {
-					margin-right: 5px;
-				}
-				@include breakpoint(extra-small) {
-					margin-right: 5px;
-				}
-			}
-			a {
-				&.button-small {
-					float: right;
-					margin-top: 9px;
-					margin-right: 20px;
-					@include breakpoint(middle) {
-						width: 110px;
-						margin-right: 17px;
-					}
-					@include breakpoint(small) {
-						width: 110px;
-					}
-					@include breakpoint(extra-small) {
-						width: 90px;
-					}
-				}
-			}
-		}
-	}
+    padding-top: 138px;
+    font-family: 'Open Sans', sans-serif;
+    @include breakpoint(small) {
+        padding-top: 80px;
+    }
+    @include breakpoint(extra-small) {
+        padding-top: 58px;
+    }
+    h2 {
+        padding-bottom: 38px;
+        @include transition-property(color);
+        @include transition-duration(400ms);
+        @include breakpoint(extra-small) {
+            padding-bottom: 18px;
+        }
+        &:hover {
+            color: #b5b4b4;
+        }
+    }
+    .dish {
+        margin-top: 50px;
+        border: 1px solid #c7c7c7;
+        @include breakpoint(extra-small) {
+            margin-top: 30px;
+        }
+        @include clearfix;
+        .price {
+            float: right;
+            padding: 8px 23px;
+            border-bottom: 1px solid #c7c7c7;
+            border-left: 1px solid #c7c7c7;
+            font-size: 36px;
+            font-weight: 300;
+            line-height: 27px;
+            @include breakpoint(medium) {
+                padding: 6px 21px;
+            }
+            @include breakpoint(extra-small) {
+                padding: 5px 18px;
+            }
+        }
+        .name-dish {
+            margin: 0;
+            padding: 55px 0 49px 42px;
+            font-size: 24px;
+            font-weight: 300;
+            text-transform: uppercase;
+            @include breakpoint(middle) {
+                padding: 55px 0 49px 22px;
+                font-size: 20px;
+            }
+            @include breakpoint(small) {
+                padding: 55px 0 49px 22px;
+                font-size: 20px;
+            }
+            @include breakpoint(extra-small) {
+                padding: 35px 0 29px 12px;
+                font-size: 20px;
+            }
+        }
+        figure {
+            position: relative;
+            width: 100%;
+            &:hover {
+                figcaption {
+                    @include opacity(1);
+                }
+            }
+            .image {
+                overflow: hidden;
+                width: 100%;
+                height: 300px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                @include user-select(none);
+            }
+            figcaption {
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                display: block;
+                padding: 36px 43px 57px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(#ffffff, 0.8);
+                @include opacity(0);
+                @include transition-property(all);
+                @include transition-duration(400ms);
+                @include breakpoint(middle) {
+                    padding: 36px 23px 37px;
+                }
+                @include breakpoint(extra-small) {
+                    padding: 36px 23px 37px;
+                }
+                .name-for-ingridients {
+                    margin: 0;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    @include breakpoint(middle) {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+                .ingridients {
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 28px;
+                    @include breakpoint(middle) {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+        .counter {
+            padding-top: 40px;
+            padding-bottom: 43px;
+            padding-left: 17px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0;
+            @include breakpoint(small) {
+                padding-top: 20px;
+                padding-bottom: 23px;
+            }
+            @include breakpoint(extra-small) {
+                padding-top: 20px;
+                padding-bottom: 23px;
+            }
+            .order-col {
+                display: inline-block;
+                width: 33px;
+                height: 33px;
+                font-size: 33px;
+                font-weight: 400;
+                line-height: 31px;
+                text-align: center;
+                vertical-align: text-bottom;
+                color: #ffffff;
+                @include border-radius(50%);
+                @include transition-property(background-color);
+                @include transition-duration(400ms);
+            }
+            .order-minus {
+                margin-right: 10px;
+                background-color: #cccccc;
+                @include breakpoint(middle) {
+                    margin-right: 5px;
+                }
+                @include breakpoint(extra-small) {
+                    margin-right: 5px;
+                }
+                &:hover {
+                    background-color: #d9d9d9;
+                }
+                &:active {
+                    background-color: #adacac;
+                }
+            }
+            .order-plus {
+                background-color: #fbb97f;
+                &:hover {
+                    background-color: #fecca0;
+                }
+                &:active {
+                    background-color: #fe9c46;
+                }
+            }
+            input {
+                margin-right: 10px;
+                @include breakpoint(middle) {
+                    margin-right: 5px;
+                }
+                @include breakpoint(extra-small) {
+                    margin-right: 5px;
+                }
+            }
+            a {
+                &.button-small {
+                    float: right;
+                    margin-top: 9px;
+                    margin-right: 20px;
+                    @include breakpoint(middle) {
+                        width: 110px;
+                        margin-right: 17px;
+                    }
+                    @include breakpoint(small) {
+                        width: 110px;
+                    }
+                    @include breakpoint(extra-small) {
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
 }
