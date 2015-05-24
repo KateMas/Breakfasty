@@ -4,7 +4,7 @@
 	@include breakpoint(small) {
 		padding-top: 80px;
 	}
-	@include breakpoint(extra-xs-small) {
+	@include breakpoint(extra-small) {
 		padding-top: 58px;
 	}
 	h2 {
@@ -15,7 +15,7 @@
 		text-transform: uppercase;
 		@include transition-property(color);
 		@include transition-duration(400ms);
-		@include breakpoint(extra-xs-small) {
+		@include breakpoint(extra-small) {
 			margin: 0 0 18px 0;
 			font-size: 36px;
 		}
@@ -26,7 +26,7 @@
 	.dish {
 		margin-top: 50px;
 		border: 1px solid #c7c7c7;
-		@include breakpoint(extra-xs-small) {
+		@include breakpoint(extra-small) {
 			margin-top: 30px;
 		}
 		@include clearfix;
@@ -41,7 +41,7 @@
 			@include breakpoint(medium) {
 				padding: 6px 21px;
 			}
-			@include breakpoint(extra-xs-small) {
+			@include breakpoint(extra-small) {
 				padding: 5px 18px;
 			}
 		}
@@ -59,7 +59,7 @@
 				padding: 55px 0 49px 22px;
 				font-size: 20px;
 			}
-			@include breakpoint(extra-xs-small) {
+			@include breakpoint(extra-small) {
 				padding: 35px 0 29px 12px;
 				font-size: 20px;
 			}
@@ -97,7 +97,7 @@
 				@include breakpoint(middle) {
 					padding: 36px 23px 37px;
 				}
-				@include breakpoint(extra-xs-small) {
+				@include breakpoint(extra-small) {
 					padding: 36px 23px 37px;
 				}
 				.name-for-ingridients {
@@ -132,7 +132,7 @@
 				padding-top: 20px;
 				padding-bottom: 23px;
 			}
-			@include breakpoint(extra-xs-small) {
+			@include breakpoint(extra-small) {
 				padding-top: 20px;
 				padding-bottom: 23px;
 			}
@@ -156,7 +156,7 @@
 				@include breakpoint(middle) {
 					margin-right: 5px;
 				}
-				@include breakpoint(extra-xs-small) {
+				@include breakpoint(extra-small) {
 					margin-right: 5px;
 				}
 				&:hover {
@@ -180,7 +180,7 @@
 				@include breakpoint(middle) {
 					margin-right: 5px;
 				}
-				@include breakpoint(extra-xs-small) {
+				@include breakpoint(extra-small) {
 					margin-right: 5px;
 				}
 			}
@@ -195,7 +195,7 @@
 				@include breakpoint(small) {
 					width: 110px;
 				}
-				@include breakpoint(extra-xs-small) {
+				@include breakpoint(extra-small) {
 					width: 90px;
 				}
 			}

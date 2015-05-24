@@ -3,7 +3,7 @@ header {
 	padding-top: 19px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
-	@include breakpoint(extra-xs-small) {
+	@include breakpoint(extra-small) {
 		padding-top: 9px;
 		padding-bottom: 9px;
 		background-color: rgba(#ffffff,0.9);
@@ -23,7 +23,7 @@ header {
 		@include breakpoint(small) {
 			font-size: 18px;
 		}
-		@include breakpoint(extra-xs-small) {
+		@include breakpoint(extra-small) {
 			min-height: 58px;
 			background-color: rgba(#ffffff,0.9);
 			font-size: 18px;
@@ -37,7 +37,7 @@ header {
 			.container	 {
 				padding-right: 45px;
 				padding-left: 30px;
-				@include breakpoint(extra-xs-small) {
+				@include breakpoint(extra-small) {
 					padding-right: 15px;
 					padding-left: 15px;
 				}
@@ -67,7 +67,7 @@ header {
 				.cart {
 					top:11px;
 					right: 45px;
-					@include breakpoint(extra-xs-small) {
+					@include breakpoint(extra-small) {
 						top: 15px;
 						right: 65px;
 					}
@@ -96,7 +96,7 @@ header {
 				padding-right: 15px;
 				padding-left: 15px;
 			}
-			@include breakpoint(extra-xs-small) {
+			@include breakpoint(extra-small) {
 				padding-right: 15px;
 				padding-left: 15px;
 			}
@@ -104,7 +104,7 @@ header {
 				.but-style {
 					margin-top: 43px;
 					border: none;
-					@include breakpoint(extra-xs-small) {
+					@include breakpoint(extra-small) {
 						margin: 14px 0 0 0;
 					}
 					&:hover {
@@ -138,14 +138,14 @@ header {
 					@include breakpoint(small) {
 						width: 200px;
 					}
-					@include breakpoint(extra-xs-small) {
+					@include breakpoint(extra-small) {
 						width: 130px;
 					}
 					img {
 						@include breakpoint(small) {
 							width: 160px;
 						}
-						@include breakpoint(extra-xs-small) {
+						@include breakpoint(extra-small) {
 							width: 130px;
 							height: 58px;
 						}
@@ -157,7 +157,7 @@ header {
 						font-weight: 600;
 						text-align: right;
 						color: #000000;
-						@include breakpoint(extra-xs-small) {
+						@include breakpoint(extra-small) {
 							display: none;
 						}
 					}
@@ -177,7 +177,7 @@ header {
 					@include breakpoint(small) {
 						padding-right: 65px;
 					}
-					@include breakpoint(extra-xs-small) {
+					@include breakpoint(extra-small) {
 						float: none;
 						padding-right: 0;
 						text-align: center;
@@ -191,7 +191,7 @@ header {
 						@include breakpoint(small) {
 							margin-right: 20px;
 						}
-						@include breakpoint(extra-xs-small) {
+						@include breakpoint(extra-small) {
 							margin: 0;
 						}
 						a {
@@ -206,7 +206,7 @@ header {
 							@include breakpoint(small) {
 								line-height: 93px;
 							}
-							@include breakpoint(extra-xs-small) {
+							@include breakpoint(extra-small) {
 								line-height: 50px;
 							}
 							&:hover {
@@ -233,7 +233,7 @@ header {
 						top: 28px;
 						right: 15px;
 					}
-					@include breakpoint(extra-xs-small) {
+					@include breakpoint(extra-small) {
 						top: 15px;
 						right: 65px;
 					}

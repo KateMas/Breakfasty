@@ -63,7 +63,7 @@
 		@media (min-width: 768px) and (max-width: 979px) and (min-height: 600px) and (max-height:699px) {
 		@content;
 		}
-	} @else if $point == extra-xs-small {
+	} @else if $point == extra-small {
 		@media (max-width: 767px) {
 		@content;
 		}

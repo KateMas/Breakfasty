@@ -7,7 +7,7 @@ footer {
 		padding-top: 90px;
 		padding-bottom: 60px;
 	}
-	@include breakpoint(extra-xs-small) {
+	@include breakpoint(extra-small) {
 		padding-top: 60px;
 		padding-bottom: 40px;
 	}
@@ -15,7 +15,7 @@ footer {
 		margin: 0;
 		font-size: 56px;
 		font-weight: 300;
-		@include breakpoint(extra-xs-small) {
+		@include breakpoint(extra-small) {
 			font-size: 30px;
 		}
 	}
@@ -28,14 +28,14 @@ footer {
 			padding-top: 60px;
 			padding-bottom: 70px;
 		}
-		@include breakpoint(extra-xs-small) {
+		@include breakpoint(extra-small) {
 			padding-top: 40px;
 			padding-bottom: 50px;
 		}
 		li {
 			display: inline-block;
 			margin-right: 78px;
-			@include breakpoint(extra-xs-small) {
+			@include breakpoint(extra-small) {
 				margin-right: 30px;
 			}
 			a {display: inline-block;
@@ -70,7 +70,7 @@ footer {
 		font-weight: 400;
 		text-align: center;
 		color: #333333;
-		@include breakpoint(extra-xs-small) {
+		@include breakpoint(extra-small) {
 			font-size: 14px;
 		}
 	}

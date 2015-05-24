@@ -10,7 +10,7 @@
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
-	@include breakpoint(extra-xs-small) {
+	@include breakpoint(extra-small) {
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
@@ -21,7 +21,7 @@
 		@include breakpoint(small) {
 			padding-top: 60px;
 		}
-		@include breakpoint(extra-xs-small) {
+		@include breakpoint(extra-small) {
 			padding-top: 40px;
 		}
 		h2 {
@@ -34,7 +34,7 @@
 			@include breakpoint(small) {
 				padding-bottom: 63px;
 			}
-			@include breakpoint(extra-xs-small) {
+			@include breakpoint(extra-small) {
 				padding-bottom: 33px;
 				font-size: 36px;
 			}
@@ -52,7 +52,7 @@
 			margin: 0 5%;
 			font-size: 22px;
 			font-weight: 300;
-			@include breakpoint(extra-xs-small) {
+			@include breakpoint(extra-small) {
 				font-size: 18px;
 			}
 		}
@@ -74,7 +74,7 @@
 				padding-top: 10px;
 				padding-bottom: 60px;
 			}
-			@include breakpoint(extra-xs-small) {
+			@include breakpoint(extra-small) {
 				padding-top: 10px;
 				padding-bottom: 40px;
 			}

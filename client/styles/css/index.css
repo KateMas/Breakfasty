@@ -6290,12 +6290,6 @@ body.faq .faq {
   padding-top: 144px;
   font-family: 'Open Sans', sans-serif;
 }
-@media (max-width: 767px) {
-  /* line 1, ../scss/layouts/faq/_faq.scss */
-  body.faq .faq {
-    padding-top: 102px;
-  }
-}
 /* line 7, ../scss/layouts/faq/_faq.scss */
 body.faq .faq h2 {
   margin: 0;
@@ -6308,12 +6302,6 @@ body.faq .faq h2 {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-@media (max-width: 767px) {
-  /* line 7, ../scss/layouts/faq/_faq.scss */
-  body.faq .faq h2 {
-    font-size: 36px;
-  }
-}
 /* line 18, ../scss/layouts/faq/_faq.scss */
 body.faq .faq h2:hover {
   color: #b5b4b4;
@@ -6321,12 +6309,6 @@ body.faq .faq h2:hover {
 /* line 22, ../scss/layouts/faq/_faq.scss */
 body.faq .faq .position-tabs {
   margin-top: 80px;
-}
-@media (max-width: 767px) {
-  /* line 22, ../scss/layouts/faq/_faq.scss */
-  body.faq .faq .position-tabs {
-    margin-top: 40px;
-  }
 }
 /* line 27, ../scss/layouts/faq/_faq.scss */
 body.faq .faq .position-tabs ul {
@@ -6343,25 +6325,9 @@ body.faq .faq .position-tabs ul {
     padding-bottom: 52px;
   }
 }
-@media (max-width: 767px) {
-  /* line 27, ../scss/layouts/faq/_faq.scss */
-  body.faq .faq .position-tabs ul {
-    width: 113px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    text-align: center;
-  }
-}
 /* line 43, ../scss/layouts/faq/_faq.scss */
 body.faq .faq .position-tabs ul li {
   margin-right: 71px;
-}
-@media (max-width: 767px) {
-  /* line 43, ../scss/layouts/faq/_faq.scss */
-  body.faq .faq .position-tabs ul li {
-    float: none;
-    margin-right: 0;
-  }
 }
 /* line 49, ../scss/layouts/faq/_faq.scss */
 body.faq .faq .position-tabs ul li:last-child {
@@ -6381,12 +6347,6 @@ body.faq .faq .position-tabs ul li a:hover {
   background-color: transparent;
   color: #ffa162;
 }
-@media (max-width: 767px) {
-  /* line 52, ../scss/layouts/faq/_faq.scss */
-  body.faq .faq .position-tabs ul li a {
-    font-size: 20px;
-  }
-}
 /* line 69, ../scss/layouts/faq/_faq.scss */
 body.faq .faq .position-tabs ul .active a {
   border: none;
@@ -6396,12 +6356,6 @@ body.faq .faq .position-tabs ul .active a {
 body.faq .faq .position-tabs p {
   margin: 0 5%;
   font-size: 22px;
-}
-@media (max-width: 767px) {
-  /* line 75, ../scss/layouts/faq/_faq.scss */
-  body.faq .faq .position-tabs p {
-    font-size: 18px;
-  }
 }
 /* line 82, ../scss/layouts/faq/_faq.scss */
 body.faq .faq .position-tabs .text-question {
