@@ -5568,24 +5568,25 @@ body.homepage .advertising .modal-sm-content .modal-sm-header {
 /* line 185, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content .modal-sm-header button {
   float: right;
+  margin-top: -5px;
   background-color: transparent;
   border: none;
 }
-/* line 189, ../scss/layouts/homepage/_advertising.scss */
+/* line 190, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content .modal-sm-header button span {
   font-size: 20px;
 }
-/* line 195, ../scss/layouts/homepage/_advertising.scss */
+/* line 196, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 199, ../scss/layouts/homepage/_advertising.scss */
+/* line 200, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form input {
   margin: auto;
 }
-/* line 202, ../scss/layouts/homepage/_advertising.scss */
+/* line 203, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form .button-middle {
   margin-top: 20px;
 }
@@ -6340,6 +6341,7 @@ body.faq .faq .position-tabs ul li:last-child {
 }
 /* line 44, ../scss/layouts/faq/_faq.scss */
 body.faq .faq .position-tabs ul li a {
+  margin: 0;
   padding: 0;
   border: none;
   font-size: 24px;
@@ -6347,7 +6349,7 @@ body.faq .faq .position-tabs ul li a {
   text-decoration: underline;
   color: #000000;
 }
-/* line 51, ../scss/layouts/faq/_faq.scss */
+/* line 52, ../scss/layouts/faq/_faq.scss */
 body.faq .faq .position-tabs ul li a:hover {
   background-color: transparent;
   color: #ffa162;
@@ -6358,28 +6360,28 @@ body.faq .faq .position-tabs ul li a:hover {
     font-size: 20px;
   }
 }
-/* line 61, ../scss/layouts/faq/_faq.scss */
+/* line 62, ../scss/layouts/faq/_faq.scss */
 body.faq .faq .position-tabs ul .active a {
   border: none;
   color: #ffa162;
 }
-/* line 67, ../scss/layouts/faq/_faq.scss */
+/* line 68, ../scss/layouts/faq/_faq.scss */
 body.faq .faq .position-tabs p {
   margin: 0 5%;
   font-size: 22px;
 }
 @media (max-width: 767px) {
-  /* line 67, ../scss/layouts/faq/_faq.scss */
+  /* line 68, ../scss/layouts/faq/_faq.scss */
   body.faq .faq .position-tabs p {
     font-size: 18px;
   }
 }
-/* line 74, ../scss/layouts/faq/_faq.scss */
+/* line 75, ../scss/layouts/faq/_faq.scss */
 body.faq .faq .position-tabs .text-question {
   font-weight: 400;
   color: #ffa162;
 }
-/* line 78, ../scss/layouts/faq/_faq.scss */
+/* line 79, ../scss/layouts/faq/_faq.scss */
 body.faq .faq .position-tabs .text-answer {
   font-weight: 300;
   line-height: 35px;
