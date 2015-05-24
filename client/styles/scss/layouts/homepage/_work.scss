@@ -1,113 +1,113 @@
 .work {
-	padding-top: 166px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0;
-	@include breakpoint(small) {
-		padding-top: 100px;
-	}
-	@include breakpoint(extra-small) {
-		padding-top: 86px;
-	}
-	.description-work	{
-		width: 936px;
-		margin: auto;
-		padding-top: 110px;
-		padding-bottom: 136px;
-		@include breakpoint(middle) {
-			width: 761px;
-		}
-		@include breakpoint(extra-middle) {
-			width: 761px;
-		}
-		@include breakpoint(small) {
-			width: 721px;
-			padding-top: 70px;
-			padding-bottom: 80px;
-		}
-		@include breakpoint(extra-small) {
-			width: 100%;
-			padding-top: 50px;
-			padding-bottom: 60px;
-		}
-		figure {
-			display: inline-block;
-			vertical-align: top;
-			@include breakpoint(extra-small) {
-				display: block;
-				margin: auto;
-				text-align: center;
-			}
-			&:first-child {
-				width: 174px;
-				margin-right: 192px;
-				@include breakpoint(middle) {
-					margin-right: 100px;
-				}
-				@include breakpoint(extra-middle) {
-					margin-right: 100px;
-				}
-				@include breakpoint(small) {
-					margin-right: 80px;
-				}
-				@include breakpoint(extra-small) {
-					margin: 0 auto;
-					padding-bottom: 50px;
-				}
-			}
-			&:nth-child(2) {
-				width: 174px;
-				margin-right: 183px;
-				@include breakpoint(middle) {
-					margin-right: 100px;
-				}
-				@include breakpoint(extra-middle) {
-					margin-right: 100px;
-				}
-				@include breakpoint(small) {
-					margin-right: 80px;
-				}
-				@include breakpoint(extra-small) {
-					margin: 0 auto;
-					padding-bottom: 50px;
-				}
-			}
-			&:nth-child(3) {
-				width: 213px;
-			}
-			span {
-				display: inline-block;
-				margin-bottom: 61px;
-				text-align: center;
-				@include breakpoint(extra-small) {
-					margin-bottom: 20px;
-				}
-			}
-			.work-food {
-				width: 93px;
-				height: 89px;
-				@extend.work-egg;
-			}
-			.work-fridge {
-				width: 72px;
-				height: 96px;
-				@extend.work-fridge;
-			}
-			.work-smile {
-				width: 95px;
-				height: 90px;
-				@extend.work-smile;
-			}
-			figcaption {
-				p {
-					margin: 0;
-					font-size: 24px;
-					font-weight: 300;
-				}
-			}
-		}
-	}
-	hr {
-		margin: 0;
-		color: #898989;
-	}
+    padding-top: 166px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0;
+    @include breakpoint(small) {
+        padding-top: 100px;
+    }
+    @include breakpoint(extra-small) {
+        padding-top: 86px;
+    }
+    .description-work {
+        width: 936px;
+        margin: auto;
+        padding-top: 110px;
+        padding-bottom: 136px;
+        @include breakpoint(middle) {
+            width: 761px;
+        }
+        @include breakpoint(extra-middle) {
+            width: 761px;
+        }
+        @include breakpoint(small) {
+            width: 721px;
+            padding-top: 70px;
+            padding-bottom: 80px;
+        }
+        @include breakpoint(extra-small) {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 60px;
+        }
+        figure {
+            display: inline-block;
+            vertical-align: top;
+            @include breakpoint(extra-small) {
+                display: block;
+                margin: auto;
+                text-align: center;
+            }
+            &:first-child {
+                width: 174px;
+                margin-right: 192px;
+                @include breakpoint(middle) {
+                    margin-right: 100px;
+                }
+                @include breakpoint(extra-middle) {
+                    margin-right: 100px;
+                }
+                @include breakpoint(small) {
+                    margin-right: 80px;
+                }
+                @include breakpoint(extra-small) {
+                    margin: 0 auto;
+                    padding-bottom: 50px;
+                }
+            }
+            &:nth-child(2) {
+                width: 174px;
+                margin-right: 183px;
+                @include breakpoint(middle) {
+                    margin-right: 100px;
+                }
+                @include breakpoint(extra-middle) {
+                    margin-right: 100px;
+                }
+                @include breakpoint(small) {
+                    margin-right: 80px;
+                }
+                @include breakpoint(extra-small) {
+                    margin: 0 auto;
+                    padding-bottom: 50px;
+                }
+            }
+            &:nth-child(3) {
+                width: 213px;
+            }
+            span {
+                display: inline-block;
+                margin-bottom: 61px;
+                text-align: center;
+                @include breakpoint(extra-small) {
+                    margin-bottom: 20px;
+                }
+            }
+            .work-food {
+                width: 93px;
+                height: 89px;
+                @extend .work-egg;
+            }
+            .work-fridge {
+                width: 72px;
+                height: 96px;
+                @extend .work-fridge;
+            }
+            .work-smile {
+                width: 95px;
+                height: 90px;
+                @extend .work-smile;
+            }
+            figcaption {
+                p {
+                    margin: 0;
+                    font-size: 24px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    hr {
+        margin: 0;
+        color: #898989;
+    }
 }

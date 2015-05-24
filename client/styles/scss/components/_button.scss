@@ -1,41 +1,41 @@
 button.button, a.button {
-	padding: 0;
-	background-color: #ff7800;
-	border: none;
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	color: #ffffff;
-	@include border-radius(0px);
-	@include transition-property(all);
-	@include transition-duration(400ms);
-	&:hover {
-		background-color: #ffac63;
-	}
-	&:active {
-		background-color: #db7215;
-	}
-	&:focus {
-		border: none;
-		outline: none;
-	}
-	&.button-large {
-		width: 300px;
-		font-size: 27px;
-		font-weight: 400;
-		line-height: 80px;
-	}
-	&.button-middle {
-		width: 180px;
-		height: 40px;
-		font-size: 18px;
-		font-weight: 400;
-	}
-	&.button-small {
-		width: 130px;
-		height: 48px;
-		font-size: 24px;
-		font-weight: 500;
-		line-height: 48px;
-	}
+    padding: 0;
+    background-color: #ff7800;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    @include border-radius(0px);
+    @include transition-property(all);
+    @include transition-duration(400ms);
+    &:hover {
+        background-color: #ffac63;
+    }
+    &:active {
+        background-color: #db7215;
+    }
+    &:focus {
+        border: none;
+        outline: none;
+    }
+    &.button-large {
+        width: 300px;
+        font-size: 27px;
+        font-weight: 400;
+        line-height: 80px;
+    }
+    &.button-middle {
+        width: 180px;
+        height: 40px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &.button-small {
+        width: 130px;
+        height: 48px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 48px;
+    }
 }
