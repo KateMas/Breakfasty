@@ -8,283 +8,520 @@
     <link rel="stylesheet" href="client/styles/css/index.css">
     <script src="client/js/jquery-2.1.3.min.js"></script>
     <script src="client/js/bootstrap.min.js"></script>
+    <script src="client/js/index.js"></script>
 </head>
 <body class="homepage">
-    <header class="navbar navbar-default nav-style scroll">
-        <div class="container">
-            <div class="navbar-header nav-button">
-                <button type="button" class="navbar-toggle collapsed but-style" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar icon-color"></span>
-                    <span class="icon-bar icon-color"></span>
-                    <span class="icon-bar icon-color"></span>
-                </button>
-                <a class="navbar-brand logo-header" href="/">
-                    <img src="client/images/header/logo.png" alt="logo">
-                    <p>[delisious breakfast everyday]</p>
-                </a>
-            </div>
-            <div class="collapse navbar-collapse list" id="navbar">
-                <ul class="nav navbar-nav ">
-                    <li><a href="#menu">menu</a></li>
-                    <li><a href="#about">about us</a></li>
-                    <li><a href="#work">how it works</a></li>
-                    <li><a href="faq.html#faq">faq</a></li>
-                </ul>
-            </div>
-            <div class="cart navbar-header">
-                <a href="javascript:void(0);"></a>
-                <sup>+5</sup>
-            </div>
+<header class="navbar navbar-default nav-style">
+    <div class="container">
+        <div class="navbar-header nav-button">
+            <button type="button" class="navbar-toggle collapsed but-style" data-toggle="collapse"
+                    data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar icon-color"></span>
+                <span class="icon-bar icon-color"></span>
+                <span class="icon-bar icon-color"></span>
+            </button>
+            <a class="navbar-brand logo-header" href="/">
+                <img src="client/images/header/logo.png" alt="logo">
+
+                <p>[delisious breakfast everyday]</p>
+            </a>
         </div>
-    </header>
-    <main>
-        <section class="advertising">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <img src="client/images/advertising/plate-card.png" alt="/"/>
-                        <h1>Eat Brekfast Every Day</h1>
-                        <p>We deliver delicious breakfasts to your doorstep</p>
-                        <button type="button" class="button button-large" data-toggle="modal" data-target=".contact-us">get 50% off</button>
-                        <div class="modal fade contact-us" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm">
-                                <div class="modal-content modal-sm-content">
-                                    <div class="modal-header modal-sm-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="/" method="post">
-                                            <input type="email" value="" name="Email" placeholder="Email address" required>
-                                            <button class="button button-middle">submit</button>
-                                        </form>
-                                    </div>
+        <div class="collapse navbar-collapse list" id="navbar">
+            <ul class="nav navbar-nav ">
+                <li><a class="scroll-to-anchor" href="#menu">menu</a></li>
+                <li><a class="scroll-to-anchor" href="#about">about us</a></li>
+                <li><a class="scroll-to-anchor" href="#work">how it works</a></li>
+                <li><a href="faq.html">faq</a></li>
+            </ul>
+        </div>
+        <div class="cart navbar-header">
+            <a href="javascript:void(0);"></a>
+            <sup>+5</sup>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="advertising">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="client/images/advertising/plate-card.png" alt="/"/>
+
+                    <h1>Eat Brekfast Every Day</h1>
+
+                    <p>We deliver delicious breakfasts to your doorstep</p>
+                    <button type="button" class="button button-large" data-toggle="modal" data-target=".contact-us">get
+                        50% off
+                    </button>
+                    <div class="modal fade contact-us" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content modal-sm-content">
+                                <div class="modal-header modal-sm-header clearfix">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="/" method="post">
+                                        <input type="email" name="email" placeholder="Email address" required>
+                                        <button class="button button-middle">submit</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="menu" class="container menu">
-        	<div class="row">
-        		<div class="col-lg 12 col-md-12 col-sm-12 col-xs-12">
-        			<h2>menu</h2>
-        		</div>
-        		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        			<div class="dish">
-        				<span class="price">$7</span>
-    	    			<h3 class="name-dish">veggie omelette<br/>banana muffin</h3>
-    	    			<figure>
-    	    				<div class="image" style="background-image: url(client/images/menu/omelette.png);"></div>
-    	    				<figcaption>
-    	    					<h3 class="name-for-ingridients">omelette:</h3>
-    	    					<p class="ingridients">Eggs, Red Pepper, Green Onions, Mushrooms,Avocado</p>
-    	    					<h3 class="name-for-ingridients">banana muffin:</h3>
-    	    					<p class="ingridients">Banana, Egg, Sugar, Butter, Canola Oil, Flour,Soda, Walnuts, Cranberries, Salt</p>
-    	    				</figcaption>
-    	    			</figure>
-    	    			<div class="counter">
-        					<a class="order-col order-minus" href="javascript:void(0);">-</a>
-                            <input type="number" value="0" min="0" max="99">
-        					<a class="order-col order-plus" href="javascript:void(0);">+</a>
-                            <a href="javascript:void(0);" class="button button-small">add</a>
-        				</div>
-        			</div>
-        		</div>
-        		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        			<div class="dish">
-        				<span class="price">$7</span>
-    	    			<h3 class="name-dish">pork crepes<br/>fruit bowl</h3>
-    	    			<figure>
-    	    				<div class="image" style="background-image: url(client/images/menu/bowl.png);"></div>
-    	    				<figcaption>
-    	    					<h3 class="name-for-ingridients">crepes:</h3>
-    	    					<p class="ingridients">Flour, Eggs, Milk, Butter, Puller Pork, Potatoes, Onion Jam, Mascarpone Cheese</p>
-    	    					<h3 class="name-for-ingridients">fruit bowl:</h3>
-    	    					<p class="ingridients">Orange, Grapefruit, Apple, Strawberries</p>
-    	    				</figcaption>
-    	    			</figure>
-    	    			<div class="counter">
-        					<a class="order-col order-minus" href="javascript:void(0);">-</a>
-                            <input type="number" value="0" min="0" max="99">
-        					<a class="order-col order-plus" href="javascript:void(0);">+</a>
-                            <a href="javascript:void(0);" class="button button-small">add</a>
-                        </div>
-        			</div>
-        		</div>
-        		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        			<div class="dish">
-        				<span class="price">$7</span>
-    	    			<h3 class="name-dish">breakfast quesadilla<br/>apple bread pudding</h3>
-    	    			<figure>
-    	    				<div class="image" style="background-image: url(client/images/menu/pudding.png);"></div>
-    	    				<figcaption>
-    	    					<h3 class="name-for-ingridients">quesadilla:</h3>
-    	    					<p class="ingridients">Tortialla, Eggs, Italian Mild Pork Sausage, Red Pepper, Green Onions, Salt and Pepper</p>
-    	    					<h3 class="name-for-ingridients">oatmel cookie:</h3>
-    	    					<p class="ingridients">Flour, Walnut, Salt, Eggs, Oats</p>
-    	    				</figcaption>
-    	    			</figure>
-    	    			<div class="counter">
-        					<a class="order-col order-minus" href="javascript:void(0);">-</a>
-                            <input type="number" value="0" min="0" max="99">
-        					<a class="order-col order-plus" href="javascript:void(0);">+</a>
-                            <a href="javascript:void(0);" class="button button-small">add</a>
-                        </div>
-        			</div>
-        		</div>
-        		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        			<div class="dish">
-        				<span class="price">$7</span>
-    	    			<h3 class="name-dish">english egg muffin<br/>banana bread</h3>
-    	    			<figure>
-    	    				<div class="image" style="background-image: url(client/images/menu/egg-muffin.png);"></div>
-    	    				<figcaption>
-    	    					<h3 class="name-for-ingridients">sandwich:</h3>
-    	    					<p class="ingridients">Multi-grain English Muffins, Ham, Egg, Avocado, Cheddar Cheese, Salt and Pepper</p>
-    	    					<h3 class="name-for-ingridients">banana bread</h3>
-    	    					<p class="ingridients">Banana, Egg, Sugar, Butter, Canola Oil, Flour, Soda, Walnuts, Cranberries, Salt</p>
-    	    				</figcaption>
-    	    			</figure>
-    	    			<div class="counter">
-        					<a class="order-col order-minus" href="javascript:void(0);">-</a>
-                            <input type="number" value="0" min="0" max="99">
-        					<a class="order-col order-plus" href="javascript:void(0);">+</a>
-                            <a href="javascript:void(0);" class="button button-small">add</a>
-                        </div>
-        			</div>
-        		</div>
-        		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        			<div class="dish">
-        				<span class="price">$7</span>
-    	    			<h3 class="name-dish">breakfast quinoa salad<br/>banana bread</h3>
-    	    			<figure>
-    	    				<div class="image" style="background-image: url(client/images/menu/salad.png);"></div>
-    	    				<figcaption>
-    	    					<h3 class="name-for-ingridients">omelette:</h3>
-    	    					<p class="ingridients">Eggs, Red Pepper, Green Onions, Mushrooms,Avocado</p>
-    	    					<h3 class="name-for-ingridients">banana muffin:</h3>
-    	    					<p class="ingridients">Banana, Egg, Sugar, Butter, Canola Oil, Flour,Soda, Walnuts, Cranberries, Salt</p>
-    	    				</figcaption>
-    	    			</figure>
-    	    			<div class="counter">
-        					<a class="order-col order-minus" href="javascript:void(0);">-</a>
-                            <input type="number" value="0" min="0" max="99">
-        					<a class="order-col order-plus" href="javascript:void(0);">+</a>
-                            <a href="javascript:void(0);" class="button button-small">add</a>
-                        </div>
-        			</div>
-        		</div>
-        		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        			<div class="dish">
-        				<span class="price">$7</span>
-    	    			<h3 class="name-dish">breakfast burrito<br/>banana bread</h3>
-    	    			<figure>
-    	    				<div class="image" style="background-image: url(client/images/menu/burrito.png);"></div>
-    	    				<figcaption>
-    	    					<h3 class="name-for-ingridients">burrito:</h3>
-    	    					<p class="ingridients">Tortilla, Potatoes, Pulled Pork, Bacon, Eggs, Red Pepper, Green Onions, Mild Cheddar Cheese, Avocado, Salt and Pepper</p>
-    	    					<h3 class="name-for-ingridients">banana bread</h3>
-    	    					<p class="ingridients">Banana, Egg, Sugar, Butter, Canola Oil, Flour,Soda, Walnuts, Cranberries, Salt</p>
-    	    				</figcaption>
-    	    			</figure>
-    	    			<div class="counter">
-        					<a class="order-col order-minus" href="javascript:void(0);">-</a>
-                            <input type="number" value="0" min="0" max="99">
-        					<a class="order-col order-plus" href="javascript:void(0);">+</a>
-                            <a href="javascript:void(0);" class="button button-small">add</a>
-                        </div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <section id="work" class="work container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h2>how it work</h2>
-                </div>
-            </div>
-            <div class="description-work">
-                <figure>
-                    <span class="work-food"></span>
-                    <figcaption>
-                        <p>1. Choose your breakfasts and subscribe.</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <span class="work-fridge"></span>
-                    <figcaption>
-                        <p>2. Get delivery and store them in the fridge.</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <span class="work-smile"></span>
-                    <figcaption>
-                        <p>3. Enjoy<br/>delicious breakfast every morning!</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                <hr/>
-            </div>
-        </section>
-        <section id="about" class="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                        <h2>about us</h2>
-                        <p>This person is in charge of all activities related to the kitchen, which usually includes menu creation,management of kitchen staff,ordering and purchasing of inventory, and plating design. Chef de cuisine is the traditional French term from which the English word chef is derived. Head chef is often used to designate someone with the same duties as an executive chef, but there is usually someone in charge of a head chef,possibly making the larger executive decisions such as direction of menu, final authority in staff management decisions, etc. This is often the case for executive chefs with multiple restaurants.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <ul class="contacts">
-                            <li>Our contacts:</li>
-                            <li>
-                                <span class="phone"></span>
-                                <a href="tel:4155716305">415 - 571 - 6305</a>
-                            </li>
-                            <li>
-                                <span class="envelope"></span>
-                                <a href="mailto:victor@breakfasty.co">victor@breakfasty.co</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="comments">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 style-bgc">
-                        <h2>what people say</h2>
-                        <span class="icon-stars"></span>
-                        <p class="comment">“The experience of eating real breakfast every morning befor work is a lifesaver! It is so easy to heat it up, eat and forget about hunger till lunch.”</p>
-                        <p class="author">by Boris Nasunov on April 14, 2015</p>
-                        <span class="icon-stars"></span>
-                        <p class="comment">“The experience of eating real breakfast every morning befor work is a lifesaver! It is so easy to heat it up, eat and forget about hunger till lunch.”</p>
-                        <p class="author">by Boris Nasunov on April 14, 2015</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="container">
+        </div>
+    </section>
+    <section id="menu" class="container menu">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h3>Simple step to eat healthy!</h3>
-                <ul>
-                    <li><a href="javascript:void(0);"></a></li>
-                    <li><a href="javascript:void(0);"></a></li>
-                    <li><a href="javascript:void(0);"></a></li>
-                </ul>
-                <p>Copyright © 2015 Breakfasty.</p>
-                <p>All rights reserved and other such important stuff.</p>
+            <div class="col-lg 12 col-md-12 col-sm-12 col-xs-12">
+                <h2>menu</h2>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="dish">
+                    <span class="price">$7</span>
+
+                    <h3 class="dish-name">veggie omelette<br/>banana muffin</h3>
+                    <figure>
+                        <img class="dish-photo" src="client/images/menu/omelette.png" alt="omelette"/>
+                        <figcaption>
+                            <a href="javascript:void(0);" data-toggle="modal" data-target="#omelette">Show more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade product" id="omelette" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="dish-photo" src="client/images/menu/omelette.png" alt="omelette"/>
+
+                                <div class="description">
+                                    <h3>veggie omelette banana muffin</h3>
+
+                                    <h4>omelette:</h4>
+
+                                    <p>Eggs, Red Pepper, Green Onions, Mushrooms,Avocado</p>
+
+                                    <h4>banana muffin:</h4>
+
+                                    <p>Banana, Egg, Sugar, Butter, Canola Oil, Flour,Soda, Walnuts,
+                                        Cranberries, Salt
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <form class="clearfix" action="/">
+                                    <div class="counter">
+                                        <a class="order-col order-minus" href="javascript:void(0);">-</a>
+                                        <input type="text" placeholder="0" pattern="\d*"
+                                               oninvalid="setCustomValidity('Please enter only numbers')"
+                                               onchange="try{setCustomValidity('')}catch(e){}"/>
+                                        <a class="order-col order-plus" href="javascript:void(0);">+</a>
+                                    </div>
+                                    <button class="button button-middle">Add</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="dish">
+                    <span class="price">$7</span>
+
+                    <h3 class="dish-name">pork crepes<br/>fruit bowl</h3>
+                    <figure>
+                        <img class="dish-photo" src="client/images/menu/bowl.png" alt="bowl"/>
+                        <figcaption>
+                            <a href="javascript:void(0);" data-toggle="modal" data-target="#bowl">Show more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade product" id="bowl" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="dish-photo" src="client/images/menu/bowl.png" alt="bowl"/>
+
+                                <div class="description">
+                                    <h3>pork crepes fruit bowl</h3>
+
+                                    <h4>crepes:</h4>
+
+                                    <p>
+                                        Flour, Eggs, Milk, Butter, Puller Pork, Potatoes, Onion Jam,
+                                        Mascarpone Cheese
+                                    </p>
+
+                                    <h4>fruit bowl:</h4>
+
+                                    <p>
+                                        Orange, Grapefruit, Apple, Strawberries
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <form class="clearfix" action="/">
+                                    <div class="counter">
+                                        <a class="order-col order-minus" href="javascript:void(0);">-</a>
+                                        <input type="text" placeholder="0" pattern="\d*"
+                                               oninvalid="setCustomValidity('Please enter only numbers')"
+                                               onchange="try{setCustomValidity('')}catch(e){}"/>
+                                        <a class="order-col order-plus" href="javascript:void(0);">+</a>
+                                    </div>
+                                    <button class="button button-middle">Add</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="dish">
+                    <span class="price">$7</span>
+
+                    <h3 class="dish-name">breakfast quesadilla<br/>apple bread pudding</h3>
+                    <figure>
+                        <img class="dish-photo" src="client/images/menu/pudding.png" alt="pudding"/>
+                        <figcaption>
+                            <a href="javascript:void(0);" data-toggle="modal" data-target="#pudding">Show more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade product" id="pudding" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="dish-photo" src="client/images/menu/pudding.png" alt="pudding"/>
+
+                                <div class="description">
+                                    <h3>breakfast quesadilla apple bread pudding</h3>
+                                    <h4>quesadilla:</h4>
+
+                                    <p>
+                                        Tortialla, Eggs, Italian Mild Pork Sausage, Red Pepper, Green Onions,
+                                        Salt and Pepper
+                                    </p>
+
+                                    <h4>oatmel cookie:</h4>
+
+                                    <p>
+                                        Flour, Walnut, Salt, Eggs, Oats
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <form class="clearfix" action="/">
+                                    <div class="counter">
+                                        <a class="order-col order-minus" href="javascript:void(0);">-</a>
+                                        <input type="text" placeholder="0" pattern="\d*"
+                                               oninvalid="setCustomValidity('Please enter only numbers')"
+                                               onchange="try{setCustomValidity('')}catch(e){}"/>
+                                        <a class="order-col order-plus" href="javascript:void(0);">+</a>
+                                    </div>
+                                    <button class="button button-middle">Add</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="dish">
+                    <span class="price">$7</span>
+
+                    <h3 class="dish-name">english egg muffin<br/>banana bread</h3>
+                    <figure>
+                        <img class="dish-photo" src="client/images/menu/egg-muffin.png" alt="egg-muffin"/>
+                        <figcaption>
+                            <a href="javascript:void(0);" data-toggle="modal" data-target="#egg-muffin">Show more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade product" id="egg-muffin" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="dish-photo" src="client/images/menu/egg-muffin.png" alt="egg-muffin"/>
+
+                                <div class="description">
+                                    <h3>english egg muffin banana bread</h3>
+
+                                    <h4>sandwich:</h4>
+
+                                    <p>
+                                        Multi-grain English Muffins, Ham, Egg, Avocado, Cheddar Cheese, Salt
+                                        and Pepper
+                                    </p>
+
+                                    <h4>banana bread</h4>
+
+                                    <p>
+                                        Banana, Egg, Sugar, Butter, Canola Oil, Flour, Soda, Walnuts,
+                                        Cranberries, Salt
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <form class="clearfix" action="/">
+                                    <div class="counter">
+                                        <a class="order-col order-minus" href="javascript:void(0);">-</a>
+                                        <input type="text" placeholder="0" pattern="\d*"
+                                               oninvalid="setCustomValidity('Please enter only numbers')"
+                                               onchange="try{setCustomValidity('')}catch(e){}"/>
+                                        <a class="order-col order-plus" href="javascript:void(0);">+</a>
+                                    </div>
+                                    <button class="button button-middle">Add</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="dish">
+                    <span class="price">$7</span>
+
+                    <h3 class="dish-name">breakfast quinoa salad<br/>banana bread</h3>
+                    <figure>
+                        <img class="dish-photo" src="client/images/menu/salad.png" alt="salad"/>
+                        <figcaption>
+                            <a href="javascript:void(0);" data-toggle="modal" data-target="#salad">Show more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade product" id="salad" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="dish-photo" src="client/images/menu/salad.png" alt="salad"/>
+
+                                <div class="description">
+
+                                    <h3>breakfast quinoa salad banana bread</h3>
+
+
+                                    <h4>omelette:</h4>
+
+                                    <p>Eggs, Red Pepper, Green Onions, Mushrooms, Avocado</p>
+
+                                    <h4>banana muffin:</h4>
+
+                                    <p>Banana, Egg, Sugar, Butter, Canola Oil, Flour, Soda, Walnuts,
+                                        Cranberries, Salt
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <form class="clearfix" action="/">
+                                    <div class="counter">
+                                        <a class="order-col order-minus" href="javascript:void(0);">-</a>
+                                        <input type="text" placeholder="0" pattern="\d*"
+                                               oninvalid="setCustomValidity('Please enter only numbers')"
+                                               onchange="try{setCustomValidity('')}catch(e){}"/>
+                                        <a class="order-col order-plus" href="javascript:void(0);">+</a>
+                                    </div>
+                                    <button class="button button-middle">Add</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="dish">
+                    <span class="price">$7</span>
+
+                    <h3 class="dish-name">breakfast burrito<br/>banana bread</h3>
+                    <figure>
+                        <img class="dish-photo" src="client/images/menu/burrito.png" alt="burrito"/>
+                        <figcaption>
+                            <a href="javascript:void(0);" data-toggle="modal" data-target="#burrito">Show more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade product" id="burrito" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="dish-photo" src="client/images/menu/burrito.png" alt="burrito"/>
+
+                                <div class="description">
+                                    <h3>breakfast burrito banana bread</h3>
+                                    <h4>burrito:</h4>
+
+                                    <p>
+                                        Tortilla, Potatoes, Pulled Pork, Bacon, Eggs, Red Pepper, Green
+                                        Onions, Mild Cheddar Cheese, Avocado, Salt and Pepper
+                                    </p>
+
+                                    <h4>banana bread</h4>
+
+                                    <p>
+                                        Banana, Egg, Sugar, Butter, Canola Oil, Flour,Soda, Walnuts, Cranberries, Salt
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <form class="clearfix" action="/">
+                                    <div class="counter">
+                                        <a class="order-col order-minus" href="javascript:void(0);">-</a>
+                                        <input type="text" placeholder="0" pattern="\d*"
+                                               oninvalid="setCustomValidity('Please enter only numbers')"
+                                               onchange="try{setCustomValidity('')}catch(e){}"/>
+                                        <a class="order-col order-plus" href="javascript:void(0);">+</a>
+                                    </div>
+                                    <button class="button button-middle">Add</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+        </div>
+    </section>
+    <section id="work" class="work container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>how it work</h2>
+            </div>
+        </div>
+        <div class="description-work">
+            <figure>
+                <span class="work-food"></span>
+                <figcaption>
+                    <p>1. Choose your breakfasts and subscribe.</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <span class="work-fridge"></span>
+                <figcaption>
+                    <p>2. Get delivery and store them in the fridge.</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <span class="work-smile"></span>
+                <figcaption>
+                    <p>3. Enjoy<br/>delicious breakfast every morning!</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+            <hr/>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                    <h2>about us</h2>
+
+                    <p>This person is in charge of all activities related to the kitchen, which usually includes menu
+                        creation,management of kitchen staff,ordering and purchasing of inventory, and plating design.
+                        Chef de cuisine is the traditional French term from which the English word chef is derived. Head
+                        chef is often used to designate someone with the same duties as an executive chef, but there is
+                        usually someone in charge of a head chef,possibly making the larger executive decisions such as
+                        direction of menu, final authority in staff management decisions, etc. This is often the case
+                        for executive chefs with multiple restaurants.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="contacts">
+                        <li>Our contacts:</li>
+                        <li>
+                            <span class="phone"></span>
+                            <a href="tel:4155716305">415 - 571 - 6305</a>
+                        </li>
+                        <li>
+                            <span class="envelope"></span>
+                            <a href="mailto:victor@breakfasty.co">victor@breakfasty.co</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comments">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 style-bgc">
+                    <h2>what people say</h2>
+                    <span class="icon-stars"></span>
+
+                    <p class="comment">“The experience of eating real breakfast every morning befor work is a lifesaver!
+                        It is so easy to heat it up, eat and forget about hunger till lunch.”</p>
+
+                    <p class="author">by Boris Nasunov on April 14, 2015</p>
+                    <span class="icon-stars"></span>
+
+                    <p class="comment">“The experience of eating real breakfast every morning befor work is a lifesaver!
+                        It is so easy to heat it up, eat and forget about hunger till lunch.”</p>
+
+                    <p class="author">by Boris Nasunov on April 14, 2015</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3>Simple step to eat healthy!</h3>
+            <ul>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+            </ul>
+            <p>Copyright © 2015 Breakfasty.</p>
+
+            <p>All rights reserved and other such important stuff.</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

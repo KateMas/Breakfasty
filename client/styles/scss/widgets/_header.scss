@@ -3,6 +3,9 @@ header {
     padding-top: 19px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    @include user-select(none);
+    @include transition-property(all);
+    @include transition-duration(400ms);
     @include breakpoint(extra-small) {
         padding-top: 9px;
         padding-bottom: 9px;

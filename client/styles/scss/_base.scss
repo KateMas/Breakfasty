@@ -9,4 +9,21 @@ body {
             font-size: 36px;
         }
     }
+
+    a {
+        color: #ff7800;
+        @include user-select(none);
+        @include transition-property(color);
+        @include transition-duration(400ms);
+
+        &:focus {
+            outline: none;
+            border: none;
+            color: #ff7800;
+        }
+
+        &:hover {
+            color: lighten(#ff7800, 20%);
+        }
+    }
 }

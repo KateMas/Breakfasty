@@ -178,36 +178,4 @@
             line-height: 50px;
         }
     }
-    .modal-sm-content {
-        @include border-radius(0px);
-        .modal-sm-header {
-            border: none;
-            button {
-                float: right;
-                margin-top: -5px;
-                background-color: transparent;
-                border: none;
-                &:focus {
-                    outline: none;
-                }
-                &:active {
-                    outline: none;
-                }
-                span {
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-    form {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-family: 'Open Sans', sans-serif;
-        input {
-            margin: auto;
-        }
-        .button-middle {
-            margin-top: 20px;
-        }
-    }
 }

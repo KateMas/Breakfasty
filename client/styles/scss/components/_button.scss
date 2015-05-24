@@ -1,5 +1,5 @@
 button.button, a.button {
-    padding: 0;
+    padding: 0 15px;
     background-color: #ff7800;
     border: none;
     font-family: 'Roboto', sans-serif;
@@ -7,6 +7,8 @@ button.button, a.button {
     text-transform: uppercase;
     color: #ffffff;
     @include border-radius(0px);
+    @include box-sizing(border-box);
+    @include user-select(none);
     @include transition-property(all);
     @include transition-duration(400ms);
     &:hover {
