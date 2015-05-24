@@ -1,28 +1,20 @@
 .faq {
 	padding-top: 144px;
 	font-family: 'Open Sans', sans-serif;
-	@include breakpoint(extra-xs-small) {
+	@include breakpoint(extra-small) {
 		padding-top: 102px;
 	}
 	h2 {
-		margin: 0;
-		font-size: 72px;
-		font-weight: 300;
-		text-align: center;
-		text-transform: uppercase;
 		@include transition-property(color);
 		@include transition-duration(400ms);
-		@include breakpoint(extra-xs-small) {
-			font-size: 36px;
-		}
 		&:hover {
 			color: #b5b4b4;
 		}
 	}
 	.position-tabs {
-		margin-top: 80px;
-		@include breakpoint(extra-xs-small) {
-	 		margin-top: 40px;
+		padding-top: 80px;
+		@include breakpoint(extra-small) {
+	 		padding-top: 40px;
 		}
 		ul {
 			width: 444px;
@@ -34,7 +26,7 @@
 				padding-top: 52px;
 				padding-bottom: 52px;
 			}
-		 	@include breakpoint(extra-xs-small) {
+		 	@include breakpoint(extra-small) {
 		 		width: 113px;
 				padding-top: 32px;
 				padding-bottom: 32px;
@@ -42,7 +34,7 @@
 			}
 		 	li {
 		 		margin-right: 71px;
-		 		@include breakpoint(extra-xs-small) {
+		 		@include breakpoint(extra-small) {
 			 		float: none;
 			 		margin-right: 0;
 				}
@@ -60,7 +52,7 @@
 		 				background-color: transparent;
 		 				color: #ffa162;
 		 			}
-		 			@include breakpoint(extra-xs-small) {
+		 			@include breakpoint(extra-small) {
 						font-size: 20px;
 					}
 		 		}
@@ -75,7 +67,7 @@
 		p {
 			margin: 0 5%;
 			font-size: 22px;
-			@include breakpoint(extra-xs-small) {
+			@include breakpoint(extra-small) {
 				font-size: 18px;
 			}
 		}

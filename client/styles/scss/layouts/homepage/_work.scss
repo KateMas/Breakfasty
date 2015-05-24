@@ -8,16 +8,6 @@
 	@include breakpoint(extra-small) {
 		padding-top: 86px;
 	}
-	h2 {
-		margin: 0;
-		font-size: 72px;
-		font-weight: 300;
-		text-align: center;
-		text-transform: uppercase;
-		@include breakpoint(extra-small) {
-			font-size: 36px;
-		}
-	}
 	.description-work	{
 		width: 936px;
 		margin: auto;

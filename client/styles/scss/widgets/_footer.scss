@@ -38,7 +38,8 @@ footer {
 			@include breakpoint(extra-small) {
 				margin-right: 30px;
 			}
-			a {display: inline-block;
+			a {
+				display: inline-block;
 			}
 			&:first-child {
 				a {

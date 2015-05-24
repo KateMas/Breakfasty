@@ -1,10 +1,12 @@
 body {
-	&.homepage {
-		.container-background {
-			background-image: url(../../../client/images/advertising/background-table.png);
-			background-size: cover;
-			background-position: 100% 100%;
-			background-repeat: no-repeat;
+	h2 {
+		margin: 0;
+		font-size: 72px;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+		@include breakpoint(extra-small) {
+			font-size: 36px;
 		}
 	}
 }
