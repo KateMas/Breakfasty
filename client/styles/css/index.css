@@ -4643,34 +4643,34 @@ button.button, a.button {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-/* line 13, ../scss/components/_button.scss */
+/* line 12, ../scss/components/_button.scss */
 button.button:hover, a.button:hover {
   background-color: #ffac63;
 }
-/* line 16, ../scss/components/_button.scss */
+/* line 15, ../scss/components/_button.scss */
 button.button:active, a.button:active {
   background-color: #db7215;
 }
-/* line 19, ../scss/components/_button.scss */
+/* line 18, ../scss/components/_button.scss */
 button.button:focus, a.button:focus {
   border: none;
   outline: none;
 }
-/* line 23, ../scss/components/_button.scss */
+/* line 22, ../scss/components/_button.scss */
 button.button.button-large, a.button.button-large {
   width: 300px;
   font-size: 27px;
   font-weight: 400;
   line-height: 80px;
 }
-/* line 29, ../scss/components/_button.scss */
+/* line 28, ../scss/components/_button.scss */
 button.button.button-middle, a.button.button-middle {
   width: 180px;
   height: 40px;
   font-size: 18px;
   font-weight: 400;
 }
-/* line 35, ../scss/components/_button.scss */
+/* line 34, ../scss/components/_button.scss */
 button.button.button-small, a.button.button-small {
   width: 130px;
   height: 48px;
