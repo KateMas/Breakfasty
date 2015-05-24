@@ -184,20 +184,10 @@
 					margin-right: 5px;
 				}
 			}
-			button {
+			.button-small {
 				float: right;
-				width: 130px;
 				margin-top: 9px;
 				margin-right: 20px;
-				padding: 0;
-				//background-color: #ff7800;
-				border: none;
-				font-size: 24px;
-				font-weight: 500;
-				line-height: 48px;
-				text-align: center;
-				text-transform: uppercase;
-				color: #ffffff;
 				@include breakpoint(middle) {
 					width: 110px;
 					margin-right: 17px;

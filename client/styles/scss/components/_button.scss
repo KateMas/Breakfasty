@@ -1,18 +1,46 @@
-.button {
-	background-color: #ff7800;
-	border: none;
-	outline: none;
-	@include border-radius(0px);
-	@include transition-property(all);
-	@include transition-duration(400ms);
-	&:hover {
-		background-color: #ffac63;
-	}
-	&:active {
-		background-color: #db7215;
-	}
-	&:focus {
+button {
+	&.button {
+		padding: 0;
+		background-color: #ff7800;
 		border: none;
 		outline: none;
+		font-family: 'Roboto', sans-serif;
+		text-transform: uppercase;
+		color: #ffffff;
+		@include border-radius(0px);
+		@include transition-property(all);
+		@include transition-duration(400ms);
+		&:hover {
+			background-color: #ffac63;
+		}
+		&:active {
+			background-color: #db7215;
+		}
+		&:visited {
+			background-color: #ff7800;
+		}
+		&:focus {
+			background-color: #ff7800;
+			border: none;
+			outline: none;
+		}
+		&.button-large {
+			width: 300px;
+			font-size: 27px;
+			font-weight: 400;
+			line-height: 80px;
+		}
+		&.button-middle {
+			width: 180px;
+			height: 40px;
+			font-size: 18px;
+			font-weight: 400;
+		}
+		&.button-small {
+			width: 130px;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 48px;
+		}
 	}
 }

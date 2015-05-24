@@ -4684,11 +4684,15 @@ input[type=email]:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-/* line 1, ../scss/components/_button.scss */
-.button {
+/* line 2, ../scss/components/_button.scss */
+button.button {
+  padding: 0;
   background-color: #ff7800;
   border: none;
   outline: none;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
@@ -4697,18 +4701,44 @@ input[type=email]:focus:-ms-input-placeholder {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-/* line 8, ../scss/components/_button.scss */
-.button:hover {
+/* line 13, ../scss/components/_button.scss */
+button.button:hover {
   background-color: #ffac63;
 }
-/* line 11, ../scss/components/_button.scss */
-.button:active {
+/* line 16, ../scss/components/_button.scss */
+button.button:active {
   background-color: #db7215;
 }
-/* line 14, ../scss/components/_button.scss */
-.button:focus {
+/* line 19, ../scss/components/_button.scss */
+button.button:visited {
+  background-color: #ff7800;
+}
+/* line 22, ../scss/components/_button.scss */
+button.button:focus {
+  background-color: #ff7800;
   border: none;
   outline: none;
+}
+/* line 27, ../scss/components/_button.scss */
+button.button.button-large {
+  width: 300px;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 80px;
+}
+/* line 33, ../scss/components/_button.scss */
+button.button.button-middle {
+  width: 180px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* line 39, ../scss/components/_button.scss */
+button.button.button-small {
+  width: 130px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px;
 }
 
 /* line 1, ../scss/widgets/_footer.scss */
@@ -5450,133 +5480,103 @@ body.homepage .advertising p {
   }
 }
 /* line 144, ../scss/layouts/homepage/_advertising.scss */
-body.homepage .advertising .large-button {
-  width: 300px;
+body.homepage .advertising .button-large {
   margin-top: 60px;
-  padding: 0;
-  border: none;
-  outline: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 27px;
-  font-weight: 400;
-  line-height: 80px;
-  text-transform: uppercase;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
 }
 @media (min-width: 1200px) and (min-height: 700px) and (max-height: 981px) {
   /* line 144, ../scss/layouts/homepage/_advertising.scss */
-  body.homepage .advertising .large-button {
+  body.homepage .advertising .button-large {
     margin-top: 30px;
   }
 }
 @media (min-width: 1200px) and (min-height: 600px) and (max-height: 699px) {
   /* line 144, ../scss/layouts/homepage/_advertising.scss */
-  body.homepage .advertising .large-button {
+  body.homepage .advertising .button-large {
     margin-top: 20px;
     line-height: 60px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) and (min-height: 700px) and (max-height: 981px) {
   /* line 144, ../scss/layouts/homepage/_advertising.scss */
-  body.homepage .advertising .large-button {
+  body.homepage .advertising .button-large {
     margin-top: 30px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) and (min-height: 600px) and (max-height: 699px) {
   /* line 144, ../scss/layouts/homepage/_advertising.scss */
-  body.homepage .advertising .large-button {
+  body.homepage .advertising .button-large {
     margin-top: 20px;
     line-height: 60px;
   }
 }
 @media (min-width: 980px) and (max-width: 991px) and (min-height: 700px) and (max-height: 981px) {
   /* line 144, ../scss/layouts/homepage/_advertising.scss */
-  body.homepage .advertising .large-button {
+  body.homepage .advertising .button-large {
     margin-top: 30px;
   }
 }
 @media (min-width: 980px) and (max-width: 991px) and (min-height: 600px) and (max-height: 699px) {
   /* line 144, ../scss/layouts/homepage/_advertising.scss */
-  body.homepage .advertising .large-button {
+  body.homepage .advertising .button-large {
     margin-top: 20px;
     line-height: 60px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) and (min-height: 700px) and (max-height: 981px) {
   /* line 144, ../scss/layouts/homepage/_advertising.scss */
-  body.homepage .advertising .large-button {
+  body.homepage .advertising .button-large {
     margin-top: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) and (min-height: 600px) and (max-height: 699px) {
   /* line 144, ../scss/layouts/homepage/_advertising.scss */
-  body.homepage .advertising .large-button {
+  body.homepage .advertising .button-large {
     margin-top: 20px;
     line-height: 60px;
   }
 }
 @media (max-width: 767px) {
   /* line 144, ../scss/layouts/homepage/_advertising.scss */
-  body.homepage .advertising .large-button {
+  body.homepage .advertising .button-large {
     width: 200px;
     margin-top: 20px;
     font-size: 18px;
     line-height: 50px;
   }
 }
-/* line 191, ../scss/layouts/homepage/_advertising.scss */
-body.homepage .advertising .large-button:focus {
-  border: none;
-  outline: none;
-}
-/* line 196, ../scss/layouts/homepage/_advertising.scss */
+/* line 181, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 198, ../scss/layouts/homepage/_advertising.scss */
+/* line 183, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content .modal-sm-header {
   border: none;
 }
-/* line 200, ../scss/layouts/homepage/_advertising.scss */
+/* line 185, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content .modal-sm-header button {
   float: right;
   border: none;
   background-color: transparent;
 }
-/* line 204, ../scss/layouts/homepage/_advertising.scss */
+/* line 189, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising .modal-sm-content .modal-sm-header button span {
   font-size: 20px;
 }
-/* line 210, ../scss/layouts/homepage/_advertising.scss */
+/* line 195, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 214, ../scss/layouts/homepage/_advertising.scss */
+/* line 199, ../scss/layouts/homepage/_advertising.scss */
 body.homepage .advertising form input {
   margin: auto;
 }
-/* line 217, ../scss/layouts/homepage/_advertising.scss */
-body.homepage .advertising form button {
-  width: 180px;
-  height: 40px;
+/* line 202, ../scss/layouts/homepage/_advertising.scss */
+body.homepage .advertising form .button-middle {
   margin-top: 20px;
-  border: none;
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #ffffff;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
 }
 /* line 1, ../scss/layouts/homepage/_work.scss */
 body.homepage .work {
@@ -6261,36 +6261,27 @@ body.homepage .menu .dish .counter input {
   }
 }
 /* line 187, ../scss/layouts/homepage/_menu.scss */
-body.homepage .menu .dish .counter button {
+body.homepage .menu .dish .counter .button-small {
   float: right;
-  width: 130px;
   margin-top: 9px;
   margin-right: 20px;
-  padding: 0;
-  border: none;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 48px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   /* line 187, ../scss/layouts/homepage/_menu.scss */
-  body.homepage .menu .dish .counter button {
+  body.homepage .menu .dish .counter .button-small {
     width: 110px;
     margin-right: 17px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
   /* line 187, ../scss/layouts/homepage/_menu.scss */
-  body.homepage .menu .dish .counter button {
+  body.homepage .menu .dish .counter .button-small {
     width: 110px;
   }
 }
 @media (max-width: 767px) {
   /* line 187, ../scss/layouts/homepage/_menu.scss */
-  body.homepage .menu .dish .counter button {
+  body.homepage .menu .dish .counter .button-small {
     width: 90px;
   }
 }
