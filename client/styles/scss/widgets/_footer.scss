@@ -1,5 +1,5 @@
 footer {
-    padding-top: 128px;
+    padding-top: 100px;
     padding-bottom: 87px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -14,19 +14,17 @@ footer {
     h3 {
         margin: 0;
         font-size: 56px;
-        font-weight: 300;
+        font-weight: 400;
         @include breakpoint(extra-small) {
             font-size: 30px;
         }
     }
     ul {
         margin: 0;
-        padding-top: 98px;
-        padding-bottom: 109px;
+        padding: 98px 0 109px;
         font-size: 0;
         @include breakpoint(small) {
-            padding-top: 60px;
-            padding-bottom: 70px;
+            padding: 60px 0 70px;
         }
         @include breakpoint(extra-small) {
             padding: 40px 0 50px;

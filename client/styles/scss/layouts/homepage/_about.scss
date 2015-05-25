@@ -1,6 +1,6 @@
 .about {
     padding-top: 126px;
-    padding-bottom: 164px;
+    padding-bottom: 190px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     @include breakpoint(small) {
@@ -12,23 +12,21 @@
         padding-bottom: 64px;
     }
     h2 {
-        padding-bottom: 83px;
         color: #ffa264;
-        @include breakpoint(extra-small) {
-            padding-bottom: 33px;
-        }
     }
     p {
-        margin: 0;
+        margin-top: 58px;
+        margin-bottom: 0;
         font-size: 22px;
         font-weight: 300;
         line-height: 35px;
         @include breakpoint(extra-small) {
+            margin-top: 30px;
             font-size: 18px;
         }
     }
     .contacts {
-        margin-top: 15px;
+        margin-top: 10px;
         font-size: 0;
         li {
             display: inline-block;

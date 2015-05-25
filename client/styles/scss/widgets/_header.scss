@@ -88,10 +88,8 @@ header {
         }
         .container {
             position: relative;
-            padding-right: 95px;
-            padding-left: 80px;
             @include breakpoint(middle) {
-                padding-right: 15px;
+//                padding-right: 15px;
                 padding-left: 15px;
             }
             @include breakpoint(extra-middle) {
@@ -225,7 +223,7 @@ header {
             .cart {
                 position: absolute;
                 top: 30px;
-                right: 95px;
+                right: 19px;
                 width: 65px;
                 @include breakpoint(middle) {
                     top: 35px;
@@ -247,14 +245,13 @@ header {
                     display: inline-block;
                     width: 34px;
                     height: 34px;
-                    background-image: url(../../../client/images/header/cart.png);
-                    background-repeat: no-repeat;
                 }
                 sup {
                     position: absolute;
                     top: 16px;
                     left: 40px;
                     font-size: 22px;
+                    color: #000000;
                     @include breakpoint(middle) {
                         top: 18px;
                     }

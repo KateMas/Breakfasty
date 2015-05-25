@@ -1,34 +1,25 @@
 .faq {
-    padding-top: 144px;
+    padding-top: 80px;
     font-family: 'Open Sans', sans-serif;
     @include breakpoint(extra-small) {
-        padding-top: 102px;
-    }
-    h2 {
-        @include transition-property(color);
-        @include transition-duration(400ms);
-        &:hover {
-            color: #b5b4b4;
-        }
+        padding-top: 40px;
     }
     .position-tabs {
-        padding-top: 80px;
+        padding-top: 60px;
         @include breakpoint(extra-small) {
-            padding-top: 40px;
+            padding-top: 20px;
         }
         ul {
             width: 444px;
             margin: auto;
-            padding-top: 72px;
-            padding-bottom: 72px;
+            padding-top: 0;
+            padding-bottom: 30px;
             border: none;
             @include breakpoint(small) {
-                padding-top: 52px;
                 padding-bottom: 52px;
             }
             @include breakpoint(extra-small) {
                 width: 113px;
-                padding-top: 32px;
                 padding-bottom: 32px;
                 text-align: center;
             }
@@ -36,6 +27,7 @@
                 margin-right: 71px;
                 @include breakpoint(extra-small) {
                     float: none;
+                    margin-top: 10px;
                     margin-right: 0;
                 }
                 &:last-child {
@@ -65,20 +57,31 @@
                 }
             }
         }
-        p {
-            margin: 0 5%;
-            font-size: 22px;
-            @include breakpoint(extra-small) {
-                font-size: 18px;
+        .tab-pane {
+            .answered {
+                margin-top: 43px;
+                @include breakpoint(small) {
+                    margin-top: 20px;
+                }
+                @include breakpoint(extra-small) {
+                    margin-top: 20px;
+                }
+                p {
+                    margin: 0;
+                    font-size: 22px;
+                    @include breakpoint(extra-small) {
+                        font-size: 18px;
+                    }
+                    &.text-question {
+                        font-weight: 400;
+                        color: #ffa162;
+                    }
+                    &.text-answer {
+                        margin-top: 15px;
+                        font-weight: 300;
+                    }
+                }
             }
-        }
-        .text-question {
-            font-weight: 400;
-            color: #ffa162;
-        }
-        .text-answer {
-            font-weight: 300;
-            line-height: 35px;
         }
     }
 }

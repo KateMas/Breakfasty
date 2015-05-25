@@ -57,11 +57,11 @@ function inputNumber() {
 
 //animated scroll to anchor with tab toggle
 function scrollToAnchor() {
-    var headerHeight = 76;
+    var scrollMore = 76;
 
     function scrollTo(target) {
         $('html, body').animate({
-            scrollTop: parseInt(target.offset().top) - parseInt(headerHeight) + "px"
+            scrollTop: parseInt(target.offset().top) - parseInt(scrollMore) + "px"
         }, {
             duration: 500
         });

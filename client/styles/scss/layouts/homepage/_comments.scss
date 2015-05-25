@@ -15,21 +15,24 @@
         padding-bottom: 30px;
     }
     .style-bgc {
-        padding-top: 80px;
+        padding-top: 52px;
         padding-bottom: 6px;
         background-color: #ffffff;
         @include breakpoint(small) {
-            padding-top: 60px;
+            padding-top: 32px;
         }
         @include breakpoint(extra-small) {
-            padding-top: 40px;
+            padding-top: 32px;
+            padding-bottom: 0px;
         }
         h2 {
-            padding-bottom: 93px;
+            padding-bottom: 67px;
             @include breakpoint(small) {
-                padding-bottom: 63px;
+                font-size: 60px;
+                padding-bottom: 33px;
             }
             @include breakpoint(extra-small) {
+                font-size: 31px;
                 padding-bottom: 33px;
             }
         }
@@ -38,7 +41,7 @@
             width: 160px;
             height: 31px;
             margin-left: 5%;
-            margin-bottom: 32px;
+            margin-bottom: 18px;
             background-image: url(../../../client/images/comments/star.png);
             background-repeat: repeat-x;
         }
@@ -52,7 +55,7 @@
         }
         .author {
             margin-right: 5%;
-            padding-bottom: 86px;
+            padding-bottom: 65px;
             font-size: 18px;
             font-weight: 300;
             font-style: italic;

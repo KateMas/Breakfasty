@@ -7,7 +7,4 @@ body {
         @import "layouts/homepage/comments";
         @import "layouts/homepage/menu";
     }
-    &.faq {
-        @import "layouts/faq/faq";
-    }
 }

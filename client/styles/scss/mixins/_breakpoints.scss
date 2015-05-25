@@ -12,7 +12,7 @@
             @content;
         }
     } @else if $point == large-small {
-        @media (min-width: 1200px) and (min-height: 600px) and (max-height: 699px) {
+        @media (min-width: 1200px) and  (max-height: 699px) {
             @content;
         }
     } @else if $point == middle {
@@ -28,7 +28,7 @@
             @content;
         }
     } @else if $point == middle-small {
-        @media (min-width: 992px) and (max-width: 1199px) and (min-height: 600px) and (max-height: 699px) {
+        @media (min-width: 992px) and (max-width: 1199px) and (max-height: 699px) {
             @content;
         }
     } @else if $point == extra-middle {
@@ -44,7 +44,7 @@
             @content;
         }
     } @else if $point == extra-middle-small {
-        @media (min-width: 980px) and (max-width: 991px) and (min-height: 600px) and (max-height: 699px) {
+        @media (min-width: 980px) and (max-width: 991px) and (max-height: 699px) {
             @content;
         }
     } @else if $point == small {
@@ -60,7 +60,7 @@
             @content;
         }
     } @else if $point == small-sm {
-        @media (min-width: 768px) and (max-width: 979px) and (min-height: 600px) and (max-height: 699px) {
+        @media (min-width: 768px) and (max-width: 979px) and (max-height: 699px) {
             @content;
         }
     } @else if $point == extra-small {
