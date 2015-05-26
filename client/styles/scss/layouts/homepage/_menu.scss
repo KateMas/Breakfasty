@@ -74,8 +74,9 @@
 
                 figcaption {
                     position: absolute;
-                    top: 0;
                     left: 0;
+                    right: 0;
+                    bottom: 0;
                     overflow: hidden;
                     display: block;
                     width: 100%;
@@ -91,6 +92,15 @@
                         margin-top: 28%;
                         font-size: 24px;
                         text-transform: uppercase;
+                    }
+
+                    .mobile & {
+                        height: 40px;
+                        @include opacity(1);
+
+                        a {
+                            margin-top: 5px;
+                        }
                     }
                 }
             }

@@ -5,11 +5,22 @@ $(document).on('ready', function () {
         $(window).on('scroll', scrollController);
         scrollToAnchor();
         inputNumber();
+        setDeviceState();
     }
 });
 
 function scrollController() {
     toggleHeader();
+}
+
+function setDeviceState() {
+    var html = $('html');
+
+    if(isMobile()) {
+        html.addClass('mobile');
+    } else {
+        html.removeClass('mobile');
+    }
 }
 
 function toggleHeader() {
