@@ -17,7 +17,7 @@
         .dish {
             margin-top: 50px;
             border: 1px solid #c7c7c7;
-            text-align: center;
+            text-align: left;
             @include breakpoint(extra-small) {
                 margin-top: 30px;
             }
@@ -40,21 +40,18 @@
 
             .dish-name {
                 margin: 0;
-                padding: 60px 0 32px;
-                font-size: 24px;
+                padding: 5px 0 10px 10px;
+                font-size: 20px;
                 font-weight: 400;
                 text-transform: uppercase;
                 @include breakpoint(middle) {
-                    padding: 60px 0 32px;
-                    font-size: 20px;
+                    padding: 5px 0 10px 10px;
                 }
                 @include breakpoint(small) {
-                    padding: 60px 0 32px;
-                    font-size: 20px;
+                    padding: 5px 0 10px 10px;
                 }
                 @include breakpoint(extra-small) {
-                    padding: 45px 0 19px;
-                    font-size: 20px;
+                    padding: 5px 0 10px 10px;
                 }
             }
             figure {
