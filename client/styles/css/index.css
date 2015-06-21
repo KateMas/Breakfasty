@@ -4245,7 +4245,7 @@ button.button:focus, a.button:focus {
 /* line 24, ../scss/components/_button.scss */
 button.button.button-large, a.button.button-large {
   width: 300px;
-  font-size: 27px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 80px;
 }
@@ -4301,7 +4301,7 @@ footer h3 {
 /* line 22, ../scss/widgets/_footer.scss */
 footer ul {
   margin: 0;
-  padding: 98px 0 109px;
+  padding: 80px 0 98px;
   font-size: 0;
 }
 @media (min-width: 768px) and (max-width: 979px) {
@@ -4369,6 +4369,7 @@ footer p {
   margin: 0;
   font-size: 18px;
   font-weight: 400;
+  line-height: 32px;
   text-align: center;
   color: #333333;
 }
@@ -5031,9 +5032,13 @@ header.nav-style .container .cart sup {
   border: none;
   color: #ffa162;
 }
-/* line 61, ../scss/widgets/_faq.scss */
-.faq .position-tabs .tab-pane .answered {
-  margin-top: 43px;
+/* line 62, ../scss/widgets/_faq.scss */
+.faq .position-tabs .tab-pane .answered:first-child {
+  margin-top: 51px;
+}
+/* line 65, ../scss/widgets/_faq.scss */
+.faq .position-tabs .tab-pane .answered:last-child {
+  margin-top: 29px;
 }
 @media (min-width: 768px) and (max-width: 979px) {
   /* line 61, ../scss/widgets/_faq.scss */
@@ -5047,26 +5052,29 @@ header.nav-style .container .cart sup {
     margin-top: 20px;
   }
 }
-/* line 69, ../scss/widgets/_faq.scss */
+/* line 74, ../scss/widgets/_faq.scss */
 .faq .position-tabs .tab-pane .answered p {
-  margin: 0;
   font-size: 22px;
 }
 @media (max-width: 767px) {
-  /* line 69, ../scss/widgets/_faq.scss */
+  /* line 74, ../scss/widgets/_faq.scss */
   .faq .position-tabs .tab-pane .answered p {
     font-size: 18px;
   }
 }
-/* line 75, ../scss/widgets/_faq.scss */
+/* line 79, ../scss/widgets/_faq.scss */
 .faq .position-tabs .tab-pane .answered p.text-question {
+  margin-bottom: 0;
   font-weight: 400;
+  line-height: 37px;
   color: #ffa162;
 }
-/* line 79, ../scss/widgets/_faq.scss */
+/* line 85, ../scss/widgets/_faq.scss */
 .faq .position-tabs .tab-pane .answered p.text-answer {
-  margin-top: 15px;
+  margin-top: 7px;
+  margin-bottom: 0;
   font-weight: 300;
+  line-height: 47px;
 }
 
 /* line 1, ../scss/layouts/homepage/_advertising.scss */
@@ -5567,11 +5575,13 @@ body.homepage .work .description-work figure figcaption {
 }
 /* line 110, ../scss/layouts/homepage/_work.scss */
 body.homepage .work .description-work figure figcaption p {
-  margin: 0;
+  margin-top: -7px;
+  margin-bottom: 0;
   font-size: 24px;
   font-weight: 400;
+  line-height: 42px;
 }
-/* line 118, ../scss/layouts/homepage/_work.scss */
+/* line 120, ../scss/layouts/homepage/_work.scss */
 body.homepage .work hr {
   margin: 0;
   border-color: #898989;
@@ -5606,7 +5616,7 @@ body.homepage .about p {
   margin-bottom: 0;
   font-size: 22px;
   font-weight: 300;
-  line-height: 35px;
+  line-height: 36px;
 }
 @media (max-width: 767px) {
   /* line 17, ../scss/layouts/homepage/_about.scss */
@@ -5625,6 +5635,7 @@ body.homepage .about .contacts li {
   display: inline-block;
   font-size: 22px;
   font-weight: 300;
+  line-height: 30px;
 }
 @media (max-width: 767px) {
   /* line 31, ../scss/layouts/homepage/_about.scss */
@@ -5634,31 +5645,31 @@ body.homepage .about .contacts li {
     line-height: 35px;
   }
 }
-/* line 40, ../scss/layouts/homepage/_about.scss */
+/* line 41, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li:first-child {
   margin-right: 28px;
 }
-/* line 43, ../scss/layouts/homepage/_about.scss */
+/* line 44, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li:nth-child(2) {
   margin-right: 25px;
 }
-/* line 46, ../scss/layouts/homepage/_about.scss */
+/* line 47, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li a {
   vertical-align: middle;
   color: #000000;
 }
-/* line 50, ../scss/layouts/homepage/_about.scss */
+/* line 51, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li span {
   display: inline-block;
   height: 22px;
   margin-right: 17px;
   vertical-align: middle;
 }
-/* line 56, ../scss/layouts/homepage/_about.scss */
+/* line 57, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li .phone {
   width: 14px;
 }
-/* line 60, ../scss/layouts/homepage/_about.scss */
+/* line 61, ../scss/layouts/homepage/_about.scss */
 body.homepage .about .contacts li .envelope {
   width: 22px;
 }
@@ -5738,6 +5749,7 @@ body.homepage .comments .style-bgc .comment {
   margin: 0 5%;
   font-size: 22px;
   font-weight: 300;
+  line-height: 35px;
 }
 @media (max-width: 767px) {
   /* line 48, ../scss/layouts/homepage/_comments.scss */
@@ -5745,10 +5757,11 @@ body.homepage .comments .style-bgc .comment {
     font-size: 18px;
   }
 }
-/* line 56, ../scss/layouts/homepage/_comments.scss */
+/* line 57, ../scss/layouts/homepage/_comments.scss */
 body.homepage .comments .style-bgc .author {
+  margin-top: 26px;
   margin-right: 5%;
-  padding-bottom: 65px;
+  margin-bottom: 82px;
   font-size: 18px;
   font-weight: 300;
   font-style: italic;
@@ -5756,26 +5769,26 @@ body.homepage .comments .style-bgc .author {
   color: #6e6e6e;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 56, ../scss/layouts/homepage/_comments.scss */
+  /* line 57, ../scss/layouts/homepage/_comments.scss */
   body.homepage .comments .style-bgc .author {
     padding-top: 10px;
   }
 }
 @media (min-width: 980px) and (max-width: 991px) {
-  /* line 56, ../scss/layouts/homepage/_comments.scss */
+  /* line 57, ../scss/layouts/homepage/_comments.scss */
   body.homepage .comments .style-bgc .author {
     padding-top: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 56, ../scss/layouts/homepage/_comments.scss */
+  /* line 57, ../scss/layouts/homepage/_comments.scss */
   body.homepage .comments .style-bgc .author {
     padding-top: 10px;
     padding-bottom: 60px;
   }
 }
 @media (max-width: 767px) {
-  /* line 56, ../scss/layouts/homepage/_comments.scss */
+  /* line 57, ../scss/layouts/homepage/_comments.scss */
   body.homepage .comments .style-bgc .author {
     padding-top: 10px;
     padding-bottom: 40px;

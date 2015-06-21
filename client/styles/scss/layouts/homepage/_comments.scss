@@ -49,13 +49,15 @@
             margin: 0 5%;
             font-size: 22px;
             font-weight: 300;
+            line-height: 35px;
             @include breakpoint(extra-small) {
                 font-size: 18px;
             }
         }
         .author {
+            margin-top: 26px;
             margin-right: 5%;
-            padding-bottom: 65px;
+            margin-bottom: 82px;
             font-size: 18px;
             font-weight: 300;
             font-style: italic;
