@@ -155,9 +155,10 @@ header {
                         }
                     }
                     p {
-                        margin: 0;
-                        font-family: 'Open Sans', sans-serif;
-                        font-size: 12px;
+                        margin-top: -5px;
+                        margin-right: -1px;
+                        margin-bottom: 0;
+                        font-size: 11px;
                         font-weight: 600;
                         text-align: right;
                         color: #000000;
@@ -200,7 +201,7 @@ header {
                         }
                         a {
                             padding: 0;
-                            line-height: 93px;
+                            line-height: 105px;
                             color: #000000;
                             @include transition-property(color);
                             @include transition-duration(400ms);
@@ -248,9 +249,9 @@ header {
                 }
                 sup {
                     position: absolute;
-                    top: 16px;
-                    left: 40px;
-                    font-size: 22px;
+                    top: 17px;
+                    left: 38px;
+                    font-size: 19px;
                     color: #000000;
                     @include breakpoint(middle) {
                         top: 18px;
