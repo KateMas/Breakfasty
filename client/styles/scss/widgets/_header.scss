@@ -72,13 +72,18 @@ header {
                 }
                 .cart {
                     top: 11px;
-                    right: 45px;
+                    right: 59px;
                     @include breakpoint(extra-small) {
                         top: 15px;
                         right: 65px;
                     }
+                    a {
+                        width: 30px;
+                    }
                     sup {
-                        top: 17px;
+                        top: 18px;
+                        left: 38px;
+                        font-size: 17px;
                         @include breakpoint(middle) {
                             top: 19px;
                         }
