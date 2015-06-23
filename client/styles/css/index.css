@@ -5718,23 +5718,24 @@ body.homepage .comments .style-bgc {
 }
 /* line 28, ../scss/layouts/homepage/_comments.scss */
 body.homepage .comments .style-bgc h2 {
-  padding-bottom: 67px;
+  margin-top: 0;
+  margin-bottom: 67px;
 }
 @media (min-width: 768px) and (max-width: 979px) {
   /* line 28, ../scss/layouts/homepage/_comments.scss */
   body.homepage .comments .style-bgc h2 {
     font-size: 60px;
-    padding-bottom: 33px;
+    margin-bottom: 33px;
   }
 }
 @media (max-width: 767px) {
   /* line 28, ../scss/layouts/homepage/_comments.scss */
   body.homepage .comments .style-bgc h2 {
     font-size: 31px;
-    padding-bottom: 33px;
+    margin-bottom: 33px;
   }
 }
-/* line 39, ../scss/layouts/homepage/_comments.scss */
+/* line 40, ../scss/layouts/homepage/_comments.scss */
 body.homepage .comments .style-bgc .icon-stars {
   display: inline-block;
   width: 160px;
@@ -5744,7 +5745,7 @@ body.homepage .comments .style-bgc .icon-stars {
   background-image: url(../../../client/images/comments/star.png);
   background-repeat: repeat-x;
 }
-/* line 48, ../scss/layouts/homepage/_comments.scss */
+/* line 49, ../scss/layouts/homepage/_comments.scss */
 body.homepage .comments .style-bgc .comment {
   margin: 0 5%;
   font-size: 22px;
@@ -5752,12 +5753,12 @@ body.homepage .comments .style-bgc .comment {
   line-height: 35px;
 }
 @media (max-width: 767px) {
-  /* line 48, ../scss/layouts/homepage/_comments.scss */
+  /* line 49, ../scss/layouts/homepage/_comments.scss */
   body.homepage .comments .style-bgc .comment {
     font-size: 18px;
   }
 }
-/* line 57, ../scss/layouts/homepage/_comments.scss */
+/* line 58, ../scss/layouts/homepage/_comments.scss */
 body.homepage .comments .style-bgc .author {
   margin-top: 26px;
   margin-right: 5%;
@@ -5769,26 +5770,26 @@ body.homepage .comments .style-bgc .author {
   color: #6e6e6e;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 57, ../scss/layouts/homepage/_comments.scss */
+  /* line 58, ../scss/layouts/homepage/_comments.scss */
   body.homepage .comments .style-bgc .author {
     padding-top: 10px;
   }
 }
 @media (min-width: 980px) and (max-width: 991px) {
-  /* line 57, ../scss/layouts/homepage/_comments.scss */
+  /* line 58, ../scss/layouts/homepage/_comments.scss */
   body.homepage .comments .style-bgc .author {
     padding-top: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 57, ../scss/layouts/homepage/_comments.scss */
+  /* line 58, ../scss/layouts/homepage/_comments.scss */
   body.homepage .comments .style-bgc .author {
     padding-top: 10px;
     padding-bottom: 60px;
   }
 }
 @media (max-width: 767px) {
-  /* line 57, ../scss/layouts/homepage/_comments.scss */
+  /* line 58, ../scss/layouts/homepage/_comments.scss */
   body.homepage .comments .style-bgc .author {
     padding-top: 10px;
     padding-bottom: 40px;

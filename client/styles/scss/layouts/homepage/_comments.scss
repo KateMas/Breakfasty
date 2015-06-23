@@ -26,14 +26,15 @@
             padding-bottom: 0px;
         }
         h2 {
-            padding-bottom: 67px;
+            margin-top: 0;
+            margin-bottom: 67px;
             @include breakpoint(small) {
                 font-size: 60px;
-                padding-bottom: 33px;
+                margin-bottom: 33px;
             }
             @include breakpoint(extra-small) {
                 font-size: 31px;
-                padding-bottom: 33px;
+                margin-bottom: 33px;
             }
         }
         .icon-stars {
